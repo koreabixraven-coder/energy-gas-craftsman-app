@@ -1,4 +1,4 @@
-const CACHE_NAME = 'energy-gas-v2-02-gas-cards';
+const CACHE_NAME = 'energy-gas-v2-04-energy-gas-hierarchy';
 const ASSETS = [
   './',
   './index.html',
@@ -106,3 +106,5 @@ self.addEventListener('fetch', e => {
 //   가로모드 문제풀이 2분할: 문제 상단고정 + 보기/해설 하단독립스크롤. quizTtsFocus 스크롤 대상 분리.
 
 // v2.02: 가스기능사 출제예상문제 1~8장, 기출문제, CBT 실전모의고사 카드 추가. 기존 에너지 카드 유지.
+
+// v2.03: 가스기능사 문제풀이를 출제예상문제 → 장 → 세부항목의 계층형 카드 구조로 수정. TTS 로직 변경 없음.
