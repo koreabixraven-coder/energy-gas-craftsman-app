@@ -1,4 +1,4 @@
-const CACHE_NAME = 'energy-gas-v2-00-pipe-base';
+const CACHE_NAME = 'energy-gas-v2-02-gas-cards';
 const ASSETS = [
   './',
   './index.html',
@@ -104,3 +104,5 @@ self.addEventListener('fetch', e => {
 //   중복출제 핵심문제 탭 추가 (기출회차+기출복원 반복문제 클러스터 취합).
 //   모의고사 점수(scoreData) localStorage 영속 저장 추가 (pipe_master_score_v31_21).
 //   가로모드 문제풀이 2분할: 문제 상단고정 + 보기/해설 하단독립스크롤. quizTtsFocus 스크롤 대상 분리.
+
+// v2.02: 가스기능사 출제예상문제 1~8장, 기출문제, CBT 실전모의고사 카드 추가. 기존 에너지 카드 유지.
