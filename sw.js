@@ -1,4 +1,4 @@
-const CACHE_NAME = 'energy-gas-v2-07-energy-boiler-types81';
+const CACHE_NAME = 'energy-gas-v2-08-energy-boiler-accessories182';
 const ASSETS = [
   './',
   './index.html',
