@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <meta name="theme-color" content="#121212">
-<!-- v2.06 GAS_2009_1: gas quiz cards corrected to staged hierarchy; TTS logic preserved -->
+<!-- v2.07 ENERGY_BOILER_TYPES81: gas quiz cards corrected to staged hierarchy; TTS logic preserved -->
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
@@ -1433,12 +1433,12 @@
 <div class="settings-backdrop" id="settingsBackdrop" onclick="closeSettings(event)"></div>
   <!-- 설정 패널 -->
   <div class="settings-panel global-settings" id="settingsPanel" onclick="event.stopPropagation()">
-    <div class="settings-head"><div class="settings-head-title">⚙ 음성·자동진행 설정 <span style="font-size:10px;color:#BA7517;">v2.06 GAS_2009_1</span></div><button class="settings-close" onclick="closeSettings(event)">×</button></div>
+    <div class="settings-head"><div class="settings-head-title">⚙ 음성·자동진행 설정 <span style="font-size:10px;color:#BA7517;">v2.07 ENERGY_BOILER_TYPES81</span></div><button class="settings-close" onclick="closeSettings(event)">×</button></div>
     <div class="settings-save-row">
       <button class="test-btn save-main" onclick="saveSettingsFromUI()">💾 설정 저장</button>
       <button class="test-btn restore-main" onclick="resetSettingsToDefault()">↩ 기본값 복원</button>
     </div>
-    <p class="s-hint" style="color:#9FE1CB;">v2.06 GAS_2009_1. 휴대폰 이동중청취 노터치/전체화면을 보강했습니다.</p>
+    <p class="s-hint" style="color:#9FE1CB;">v2.07 ENERGY_BOILER_TYPES81. 휴대폰 이동중청취 노터치/전체화면을 보강했습니다.</p>
 <div class="settings-dirty-note" id="settingsDirtyNote">변경사항이 있습니다. 저장 버튼을 눌러야 다음 실행에도 유지됩니다.</div>
 
     <div class="s-title">
@@ -1998,7 +1998,7 @@ applyRestoreRepeatPatch();
    기출회차(41~62회)와 기출복원(2019~2025)에서 2회 이상 출제된 문제를
    고유 클러스터로 취합하여 가상 DB 레벨을 생성합니다. */
 function buildRepeatQuizDB(){
-  /* v2.06 GAS_2009_1
+  /* v2.07 ENERGY_BOILER_TYPES81
      샘플 DB에 포함된 _repeatRefs와 별도 중복핵심 레벨을 그대로 사용합니다.
      실제 기출 데이터 입력 후에는 에너지/가스/통합 반복문제 빌더로 확장합니다. */
   try{
@@ -3274,7 +3274,7 @@ function buildLevelBar(){
   const wrap=document.createElement('div');
   wrap.className='quiz-toc-wrap';
   const total=(typeof DB!=='undefined'&&DB)?Object.values(DB).reduce((a,b)=>a+(Array.isArray(b)?b.length:0),0):0;
-  wrap.innerHTML='<div class="quiz-toc-head"><div><div class="quiz-toc-title">문제풀이 목차</div><div class="quiz-toc-gdesc">에너지 / 가스 / 공통핵심 / 중복출제 핵심문제 메뉴 구조 적용.</div></div><div class="quiz-toc-sub">총 '+total+'문제 · v2.06 GAS_2009_1</div></div>';
+  wrap.innerHTML='<div class="quiz-toc-head"><div><div class="quiz-toc-title">문제풀이 목차</div><div class="quiz-toc-gdesc">에너지 / 가스 / 공통핵심 / 중복출제 핵심문제 메뉴 구조 적용.</div></div><div class="quiz-toc-sub">총 '+total+'문제 · v2.07 ENERGY_BOILER_TYPES81</div></div>';
 
   const grid=document.createElement('div');
   grid.className='quiz-toc-grid';

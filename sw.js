@@ -1,4 +1,4 @@
-const CACHE_NAME = 'energy-gas-v2-06-gas-2009-1';
+const CACHE_NAME = 'energy-gas-v2-07-energy-boiler-types81';
 const ASSETS = [
   './',
   './index.html',
@@ -110,3 +110,5 @@ self.addEventListener('fetch', e => {
 // v2.03: 가스기능사 문제풀이를 출제예상문제 → 장 → 세부항목의 계층형 카드 구조로 수정. TTS 로직 변경 없음.
 
 // v2.06: 가스기능사 기출문제 2009년 1회 60문제 입력.
+
+// v2.07: 에너지관리기능사 출제예상문제 02. 보일러의 종류 및 특징 81문제 입력.
