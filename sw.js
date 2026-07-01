@@ -1,4 +1,4 @@
-const CACHE_NAME = 'energy-gas-v2-05-energy-heat46';
+const CACHE_NAME = 'energy-gas-v2-06-gas-2009-1';
 const ASSETS = [
   './',
   './index.html',
@@ -108,3 +108,5 @@ self.addEventListener('fetch', e => {
 // v2.02: 가스기능사 출제예상문제 1~8장, 기출문제, CBT 실전모의고사 카드 추가. 기존 에너지 카드 유지.
 
 // v2.03: 가스기능사 문제풀이를 출제예상문제 → 장 → 세부항목의 계층형 카드 구조로 수정. TTS 로직 변경 없음.
+
+// v2.06: 가스기능사 기출문제 2009년 1회 60문제 입력.
