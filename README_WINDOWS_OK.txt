@@ -1,1 +1,1 @@
-energy-gas-craftsman-app v2.19 ENERGY_2015_3_60 - 1239문제 입력 완료
+energy-gas-craftsman-app v2.20 ENERGY_2015_4_60 - 1299문제 입력 완료
