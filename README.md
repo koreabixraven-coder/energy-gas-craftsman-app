@@ -1,4 +1,4 @@
-# energy-gas-craftsman-app v2.24 ENERGY_2016_2_FIX_8_24
+# energy-gas-craftsman-app v2.25 CBT_MOCK_1_60
 
 배관기능장 안정본 TTS 로직 기반의 에너지관리기능사·가스기능사 통합 학습앱입니다.
 
@@ -65,3 +65,11 @@
 - 전체 문제 수 1479문제 유지
 - questions.js?v=2.24 및 Service Worker CACHE_NAME v2.24 반영
 - TTS 자동읽기 로직, 설정창, 오답노트, 암기완료 기능 변경 없음
+
+
+## v2.25 변경
+- 에너지관리기능사 / CBT 대비 적중모의고사 / 1회 60문제 추가
+- 57번 해설 사용자 재확인본 기준 보강
+- 전체 문제 수 1539문제
+- questions.js?v=2.25 및 Service Worker CACHE_NAME v2.25 반영
+- TTS 자동읽기 로직, 설정창, 오답노트, 암기완료 기능은 변경하지 않음
