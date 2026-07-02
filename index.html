@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <meta name="theme-color" content="#121212">
-<!-- v2.16 ENERGY_2014_4_60: energy 2014-4 previous test 60 questions added; TTS logic preserved -->
+<!-- v2.17 ENERGY_2015_1_60: energy 2015-1 previous test 60 questions added; TTS logic preserved -->
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
@@ -12,7 +12,7 @@
 <link rel="manifest" href="manifest.json">
 <link rel="apple-touch-icon" href="icon-192.png">
 <script src="theory.js"></script>
-<script src="questions.js?v=2.16"></script>
+<script src="questions.js?v=2.17"></script>
 <script>
 /* ── v30.22 패드 화면 확장 설정 선적용 ── */
 (function(){
@@ -3274,7 +3274,7 @@ function buildLevelBar(){
   const wrap=document.createElement('div');
   wrap.className='quiz-toc-wrap';
   const total=(typeof DB!=='undefined'&&DB)?Object.values(DB).reduce((a,b)=>a+(Array.isArray(b)?b.length:0),0):0;
-  wrap.innerHTML='<div class="quiz-toc-head"><div><div class="quiz-toc-title">문제풀이 목차</div><div class="quiz-toc-gdesc">에너지 / 가스 / 공통핵심 / 중복출제 핵심문제 메뉴 구조 적용.</div></div><div class="quiz-toc-sub">총 '+total+'문제 · v2.14 ENERGY_2014_2_60</div></div>';
+  wrap.innerHTML='<div class="quiz-toc-head"><div><div class="quiz-toc-title">문제풀이 목차</div><div class="quiz-toc-gdesc">에너지 / 가스 / 공통핵심 / 중복출제 핵심문제 메뉴 구조 적용.</div></div><div class="quiz-toc-sub">총 '+total+'문제 · v2.17 ENERGY_2015_1_60</div></div>';
 
   const grid=document.createElement('div');
   grid.className='quiz-toc-grid';
