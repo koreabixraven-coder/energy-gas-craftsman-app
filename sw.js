@@ -1,4 +1,4 @@
-const CACHE_NAME = 'energy-gas-v2-17-energy-2015-1-60';
+const CACHE_NAME = 'energy-gas-v2-18-energy-2015-2-60';
 const ASSETS = [
   './',
   './index.html',
