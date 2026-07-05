@@ -1,0 +1,14 @@
+{
+  "version": "v2.49",
+  "added_set": "가스기능사 / 기출문제 / 2012년 2회",
+  "added_count": 60,
+  "total_questions": 2797,
+  "cache_name": "energy-gas-v2-49-gas-2012-2-60-cache-strict-original-ex",
+  "preserved": [
+    "TTS 자동읽기 로직",
+    "설정창",
+    "오답노트",
+    "암기완료 기능"
+  ],
+  "key": "가스_기출_2012_2"
+}

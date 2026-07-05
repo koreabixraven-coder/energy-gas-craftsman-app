@@ -1,1 +1,1 @@
-Windows 압축해제 정상 확인: v2.47 GAS_2011_4_60_CACHE_STRICT_ORIGINAL_EX
+Windows 압축해제 정상 확인: v2.49 GAS_2012_2_60_CACHE_STRICT_ORIGINAL_EX

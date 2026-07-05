@@ -1,0 +1,14 @@
+{
+  "version": "v2.48 GAS_2012_1_60_CACHE_STRICT_ORIGINAL_EX",
+  "added": "가스기능사 / 기출문제 / 2012년 1회 60문제",
+  "total_questions": 2737,
+  "cache_name": "energy-gas-v2-48-gas-2012-1-60-cache-strict-original-ex",
+  "question_key": "가스_기출_2012_1",
+  "source": "사용자 제공 원본 이미지에서 추출 및 대조",
+  "preserved": [
+    "TTS 자동읽기 로직",
+    "설정창",
+    "오답노트",
+    "암기완료 기능"
+  ]
+}
