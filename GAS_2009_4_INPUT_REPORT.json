@@ -1,0 +1,20 @@
+{
+  "version": "v2.39",
+  "added": "가스기능사 / 기출문제 / 2009년 4회",
+  "added_count": 60,
+  "total_questions": 2197,
+  "cache_version": "2.39",
+  "touched": [
+    "questions.js",
+    "index.html",
+    "manifest.json",
+    "sw.js",
+    "README.md"
+  ],
+  "preserved": [
+    "TTS 자동읽기",
+    "설정창",
+    "오답노트",
+    "암기완료 기능"
+  ]
+}
