@@ -1,3 +1,27 @@
+# energy-gas-craftsman-app v2.37
+GAS_2009_2_60_CACHE_STRICT_ORIGINAL_EX
+
+## v2.37 변경
+- 기준본 v2.36 내용 유지
+- 가스기능사 → 기출문제 → 2009년 2회 60문제 추가
+- 가스기능사 기출문제 메뉴: 2009년 1회 / 2009년 2회 카드 유지
+- 전체 문제 수: 2077문제
+- questions.js?v=2.37 반영
+- theory.js?v=2.37 반영
+- manifest.json?v=2.37 반영
+- sw.js?v=2.37 반영
+- Service Worker CACHE_NAME: energy-gas-v2-37-gas-2009-2-60-cache-strict-original-ex
+- TTS 자동읽기 로직, 설정창, 오답노트, 암기완료 기능은 변경하지 않음
+- 원본 사진의 문제·보기·정답·해설만 반영
+- 해설이 다음 장 상단에 이어진 8번은 다음 페이지 상단 해설 확인 후 반영
+
+## 업로드 방법
+압축을 풀고 GitHub `energy-gas-craftsman-app` 저장소에 전체 파일을 덮어 업로드합니다.
+
+업로드 후 GitHub Pages 배포 완료 시간을 확인하고, 앱 주소에 `?v=2.37`을 붙여 확인합니다.
+
+---
+
 # energy-gas-craftsman-app v2.36
 LOCK_OVERLAY_COMMENT_FIX_CACHE_STRICT_ORIGINAL_EX
 

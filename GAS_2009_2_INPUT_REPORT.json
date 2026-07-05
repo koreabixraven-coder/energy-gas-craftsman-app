@@ -1,0 +1,20 @@
+{
+  "version": "v2.37 GAS_2009_2_60_CACHE_STRICT_ORIGINAL_EX",
+  "added_level": "가스_기출_2009_2",
+  "added_title": "가스기능사 / 기출문제 / 2009년 2회",
+  "added_count": 60,
+  "total_questions_expected": 2077,
+  "cache": {
+    "questions.js": "v=2.37",
+    "theory.js": "v=2.37",
+    "manifest.json": "v=2.37",
+    "sw.js": "v=2.37",
+    "CACHE_NAME": "energy-gas-v2-37-gas-2009-2-60-cache-strict-original-ex"
+  },
+  "source_pages": "사용자 제공 원본 이미지 p.98~105",
+  "principles": [
+    "원본 문제·보기·정답·해설만 반영",
+    "TTS/설정/오답/암기완료 기능 변경 없음",
+    "해설 없으면 원본 해설 없음 원칙 유지"
+  ]
+}
