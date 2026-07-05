@@ -1,0 +1,332 @@
+{
+  "version": "v2.34",
+  "base": "v2.33",
+  "duplicateLevel": "에너지_CBT중복문제특훈",
+  "groups": [
+    {
+      "groupId": "CBT_DUP_001",
+      "count": 2,
+      "refs": [
+        "CBT 1회 51번",
+        "CBT 5회 53번"
+      ],
+      "question": "배관 보온재의 선정 시 고려해야 할 사항으로 가장 거리가 먼 것은?",
+      "review": true,
+      "note": "검토 필요: 해설 차이",
+      "answerTexts": [
+        {
+          "ref": "CBT 1회 51번",
+          "ans": 2,
+          "answerText": "해체의 편리성"
+        },
+        {
+          "ref": "CBT 5회 53번",
+          "ans": 2,
+          "answerText": "해체의 편리성"
+        }
+      ]
+    },
+    {
+      "groupId": "CBT_DUP_002",
+      "count": 2,
+      "refs": [
+        "CBT 1회 55번",
+        "CBT 6회 11번"
+      ],
+      "question": "에너지이용 합리화법규상 냉난방온도제한 건물에 냉난방 제한온도를 적용할 때의 기준으로 옳은 것은? 단, 판매시설 및 공항의 경우는 제외한다.",
+      "review": true,
+      "note": "검토 필요: 해설 차이",
+      "answerTexts": [
+        {
+          "ref": "CBT 1회 55번",
+          "ans": 3,
+          "answerText": "냉방 : 26℃ 이상, 난방 : 20℃ 이하"
+        },
+        {
+          "ref": "CBT 6회 11번",
+          "ans": 3,
+          "answerText": "냉방 : 26℃ 이상, 난방 : 20℃ 이하"
+        }
+      ]
+    },
+    {
+      "groupId": "CBT_DUP_003",
+      "count": 2,
+      "refs": [
+        "CBT 2회 2번",
+        "CBT 4회 4번"
+      ],
+      "question": "물을 가열하여 증기를 발생시키는 경우 압력을 높이면 그 값이 작아지는 것은?",
+      "review": true,
+      "note": "검토 필요: 해설 차이",
+      "answerTexts": [
+        {
+          "ref": "CBT 2회 2번",
+          "ans": 3,
+          "answerText": "잠열"
+        },
+        {
+          "ref": "CBT 4회 4번",
+          "ans": 3,
+          "answerText": "잠열"
+        }
+      ]
+    },
+    {
+      "groupId": "CBT_DUP_004",
+      "count": 2,
+      "refs": [
+        "CBT 2회 24번",
+        "CBT 4회 11번"
+      ],
+      "question": "보일러 집진장치의 형식과 종류를 서로 짝지은 것으로 틀린 것은?",
+      "review": true,
+      "note": "검토 필요: 해설 차이",
+      "answerTexts": [
+        {
+          "ref": "CBT 2회 24번",
+          "ans": 1,
+          "answerText": "여과식 - 타이젠 와셔"
+        },
+        {
+          "ref": "CBT 4회 11번",
+          "ans": 1,
+          "answerText": "여과식 - 타이젠 와셔"
+        }
+      ]
+    },
+    {
+      "groupId": "CBT_DUP_005",
+      "count": 2,
+      "refs": [
+        "CBT 2회 33번",
+        "CBT 4회 12번"
+      ],
+      "question": "보일러 부속장치에 관한 설명으로 틀린 것은?",
+      "review": true,
+      "note": "검토 필요: 정답 보기문구 차이, 정답 번호 차이, 해설 차이",
+      "answerTexts": [
+        {
+          "ref": "CBT 2회 33번",
+          "ans": 1,
+          "answerText": "슈트 블로워 : 보일러 동 저면의 스케일, 침전물 등을 밖으로 배출하는 장치"
+        },
+        {
+          "ref": "CBT 4회 12번",
+          "ans": 2,
+          "answerText": "고압증기 터빈에서 팽창되어 압력이 저하된 증기를 재 과열하는 장치를 과열기라 한다."
+        }
+      ]
+    },
+    {
+      "groupId": "CBT_DUP_006",
+      "count": 2,
+      "refs": [
+        "CBT 2회 43번",
+        "CBT 4회 17번"
+      ],
+      "question": "프로판가스를 완전연소 시킬 때 발생하는 것은?",
+      "review": true,
+      "note": "검토 필요: 해설 차이",
+      "answerTexts": [
+        {
+          "ref": "CBT 2회 43번",
+          "ans": 2,
+          "answerText": "CO₂ 및 H₂O"
+        },
+        {
+          "ref": "CBT 4회 17번",
+          "ans": 2,
+          "answerText": "CO₂ 및 H₂O"
+        }
+      ]
+    },
+    {
+      "groupId": "CBT_DUP_007",
+      "count": 2,
+      "refs": [
+        "CBT 4회 25번",
+        "CBT 6회 25번"
+      ],
+      "question": "증기난방과 비교한 온수난방의 특징 설명으로 틀린 것은?",
+      "review": true,
+      "note": "검토 필요: 정답 보기문구 차이, 정답 번호 차이, 해설 차이",
+      "answerTexts": [
+        {
+          "ref": "CBT 4회 25번",
+          "ans": 0,
+          "answerText": "물의 잠열을 이용하여 난방하는 방식이다."
+        },
+        {
+          "ref": "CBT 6회 25번",
+          "ans": 1,
+          "answerText": "건물 높이에 제한을 받지 않는다."
+        }
+      ]
+    },
+    {
+      "groupId": "CBT_DUP_008",
+      "count": 2,
+      "refs": [
+        "CBT 4회 38번",
+        "CBT 7회 39번"
+      ],
+      "question": "보일러 연소 중에 발생하는 맥동연소의 원인이 아닌 것은?",
+      "review": true,
+      "note": "검토 필요: 해설 차이",
+      "answerTexts": [
+        {
+          "ref": "CBT 4회 38번",
+          "ans": 3,
+          "answerText": "연도 단면의 변화가 적은 경우"
+        },
+        {
+          "ref": "CBT 7회 39번",
+          "ans": 3,
+          "answerText": "연도 단면의 변화가 적은 경우"
+        }
+      ]
+    },
+    {
+      "groupId": "CBT_DUP_009",
+      "count": 2,
+      "refs": [
+        "CBT 4회 45번",
+        "CBT 6회 31번"
+      ],
+      "question": "공기량이 지나치게 많을 때 나타나는 현상 중 틀린 것은?",
+      "review": true,
+      "note": "검토 필요: 해설 차이",
+      "answerTexts": [
+        {
+          "ref": "CBT 4회 45번",
+          "ans": 3,
+          "answerText": "배기가스 온도가 높아진다."
+        },
+        {
+          "ref": "CBT 6회 31번",
+          "ans": 3,
+          "answerText": "배기가스 온도가 높아진다."
+        }
+      ]
+    },
+    {
+      "groupId": "CBT_DUP_010",
+      "count": 2,
+      "refs": [
+        "CBT 5회 23번",
+        "CBT 7회 33번"
+      ],
+      "question": "보일러 용량을 결정하는 정격출력에 포함되어 고려할 사항이 아닌 것은?",
+      "review": false,
+      "note": "CBT 중복 출제",
+      "answerTexts": [
+        {
+          "ref": "CBT 5회 23번",
+          "ans": 2,
+          "answerText": "채광부하"
+        },
+        {
+          "ref": "CBT 7회 33번",
+          "ans": 2,
+          "answerText": "채광부하"
+        }
+      ]
+    },
+    {
+      "groupId": "CBT_DUP_011",
+      "count": 2,
+      "refs": [
+        "CBT 5회 28번",
+        "CBT 7회 35번"
+      ],
+      "question": "보일러 수면계의 개수와 관련된 사항 중 잘못 설명된 것은?",
+      "review": true,
+      "note": "검토 필요: 해설 차이",
+      "answerTexts": [
+        {
+          "ref": "CBT 5회 28번",
+          "ans": 1,
+          "answerText": "소용량 및 소형관류보일러에는 2개 이상의 유리수면계를 부착한다."
+        },
+        {
+          "ref": "CBT 7회 35번",
+          "ans": 1,
+          "answerText": "소용량 및 소형관류보일러에는 2개 이상의 유리수면계를 부착한다."
+        }
+      ]
+    },
+    {
+      "groupId": "CBT_DUP_012",
+      "count": 2,
+      "refs": [
+        "CBT 5회 30번",
+        "CBT 7회 36번"
+      ],
+      "question": "다음 중 용어별 사용단위가 틀린 것은?",
+      "review": false,
+      "note": "CBT 중복 출제",
+      "answerTexts": [
+        {
+          "ref": "CBT 5회 30번",
+          "ans": 2,
+          "answerText": "열전달율 : kcal/mh℃"
+        },
+        {
+          "ref": "CBT 7회 36번",
+          "ans": 2,
+          "answerText": "열전달율 : kcal/mh℃"
+        }
+      ]
+    },
+    {
+      "groupId": "CBT_DUP_013",
+      "count": 2,
+      "refs": [
+        "CBT 5회 40번",
+        "CBT 7회 44번"
+      ],
+      "question": "코르니시 보일러의 노통 길이가 4500mm이고, 외경이 3000mm, 두께가 10mm일 때 전열면적은 약 몇 m²인가?",
+      "review": true,
+      "note": "검토 필요: 해설 차이",
+      "answerTexts": [
+        {
+          "ref": "CBT 5회 40번",
+          "ans": 3,
+          "answerText": "42.4"
+        },
+        {
+          "ref": "CBT 7회 44번",
+          "ans": 3,
+          "answerText": "42.4"
+        }
+      ]
+    },
+    {
+      "groupId": "CBT_DUP_014",
+      "count": 2,
+      "refs": [
+        "CBT 5회 56번",
+        "CBT 7회 37번"
+      ],
+      "question": "특정열사용기자재 중 검사대상기기를 설치하거나 개조하여 사용하려는 자는 누구의 검사를 받아야 하는가?",
+      "review": true,
+      "note": "검토 필요: 정답 보기문구 차이, 해설 차이",
+      "answerTexts": [
+        {
+          "ref": "CBT 5회 56번",
+          "ans": 2,
+          "answerText": "한국에너지공단이사장"
+        },
+        {
+          "ref": "CBT 7회 37번",
+          "ans": 2,
+          "answerText": "에너지공단 이사장"
+        }
+      ]
+    }
+  ],
+  "totalGroups": 14,
+  "totalDuplicateOriginalItems": 28,
+  "duplicateTrainingItems": 14
+}

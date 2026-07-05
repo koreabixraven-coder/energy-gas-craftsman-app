@@ -1,8 +1,8 @@
-/* energy-gas questions.js · v2.33 CBT_MOCK_7_60_CACHE_MENU_STRICT_ORIGINAL_EX
-   에너지관리기능사 / CBT 대비 적중모의고사 / 1~7회 각 60문제 분리 카드화.
-   에너지관리기능사 / CBT 대비 적중모의고사 / 7회 60문제 추가.
-   전체 문제 수 1899문제.
-   가스기능사 / 기출문제 / 2009년 1회 60문제 유지. */
+/* energy-gas questions.js · v2.34 CBT_DUPLICATE_CARD_CACHE_MENU_STRICT_ORIGINAL_EX
+   CBT 1~7회 420문제 중 중복문제 14그룹/28문항 표시.
+   원본 CBT 문제 삭제 없이 duplicate 메타데이터만 추가.
+   CBT 중복문제 특훈 카드 14문제 추가.
+   전체 문제 수 1913문제. */
 const DB = {
   "에너지_예상_1_01_열및증기": [
     {
@@ -21286,7 +21286,31 @@ const DB = {
       ],
       "source": "사용자 제공 원본 이미지 및 정답표 기준 추출·대조",
       "no": 51,
-      "set": "CBT 대비 적중모의고사 / 1회"
+      "set": "CBT 대비 적중모의고사 / 1회",
+      "duplicateGroupId": "CBT_DUP_001",
+      "isDuplicate": true,
+      "duplicateRefs": [
+        "CBT 1회 51번",
+        "CBT 5회 53번"
+      ],
+      "duplicateNote": "검토 필요: 해설 차이",
+      "duplicateReviewNeeded": true,
+      "duplicateMethod": "문제문 정규화 비교(띄어쓰기·괄호·단위·문장부호 차이 제거)",
+      "_repeatRefs": [
+        {
+          "level": "에너지_CBT적중모의고사_1",
+          "label": "CBT 1회",
+          "no": 51
+        },
+        {
+          "level": "에너지_CBT적중모의고사_5",
+          "label": "CBT 5회",
+          "no": 53
+        }
+      ],
+      "_repeatScope": "CBT 중복문제 특훈 기준 · 검토 필요",
+      "_repeatMethod": "문제문 정규화 비교(띄어쓰기·괄호·단위·문장부호 차이 제거)",
+      "_repeatCount": 2
     },
     {
       "cat": "에너지관리기능사 / CBT 대비 적중모의고사 / 1회",
@@ -21374,7 +21398,31 @@ const DB = {
       ],
       "source": "사용자 제공 원본 이미지 및 정답표 기준 추출·대조",
       "no": 55,
-      "set": "CBT 대비 적중모의고사 / 1회"
+      "set": "CBT 대비 적중모의고사 / 1회",
+      "duplicateGroupId": "CBT_DUP_002",
+      "isDuplicate": true,
+      "duplicateRefs": [
+        "CBT 1회 55번",
+        "CBT 6회 11번"
+      ],
+      "duplicateNote": "검토 필요: 해설 차이",
+      "duplicateReviewNeeded": true,
+      "duplicateMethod": "문제문 정규화 비교(띄어쓰기·괄호·단위·문장부호 차이 제거)",
+      "_repeatRefs": [
+        {
+          "level": "에너지_CBT적중모의고사_1",
+          "label": "CBT 1회",
+          "no": 55
+        },
+        {
+          "level": "에너지_CBT적중모의고사_6",
+          "label": "CBT 6회",
+          "no": 11
+        }
+      ],
+      "_repeatScope": "CBT 중복문제 특훈 기준 · 검토 필요",
+      "_repeatMethod": "문제문 정규화 비교(띄어쓰기·괄호·단위·문장부호 차이 제거)",
+      "_repeatCount": 2
     },
     {
       "cat": "에너지관리기능사 / CBT 대비 적중모의고사 / 1회",
@@ -21530,7 +21578,31 @@ const DB = {
       ],
       "source": "사용자 제공 원본 이미지 및 정답표 기준 추출·대조",
       "no": 2,
-      "set": "CBT 대비 적중모의고사 / 2회"
+      "set": "CBT 대비 적중모의고사 / 2회",
+      "duplicateGroupId": "CBT_DUP_003",
+      "isDuplicate": true,
+      "duplicateRefs": [
+        "CBT 2회 2번",
+        "CBT 4회 4번"
+      ],
+      "duplicateNote": "검토 필요: 해설 차이",
+      "duplicateReviewNeeded": true,
+      "duplicateMethod": "문제문 정규화 비교(띄어쓰기·괄호·단위·문장부호 차이 제거)",
+      "_repeatRefs": [
+        {
+          "level": "에너지_CBT적중모의고사_2",
+          "label": "CBT 2회",
+          "no": 2
+        },
+        {
+          "level": "에너지_CBT적중모의고사_4",
+          "label": "CBT 4회",
+          "no": 4
+        }
+      ],
+      "_repeatScope": "CBT 중복문제 특훈 기준 · 검토 필요",
+      "_repeatMethod": "문제문 정규화 비교(띄어쓰기·괄호·단위·문장부호 차이 제거)",
+      "_repeatCount": 2
     },
     {
       "cat": "에너지관리기능사 / CBT 대비 적중모의고사 / 2회",
@@ -22014,7 +22086,31 @@ const DB = {
       ],
       "source": "사용자 제공 원본 이미지 및 정답표 기준 추출·대조",
       "no": 24,
-      "set": "CBT 대비 적중모의고사 / 2회"
+      "set": "CBT 대비 적중모의고사 / 2회",
+      "duplicateGroupId": "CBT_DUP_004",
+      "isDuplicate": true,
+      "duplicateRefs": [
+        "CBT 2회 24번",
+        "CBT 4회 11번"
+      ],
+      "duplicateNote": "검토 필요: 해설 차이",
+      "duplicateReviewNeeded": true,
+      "duplicateMethod": "문제문 정규화 비교(띄어쓰기·괄호·단위·문장부호 차이 제거)",
+      "_repeatRefs": [
+        {
+          "level": "에너지_CBT적중모의고사_2",
+          "label": "CBT 2회",
+          "no": 24
+        },
+        {
+          "level": "에너지_CBT적중모의고사_4",
+          "label": "CBT 4회",
+          "no": 11
+        }
+      ],
+      "_repeatScope": "CBT 중복문제 특훈 기준 · 검토 필요",
+      "_repeatMethod": "문제문 정규화 비교(띄어쓰기·괄호·단위·문장부호 차이 제거)",
+      "_repeatCount": 2
     },
     {
       "cat": "에너지관리기능사 / CBT 대비 적중모의고사 / 2회",
@@ -22212,7 +22308,31 @@ const DB = {
       ],
       "source": "사용자 제공 원본 이미지 및 정답표 기준 추출·대조",
       "no": 33,
-      "set": "CBT 대비 적중모의고사 / 2회"
+      "set": "CBT 대비 적중모의고사 / 2회",
+      "duplicateGroupId": "CBT_DUP_005",
+      "isDuplicate": true,
+      "duplicateRefs": [
+        "CBT 2회 33번",
+        "CBT 4회 12번"
+      ],
+      "duplicateNote": "검토 필요: 정답 보기문구 차이, 정답 번호 차이, 해설 차이",
+      "duplicateReviewNeeded": true,
+      "duplicateMethod": "문제문 정규화 비교(띄어쓰기·괄호·단위·문장부호 차이 제거)",
+      "_repeatRefs": [
+        {
+          "level": "에너지_CBT적중모의고사_2",
+          "label": "CBT 2회",
+          "no": 33
+        },
+        {
+          "level": "에너지_CBT적중모의고사_4",
+          "label": "CBT 4회",
+          "no": 12
+        }
+      ],
+      "_repeatScope": "CBT 중복문제 특훈 기준 · 검토 필요",
+      "_repeatMethod": "문제문 정규화 비교(띄어쓰기·괄호·단위·문장부호 차이 제거)",
+      "_repeatCount": 2
     },
     {
       "cat": "에너지관리기능사 / CBT 대비 적중모의고사 / 2회",
@@ -22432,7 +22552,31 @@ const DB = {
       ],
       "source": "사용자 제공 원본 이미지 및 정답표 기준 추출·대조",
       "no": 43,
-      "set": "CBT 대비 적중모의고사 / 2회"
+      "set": "CBT 대비 적중모의고사 / 2회",
+      "duplicateGroupId": "CBT_DUP_006",
+      "isDuplicate": true,
+      "duplicateRefs": [
+        "CBT 2회 43번",
+        "CBT 4회 17번"
+      ],
+      "duplicateNote": "검토 필요: 해설 차이",
+      "duplicateReviewNeeded": true,
+      "duplicateMethod": "문제문 정규화 비교(띄어쓰기·괄호·단위·문장부호 차이 제거)",
+      "_repeatRefs": [
+        {
+          "level": "에너지_CBT적중모의고사_2",
+          "label": "CBT 2회",
+          "no": 43
+        },
+        {
+          "level": "에너지_CBT적중모의고사_4",
+          "label": "CBT 4회",
+          "no": 17
+        }
+      ],
+      "_repeatScope": "CBT 중복문제 특훈 기준 · 검토 필요",
+      "_repeatMethod": "문제문 정규화 비교(띄어쓰기·괄호·단위·문장부호 차이 제거)",
+      "_repeatCount": 2
     },
     {
       "cat": "에너지관리기능사 / CBT 대비 적중모의고사 / 2회",
@@ -24218,7 +24362,31 @@ const DB = {
       ],
       "source": "사용자 제공 원본 이미지 및 정답표 기준 추출·대조",
       "no": 4,
-      "set": "CBT 대비 적중모의고사 / 4회"
+      "set": "CBT 대비 적중모의고사 / 4회",
+      "duplicateGroupId": "CBT_DUP_003",
+      "isDuplicate": true,
+      "duplicateRefs": [
+        "CBT 2회 2번",
+        "CBT 4회 4번"
+      ],
+      "duplicateNote": "검토 필요: 해설 차이",
+      "duplicateReviewNeeded": true,
+      "duplicateMethod": "문제문 정규화 비교(띄어쓰기·괄호·단위·문장부호 차이 제거)",
+      "_repeatRefs": [
+        {
+          "level": "에너지_CBT적중모의고사_2",
+          "label": "CBT 2회",
+          "no": 2
+        },
+        {
+          "level": "에너지_CBT적중모의고사_4",
+          "label": "CBT 4회",
+          "no": 4
+        }
+      ],
+      "_repeatScope": "CBT 중복문제 특훈 기준 · 검토 필요",
+      "_repeatMethod": "문제문 정규화 비교(띄어쓰기·괄호·단위·문장부호 차이 제거)",
+      "_repeatCount": 2
     },
     {
       "cat": "에너지관리기능사 / CBT 대비 적중모의고사 / 4회",
@@ -24372,7 +24540,31 @@ const DB = {
       ],
       "source": "사용자 제공 원본 이미지 및 정답표 기준 추출·대조",
       "no": 11,
-      "set": "CBT 대비 적중모의고사 / 4회"
+      "set": "CBT 대비 적중모의고사 / 4회",
+      "duplicateGroupId": "CBT_DUP_004",
+      "isDuplicate": true,
+      "duplicateRefs": [
+        "CBT 2회 24번",
+        "CBT 4회 11번"
+      ],
+      "duplicateNote": "검토 필요: 해설 차이",
+      "duplicateReviewNeeded": true,
+      "duplicateMethod": "문제문 정규화 비교(띄어쓰기·괄호·단위·문장부호 차이 제거)",
+      "_repeatRefs": [
+        {
+          "level": "에너지_CBT적중모의고사_2",
+          "label": "CBT 2회",
+          "no": 24
+        },
+        {
+          "level": "에너지_CBT적중모의고사_4",
+          "label": "CBT 4회",
+          "no": 11
+        }
+      ],
+      "_repeatScope": "CBT 중복문제 특훈 기준 · 검토 필요",
+      "_repeatMethod": "문제문 정규화 비교(띄어쓰기·괄호·단위·문장부호 차이 제거)",
+      "_repeatCount": 2
     },
     {
       "cat": "에너지관리기능사 / CBT 대비 적중모의고사 / 4회",
@@ -24394,7 +24586,31 @@ const DB = {
       ],
       "source": "사용자 제공 원본 이미지 및 정답표 기준 추출·대조",
       "no": 12,
-      "set": "CBT 대비 적중모의고사 / 4회"
+      "set": "CBT 대비 적중모의고사 / 4회",
+      "duplicateGroupId": "CBT_DUP_005",
+      "isDuplicate": true,
+      "duplicateRefs": [
+        "CBT 2회 33번",
+        "CBT 4회 12번"
+      ],
+      "duplicateNote": "검토 필요: 정답 보기문구 차이, 정답 번호 차이, 해설 차이",
+      "duplicateReviewNeeded": true,
+      "duplicateMethod": "문제문 정규화 비교(띄어쓰기·괄호·단위·문장부호 차이 제거)",
+      "_repeatRefs": [
+        {
+          "level": "에너지_CBT적중모의고사_2",
+          "label": "CBT 2회",
+          "no": 33
+        },
+        {
+          "level": "에너지_CBT적중모의고사_4",
+          "label": "CBT 4회",
+          "no": 12
+        }
+      ],
+      "_repeatScope": "CBT 중복문제 특훈 기준 · 검토 필요",
+      "_repeatMethod": "문제문 정규화 비교(띄어쓰기·괄호·단위·문장부호 차이 제거)",
+      "_repeatCount": 2
     },
     {
       "cat": "에너지관리기능사 / CBT 대비 적중모의고사 / 4회",
@@ -24504,7 +24720,31 @@ const DB = {
       ],
       "source": "사용자 제공 원본 이미지 및 정답표 기준 추출·대조",
       "no": 17,
-      "set": "CBT 대비 적중모의고사 / 4회"
+      "set": "CBT 대비 적중모의고사 / 4회",
+      "duplicateGroupId": "CBT_DUP_006",
+      "isDuplicate": true,
+      "duplicateRefs": [
+        "CBT 2회 43번",
+        "CBT 4회 17번"
+      ],
+      "duplicateNote": "검토 필요: 해설 차이",
+      "duplicateReviewNeeded": true,
+      "duplicateMethod": "문제문 정규화 비교(띄어쓰기·괄호·단위·문장부호 차이 제거)",
+      "_repeatRefs": [
+        {
+          "level": "에너지_CBT적중모의고사_2",
+          "label": "CBT 2회",
+          "no": 43
+        },
+        {
+          "level": "에너지_CBT적중모의고사_4",
+          "label": "CBT 4회",
+          "no": 17
+        }
+      ],
+      "_repeatScope": "CBT 중복문제 특훈 기준 · 검토 필요",
+      "_repeatMethod": "문제문 정규화 비교(띄어쓰기·괄호·단위·문장부호 차이 제거)",
+      "_repeatCount": 2
     },
     {
       "cat": "에너지관리기능사 / CBT 대비 적중모의고사 / 4회",
@@ -24680,7 +24920,31 @@ const DB = {
       ],
       "source": "사용자 제공 원본 이미지 및 정답표 기준 추출·대조",
       "no": 25,
-      "set": "CBT 대비 적중모의고사 / 4회"
+      "set": "CBT 대비 적중모의고사 / 4회",
+      "duplicateGroupId": "CBT_DUP_007",
+      "isDuplicate": true,
+      "duplicateRefs": [
+        "CBT 4회 25번",
+        "CBT 6회 25번"
+      ],
+      "duplicateNote": "검토 필요: 정답 보기문구 차이, 정답 번호 차이, 해설 차이",
+      "duplicateReviewNeeded": true,
+      "duplicateMethod": "문제문 정규화 비교(띄어쓰기·괄호·단위·문장부호 차이 제거)",
+      "_repeatRefs": [
+        {
+          "level": "에너지_CBT적중모의고사_4",
+          "label": "CBT 4회",
+          "no": 25
+        },
+        {
+          "level": "에너지_CBT적중모의고사_6",
+          "label": "CBT 6회",
+          "no": 25
+        }
+      ],
+      "_repeatScope": "CBT 중복문제 특훈 기준 · 검토 필요",
+      "_repeatMethod": "문제문 정규화 비교(띄어쓰기·괄호·단위·문장부호 차이 제거)",
+      "_repeatCount": 2
     },
     {
       "cat": "에너지관리기능사 / CBT 대비 적중모의고사 / 4회",
@@ -24966,7 +25230,31 @@ const DB = {
       ],
       "source": "사용자 제공 원본 이미지 및 정답표 기준 추출·대조",
       "no": 38,
-      "set": "CBT 대비 적중모의고사 / 4회"
+      "set": "CBT 대비 적중모의고사 / 4회",
+      "duplicateGroupId": "CBT_DUP_008",
+      "isDuplicate": true,
+      "duplicateRefs": [
+        "CBT 4회 38번",
+        "CBT 7회 39번"
+      ],
+      "duplicateNote": "검토 필요: 해설 차이",
+      "duplicateReviewNeeded": true,
+      "duplicateMethod": "문제문 정규화 비교(띄어쓰기·괄호·단위·문장부호 차이 제거)",
+      "_repeatRefs": [
+        {
+          "level": "에너지_CBT적중모의고사_4",
+          "label": "CBT 4회",
+          "no": 38
+        },
+        {
+          "level": "에너지_CBT적중모의고사_7",
+          "label": "CBT 7회",
+          "no": 39
+        }
+      ],
+      "_repeatScope": "CBT 중복문제 특훈 기준 · 검토 필요",
+      "_repeatMethod": "문제문 정규화 비교(띄어쓰기·괄호·단위·문장부호 차이 제거)",
+      "_repeatCount": 2
     },
     {
       "cat": "에너지관리기능사 / CBT 대비 적중모의고사 / 4회",
@@ -25120,7 +25408,31 @@ const DB = {
       ],
       "source": "사용자 제공 원본 이미지 및 정답표 기준 추출·대조",
       "no": 45,
-      "set": "CBT 대비 적중모의고사 / 4회"
+      "set": "CBT 대비 적중모의고사 / 4회",
+      "duplicateGroupId": "CBT_DUP_009",
+      "isDuplicate": true,
+      "duplicateRefs": [
+        "CBT 4회 45번",
+        "CBT 6회 31번"
+      ],
+      "duplicateNote": "검토 필요: 해설 차이",
+      "duplicateReviewNeeded": true,
+      "duplicateMethod": "문제문 정규화 비교(띄어쓰기·괄호·단위·문장부호 차이 제거)",
+      "_repeatRefs": [
+        {
+          "level": "에너지_CBT적중모의고사_4",
+          "label": "CBT 4회",
+          "no": 45
+        },
+        {
+          "level": "에너지_CBT적중모의고사_6",
+          "label": "CBT 6회",
+          "no": 31
+        }
+      ],
+      "_repeatScope": "CBT 중복문제 특훈 기준 · 검토 필요",
+      "_repeatMethod": "문제문 정규화 비교(띄어쓰기·괄호·단위·문장부호 차이 제거)",
+      "_repeatCount": 2
     },
     {
       "cat": "에너지관리기능사 / CBT 대비 적중모의고사 / 4회",
@@ -25958,7 +26270,31 @@ const DB = {
       ],
       "source": "사용자 제공 원본 이미지 및 정답표 기준 추출·대조",
       "no": 23,
-      "set": "CBT 대비 적중모의고사 / 5회"
+      "set": "CBT 대비 적중모의고사 / 5회",
+      "duplicateGroupId": "CBT_DUP_010",
+      "isDuplicate": true,
+      "duplicateRefs": [
+        "CBT 5회 23번",
+        "CBT 7회 33번"
+      ],
+      "duplicateNote": "CBT 중복 출제",
+      "duplicateReviewNeeded": false,
+      "duplicateMethod": "문제문 정규화 비교(띄어쓰기·괄호·단위·문장부호 차이 제거)",
+      "_repeatRefs": [
+        {
+          "level": "에너지_CBT적중모의고사_5",
+          "label": "CBT 5회",
+          "no": 23
+        },
+        {
+          "level": "에너지_CBT적중모의고사_7",
+          "label": "CBT 7회",
+          "no": 33
+        }
+      ],
+      "_repeatScope": "CBT 중복문제 특훈 기준",
+      "_repeatMethod": "문제문 정규화 비교(띄어쓰기·괄호·단위·문장부호 차이 제거)",
+      "_repeatCount": 2
     },
     {
       "cat": "에너지관리기능사 / CBT 대비 적중모의고사 / 5회",
@@ -26068,7 +26404,31 @@ const DB = {
       ],
       "source": "사용자 제공 원본 이미지 및 정답표 기준 추출·대조",
       "no": 28,
-      "set": "CBT 대비 적중모의고사 / 5회"
+      "set": "CBT 대비 적중모의고사 / 5회",
+      "duplicateGroupId": "CBT_DUP_011",
+      "isDuplicate": true,
+      "duplicateRefs": [
+        "CBT 5회 28번",
+        "CBT 7회 35번"
+      ],
+      "duplicateNote": "검토 필요: 해설 차이",
+      "duplicateReviewNeeded": true,
+      "duplicateMethod": "문제문 정규화 비교(띄어쓰기·괄호·단위·문장부호 차이 제거)",
+      "_repeatRefs": [
+        {
+          "level": "에너지_CBT적중모의고사_5",
+          "label": "CBT 5회",
+          "no": 28
+        },
+        {
+          "level": "에너지_CBT적중모의고사_7",
+          "label": "CBT 7회",
+          "no": 35
+        }
+      ],
+      "_repeatScope": "CBT 중복문제 특훈 기준 · 검토 필요",
+      "_repeatMethod": "문제문 정규화 비교(띄어쓰기·괄호·단위·문장부호 차이 제거)",
+      "_repeatCount": 2
     },
     {
       "cat": "에너지관리기능사 / CBT 대비 적중모의고사 / 5회",
@@ -26112,7 +26472,31 @@ const DB = {
       ],
       "source": "사용자 제공 원본 이미지 및 정답표 기준 추출·대조",
       "no": 30,
-      "set": "CBT 대비 적중모의고사 / 5회"
+      "set": "CBT 대비 적중모의고사 / 5회",
+      "duplicateGroupId": "CBT_DUP_012",
+      "isDuplicate": true,
+      "duplicateRefs": [
+        "CBT 5회 30번",
+        "CBT 7회 36번"
+      ],
+      "duplicateNote": "CBT 중복 출제",
+      "duplicateReviewNeeded": false,
+      "duplicateMethod": "문제문 정규화 비교(띄어쓰기·괄호·단위·문장부호 차이 제거)",
+      "_repeatRefs": [
+        {
+          "level": "에너지_CBT적중모의고사_5",
+          "label": "CBT 5회",
+          "no": 30
+        },
+        {
+          "level": "에너지_CBT적중모의고사_7",
+          "label": "CBT 7회",
+          "no": 36
+        }
+      ],
+      "_repeatScope": "CBT 중복문제 특훈 기준",
+      "_repeatMethod": "문제문 정규화 비교(띄어쓰기·괄호·단위·문장부호 차이 제거)",
+      "_repeatCount": 2
     },
     {
       "cat": "에너지관리기능사 / CBT 대비 적중모의고사 / 5회",
@@ -26332,7 +26716,31 @@ const DB = {
       ],
       "source": "사용자 제공 원본 이미지 및 정답표 기준 추출·대조",
       "no": 40,
-      "set": "CBT 대비 적중모의고사 / 5회"
+      "set": "CBT 대비 적중모의고사 / 5회",
+      "duplicateGroupId": "CBT_DUP_013",
+      "isDuplicate": true,
+      "duplicateRefs": [
+        "CBT 5회 40번",
+        "CBT 7회 44번"
+      ],
+      "duplicateNote": "검토 필요: 해설 차이",
+      "duplicateReviewNeeded": true,
+      "duplicateMethod": "문제문 정규화 비교(띄어쓰기·괄호·단위·문장부호 차이 제거)",
+      "_repeatRefs": [
+        {
+          "level": "에너지_CBT적중모의고사_5",
+          "label": "CBT 5회",
+          "no": 40
+        },
+        {
+          "level": "에너지_CBT적중모의고사_7",
+          "label": "CBT 7회",
+          "no": 44
+        }
+      ],
+      "_repeatScope": "CBT 중복문제 특훈 기준 · 검토 필요",
+      "_repeatMethod": "문제문 정규화 비교(띄어쓰기·괄호·단위·문장부호 차이 제거)",
+      "_repeatCount": 2
     },
     {
       "cat": "에너지관리기능사 / CBT 대비 적중모의고사 / 5회",
@@ -26618,7 +27026,31 @@ const DB = {
       ],
       "source": "사용자 제공 원본 이미지 및 정답표 기준 추출·대조",
       "no": 53,
-      "set": "CBT 대비 적중모의고사 / 5회"
+      "set": "CBT 대비 적중모의고사 / 5회",
+      "duplicateGroupId": "CBT_DUP_001",
+      "isDuplicate": true,
+      "duplicateRefs": [
+        "CBT 1회 51번",
+        "CBT 5회 53번"
+      ],
+      "duplicateNote": "검토 필요: 해설 차이",
+      "duplicateReviewNeeded": true,
+      "duplicateMethod": "문제문 정규화 비교(띄어쓰기·괄호·단위·문장부호 차이 제거)",
+      "_repeatRefs": [
+        {
+          "level": "에너지_CBT적중모의고사_1",
+          "label": "CBT 1회",
+          "no": 51
+        },
+        {
+          "level": "에너지_CBT적중모의고사_5",
+          "label": "CBT 5회",
+          "no": 53
+        }
+      ],
+      "_repeatScope": "CBT 중복문제 특훈 기준 · 검토 필요",
+      "_repeatMethod": "문제문 정규화 비교(띄어쓰기·괄호·단위·문장부호 차이 제거)",
+      "_repeatCount": 2
     },
     {
       "cat": "에너지관리기능사 / CBT 대비 적중모의고사 / 5회",
@@ -26684,7 +27116,31 @@ const DB = {
       ],
       "source": "사용자 제공 원본 이미지 및 정답표 기준 추출·대조",
       "no": 56,
-      "set": "CBT 대비 적중모의고사 / 5회"
+      "set": "CBT 대비 적중모의고사 / 5회",
+      "duplicateGroupId": "CBT_DUP_014",
+      "isDuplicate": true,
+      "duplicateRefs": [
+        "CBT 5회 56번",
+        "CBT 7회 37번"
+      ],
+      "duplicateNote": "검토 필요: 정답 보기문구 차이, 해설 차이",
+      "duplicateReviewNeeded": true,
+      "duplicateMethod": "문제문 정규화 비교(띄어쓰기·괄호·단위·문장부호 차이 제거)",
+      "_repeatRefs": [
+        {
+          "level": "에너지_CBT적중모의고사_5",
+          "label": "CBT 5회",
+          "no": 56
+        },
+        {
+          "level": "에너지_CBT적중모의고사_7",
+          "label": "CBT 7회",
+          "no": 37
+        }
+      ],
+      "_repeatScope": "CBT 중복문제 특훈 기준 · 검토 필요",
+      "_repeatMethod": "문제문 정규화 비교(띄어쓰기·괄호·단위·문장부호 차이 제거)",
+      "_repeatCount": 2
     },
     {
       "cat": "에너지관리기능사 / CBT 대비 적중모의고사 / 5회",
@@ -27016,7 +27472,31 @@ const DB = {
       ],
       "source": "사용자 제공 원본 이미지 및 정답표 기준 추출·대조",
       "no": 11,
-      "set": "CBT 대비 적중모의고사 / 6회"
+      "set": "CBT 대비 적중모의고사 / 6회",
+      "duplicateGroupId": "CBT_DUP_002",
+      "isDuplicate": true,
+      "duplicateRefs": [
+        "CBT 1회 55번",
+        "CBT 6회 11번"
+      ],
+      "duplicateNote": "검토 필요: 해설 차이",
+      "duplicateReviewNeeded": true,
+      "duplicateMethod": "문제문 정규화 비교(띄어쓰기·괄호·단위·문장부호 차이 제거)",
+      "_repeatRefs": [
+        {
+          "level": "에너지_CBT적중모의고사_1",
+          "label": "CBT 1회",
+          "no": 55
+        },
+        {
+          "level": "에너지_CBT적중모의고사_6",
+          "label": "CBT 6회",
+          "no": 11
+        }
+      ],
+      "_repeatScope": "CBT 중복문제 특훈 기준 · 검토 필요",
+      "_repeatMethod": "문제문 정규화 비교(띄어쓰기·괄호·단위·문장부호 차이 제거)",
+      "_repeatCount": 2
     },
     {
       "cat": "에너지관리기능사 / CBT 대비 적중모의고사 / 6회",
@@ -27324,7 +27804,31 @@ const DB = {
       ],
       "source": "사용자 제공 원본 이미지 및 정답표 기준 추출·대조",
       "no": 25,
-      "set": "CBT 대비 적중모의고사 / 6회"
+      "set": "CBT 대비 적중모의고사 / 6회",
+      "duplicateGroupId": "CBT_DUP_007",
+      "isDuplicate": true,
+      "duplicateRefs": [
+        "CBT 4회 25번",
+        "CBT 6회 25번"
+      ],
+      "duplicateNote": "검토 필요: 정답 보기문구 차이, 정답 번호 차이, 해설 차이",
+      "duplicateReviewNeeded": true,
+      "duplicateMethod": "문제문 정규화 비교(띄어쓰기·괄호·단위·문장부호 차이 제거)",
+      "_repeatRefs": [
+        {
+          "level": "에너지_CBT적중모의고사_4",
+          "label": "CBT 4회",
+          "no": 25
+        },
+        {
+          "level": "에너지_CBT적중모의고사_6",
+          "label": "CBT 6회",
+          "no": 25
+        }
+      ],
+      "_repeatScope": "CBT 중복문제 특훈 기준 · 검토 필요",
+      "_repeatMethod": "문제문 정규화 비교(띄어쓰기·괄호·단위·문장부호 차이 제거)",
+      "_repeatCount": 2
     },
     {
       "cat": "에너지관리기능사 / CBT 대비 적중모의고사 / 6회",
@@ -27456,7 +27960,31 @@ const DB = {
       ],
       "source": "사용자 제공 원본 이미지 및 정답표 기준 추출·대조",
       "no": 31,
-      "set": "CBT 대비 적중모의고사 / 6회"
+      "set": "CBT 대비 적중모의고사 / 6회",
+      "duplicateGroupId": "CBT_DUP_009",
+      "isDuplicate": true,
+      "duplicateRefs": [
+        "CBT 4회 45번",
+        "CBT 6회 31번"
+      ],
+      "duplicateNote": "검토 필요: 해설 차이",
+      "duplicateReviewNeeded": true,
+      "duplicateMethod": "문제문 정규화 비교(띄어쓰기·괄호·단위·문장부호 차이 제거)",
+      "_repeatRefs": [
+        {
+          "level": "에너지_CBT적중모의고사_4",
+          "label": "CBT 4회",
+          "no": 45
+        },
+        {
+          "level": "에너지_CBT적중모의고사_6",
+          "label": "CBT 6회",
+          "no": 31
+        }
+      ],
+      "_repeatScope": "CBT 중복문제 특훈 기준 · 검토 필요",
+      "_repeatMethod": "문제문 정규화 비교(띄어쓰기·괄호·단위·문장부호 차이 제거)",
+      "_repeatCount": 2
     },
     {
       "cat": "에너지관리기능사 / CBT 대비 적중모의고사 / 6회",
@@ -28822,7 +29350,31 @@ const DB = {
       ],
       "source": "사용자 제공 원본 이미지 및 정답표 기준 추출·대조",
       "no": 33,
-      "set": "CBT 대비 적중모의고사 / 7회"
+      "set": "CBT 대비 적중모의고사 / 7회",
+      "duplicateGroupId": "CBT_DUP_010",
+      "isDuplicate": true,
+      "duplicateRefs": [
+        "CBT 5회 23번",
+        "CBT 7회 33번"
+      ],
+      "duplicateNote": "CBT 중복 출제",
+      "duplicateReviewNeeded": false,
+      "duplicateMethod": "문제문 정규화 비교(띄어쓰기·괄호·단위·문장부호 차이 제거)",
+      "_repeatRefs": [
+        {
+          "level": "에너지_CBT적중모의고사_5",
+          "label": "CBT 5회",
+          "no": 23
+        },
+        {
+          "level": "에너지_CBT적중모의고사_7",
+          "label": "CBT 7회",
+          "no": 33
+        }
+      ],
+      "_repeatScope": "CBT 중복문제 특훈 기준",
+      "_repeatMethod": "문제문 정규화 비교(띄어쓰기·괄호·단위·문장부호 차이 제거)",
+      "_repeatCount": 2
     },
     {
       "cat": "에너지관리기능사 / CBT 대비 적중모의고사 / 7회",
@@ -28866,7 +29418,31 @@ const DB = {
       ],
       "source": "사용자 제공 원본 이미지 및 정답표 기준 추출·대조",
       "no": 35,
-      "set": "CBT 대비 적중모의고사 / 7회"
+      "set": "CBT 대비 적중모의고사 / 7회",
+      "duplicateGroupId": "CBT_DUP_011",
+      "isDuplicate": true,
+      "duplicateRefs": [
+        "CBT 5회 28번",
+        "CBT 7회 35번"
+      ],
+      "duplicateNote": "검토 필요: 해설 차이",
+      "duplicateReviewNeeded": true,
+      "duplicateMethod": "문제문 정규화 비교(띄어쓰기·괄호·단위·문장부호 차이 제거)",
+      "_repeatRefs": [
+        {
+          "level": "에너지_CBT적중모의고사_5",
+          "label": "CBT 5회",
+          "no": 28
+        },
+        {
+          "level": "에너지_CBT적중모의고사_7",
+          "label": "CBT 7회",
+          "no": 35
+        }
+      ],
+      "_repeatScope": "CBT 중복문제 특훈 기준 · 검토 필요",
+      "_repeatMethod": "문제문 정규화 비교(띄어쓰기·괄호·단위·문장부호 차이 제거)",
+      "_repeatCount": 2
     },
     {
       "cat": "에너지관리기능사 / CBT 대비 적중모의고사 / 7회",
@@ -28888,7 +29464,31 @@ const DB = {
       ],
       "source": "사용자 제공 원본 이미지 및 정답표 기준 추출·대조",
       "no": 36,
-      "set": "CBT 대비 적중모의고사 / 7회"
+      "set": "CBT 대비 적중모의고사 / 7회",
+      "duplicateGroupId": "CBT_DUP_012",
+      "isDuplicate": true,
+      "duplicateRefs": [
+        "CBT 5회 30번",
+        "CBT 7회 36번"
+      ],
+      "duplicateNote": "CBT 중복 출제",
+      "duplicateReviewNeeded": false,
+      "duplicateMethod": "문제문 정규화 비교(띄어쓰기·괄호·단위·문장부호 차이 제거)",
+      "_repeatRefs": [
+        {
+          "level": "에너지_CBT적중모의고사_5",
+          "label": "CBT 5회",
+          "no": 30
+        },
+        {
+          "level": "에너지_CBT적중모의고사_7",
+          "label": "CBT 7회",
+          "no": 36
+        }
+      ],
+      "_repeatScope": "CBT 중복문제 특훈 기준",
+      "_repeatMethod": "문제문 정규화 비교(띄어쓰기·괄호·단위·문장부호 차이 제거)",
+      "_repeatCount": 2
     },
     {
       "cat": "에너지관리기능사 / CBT 대비 적중모의고사 / 7회",
@@ -28910,7 +29510,31 @@ const DB = {
       ],
       "source": "사용자 제공 원본 이미지 및 정답표 기준 추출·대조",
       "no": 37,
-      "set": "CBT 대비 적중모의고사 / 7회"
+      "set": "CBT 대비 적중모의고사 / 7회",
+      "duplicateGroupId": "CBT_DUP_014",
+      "isDuplicate": true,
+      "duplicateRefs": [
+        "CBT 5회 56번",
+        "CBT 7회 37번"
+      ],
+      "duplicateNote": "검토 필요: 정답 보기문구 차이, 해설 차이",
+      "duplicateReviewNeeded": true,
+      "duplicateMethod": "문제문 정규화 비교(띄어쓰기·괄호·단위·문장부호 차이 제거)",
+      "_repeatRefs": [
+        {
+          "level": "에너지_CBT적중모의고사_5",
+          "label": "CBT 5회",
+          "no": 56
+        },
+        {
+          "level": "에너지_CBT적중모의고사_7",
+          "label": "CBT 7회",
+          "no": 37
+        }
+      ],
+      "_repeatScope": "CBT 중복문제 특훈 기준 · 검토 필요",
+      "_repeatMethod": "문제문 정규화 비교(띄어쓰기·괄호·단위·문장부호 차이 제거)",
+      "_repeatCount": 2
     },
     {
       "cat": "에너지관리기능사 / CBT 대비 적중모의고사 / 7회",
@@ -28954,7 +29578,31 @@ const DB = {
       ],
       "source": "사용자 제공 원본 이미지 및 정답표 기준 추출·대조",
       "no": 39,
-      "set": "CBT 대비 적중모의고사 / 7회"
+      "set": "CBT 대비 적중모의고사 / 7회",
+      "duplicateGroupId": "CBT_DUP_008",
+      "isDuplicate": true,
+      "duplicateRefs": [
+        "CBT 4회 38번",
+        "CBT 7회 39번"
+      ],
+      "duplicateNote": "검토 필요: 해설 차이",
+      "duplicateReviewNeeded": true,
+      "duplicateMethod": "문제문 정규화 비교(띄어쓰기·괄호·단위·문장부호 차이 제거)",
+      "_repeatRefs": [
+        {
+          "level": "에너지_CBT적중모의고사_4",
+          "label": "CBT 4회",
+          "no": 38
+        },
+        {
+          "level": "에너지_CBT적중모의고사_7",
+          "label": "CBT 7회",
+          "no": 39
+        }
+      ],
+      "_repeatScope": "CBT 중복문제 특훈 기준 · 검토 필요",
+      "_repeatMethod": "문제문 정규화 비교(띄어쓰기·괄호·단위·문장부호 차이 제거)",
+      "_repeatCount": 2
     },
     {
       "cat": "에너지관리기능사 / CBT 대비 적중모의고사 / 7회",
@@ -29064,7 +29712,31 @@ const DB = {
       ],
       "source": "사용자 제공 원본 이미지 및 정답표 기준 추출·대조",
       "no": 44,
-      "set": "CBT 대비 적중모의고사 / 7회"
+      "set": "CBT 대비 적중모의고사 / 7회",
+      "duplicateGroupId": "CBT_DUP_013",
+      "isDuplicate": true,
+      "duplicateRefs": [
+        "CBT 5회 40번",
+        "CBT 7회 44번"
+      ],
+      "duplicateNote": "검토 필요: 해설 차이",
+      "duplicateReviewNeeded": true,
+      "duplicateMethod": "문제문 정규화 비교(띄어쓰기·괄호·단위·문장부호 차이 제거)",
+      "_repeatRefs": [
+        {
+          "level": "에너지_CBT적중모의고사_5",
+          "label": "CBT 5회",
+          "no": 40
+        },
+        {
+          "level": "에너지_CBT적중모의고사_7",
+          "label": "CBT 7회",
+          "no": 44
+        }
+      ],
+      "_repeatScope": "CBT 중복문제 특훈 기준 · 검토 필요",
+      "_repeatMethod": "문제문 정규화 비교(띄어쓰기·괄호·단위·문장부호 차이 제거)",
+      "_repeatCount": 2
     },
     {
       "cat": "에너지관리기능사 / CBT 대비 적중모의고사 / 7회",
@@ -29417,6 +30089,708 @@ const DB = {
       "source": "사용자 제공 원본 이미지 및 정답표 기준 추출·대조",
       "no": 60,
       "set": "CBT 대비 적중모의고사 / 7회"
+    }
+  ],
+  "에너지_CBT중복문제특훈": [
+    {
+      "cat": "에너지관리기능사 / CBT 중복문제 특훈",
+      "q": "배관 보온재의 선정 시 고려해야 할 사항으로 가장 거리가 먼 것은?",
+      "opts": [
+        "안전사용 온도 범위",
+        "보온재의 가격",
+        "해체의 편리성",
+        "공사 현장의 작업성"
+      ],
+      "ans": 2,
+      "ex": "보온재의 선정 시 고려해야 할 사항 : 안전사용 온도 범위, 보온재의 가격, 공사 현장의 작업성, 내구성 및 기공성, 비중이 가볍고 흡수성이 적을 것",
+      "page": "사용자 제공 원본 이미지 p.420~427",
+      "keywords": [
+        "에너지관리기능사",
+        "CBT 대비 적중모의고사",
+        "1회",
+        "TTS 문제풀이"
+      ],
+      "source": "사용자 제공 원본 이미지 및 정답표 기준 추출·대조 / CBT 1~7회 중복문제 특훈 대표문제",
+      "no": 1,
+      "set": "CBT 중복문제 특훈",
+      "duplicateGroupId": "CBT_DUP_001",
+      "isDuplicate": true,
+      "duplicateRefs": [
+        "CBT 1회 51번",
+        "CBT 5회 53번"
+      ],
+      "duplicateNote": "검토 필요: 해설 차이",
+      "duplicateReviewNeeded": true,
+      "duplicateMethod": "문제문 정규화 비교(띄어쓰기·괄호·단위·문장부호 차이 제거)",
+      "_repeatRefs": [
+        {
+          "level": "에너지_CBT적중모의고사_1",
+          "label": "CBT 1회",
+          "no": 51
+        },
+        {
+          "level": "에너지_CBT적중모의고사_5",
+          "label": "CBT 5회",
+          "no": 53
+        }
+      ],
+      "_repeatScope": "CBT 중복문제 특훈 기준 · 검토 필요",
+      "_repeatMethod": "문제문 정규화 비교(띄어쓰기·괄호·단위·문장부호 차이 제거)",
+      "_repeatCount": 2,
+      "originalNo": 51,
+      "originalLevel": "에너지_CBT적중모의고사_1",
+      "originalRef": "CBT 1회 51번",
+      "duplicateRepresentative": true
+    },
+    {
+      "cat": "에너지관리기능사 / CBT 중복문제 특훈",
+      "q": "에너지이용 합리화법규상 냉난방온도제한 건물에 냉난방 제한온도를 적용할 때의 기준으로 옳은 것은? 단, 판매시설 및 공항의 경우는 제외한다.",
+      "opts": [
+        "냉방 : 24℃ 이상, 난방 : 18℃ 이하",
+        "냉방 : 24℃ 이상, 난방 : 20℃ 이하",
+        "냉방 : 26℃ 이상, 난방 : 18℃ 이하",
+        "냉방 : 26℃ 이상, 난방 : 20℃ 이하"
+      ],
+      "ans": 3,
+      "ex": "냉난방온도의 제한온도 기준 : 냉방 26℃ 이상, 난방 20℃ 이하. 판매시설 및 공항의 경우 냉방은 25℃ 이상이다.",
+      "page": "사용자 제공 원본 이미지 p.420~427",
+      "keywords": [
+        "에너지관리기능사",
+        "CBT 대비 적중모의고사",
+        "1회",
+        "TTS 문제풀이"
+      ],
+      "source": "사용자 제공 원본 이미지 및 정답표 기준 추출·대조 / CBT 1~7회 중복문제 특훈 대표문제",
+      "no": 2,
+      "set": "CBT 중복문제 특훈",
+      "duplicateGroupId": "CBT_DUP_002",
+      "isDuplicate": true,
+      "duplicateRefs": [
+        "CBT 1회 55번",
+        "CBT 6회 11번"
+      ],
+      "duplicateNote": "검토 필요: 해설 차이",
+      "duplicateReviewNeeded": true,
+      "duplicateMethod": "문제문 정규화 비교(띄어쓰기·괄호·단위·문장부호 차이 제거)",
+      "_repeatRefs": [
+        {
+          "level": "에너지_CBT적중모의고사_1",
+          "label": "CBT 1회",
+          "no": 55
+        },
+        {
+          "level": "에너지_CBT적중모의고사_6",
+          "label": "CBT 6회",
+          "no": 11
+        }
+      ],
+      "_repeatScope": "CBT 중복문제 특훈 기준 · 검토 필요",
+      "_repeatMethod": "문제문 정규화 비교(띄어쓰기·괄호·단위·문장부호 차이 제거)",
+      "_repeatCount": 2,
+      "originalNo": 55,
+      "originalLevel": "에너지_CBT적중모의고사_1",
+      "originalRef": "CBT 1회 55번",
+      "duplicateRepresentative": true
+    },
+    {
+      "cat": "에너지관리기능사 / CBT 중복문제 특훈",
+      "q": "물을 가열하여 증기를 발생시키는 경우 압력을 높이면 그 값이 작아지는 것은?",
+      "opts": [
+        "비등점",
+        "현열",
+        "포화수 엔탈피",
+        "잠열"
+      ],
+      "ans": 3,
+      "ex": "증기압력이 높아지면 포화온도는 증가하고 포화수 엔탈피는 증가하며, 잠열은 감소한다.",
+      "page": "사용자 제공 원본 이미지 p.428~435",
+      "keywords": [
+        "에너지관리기능사",
+        "CBT 대비 적중모의고사",
+        "2회",
+        "TTS 문제풀이"
+      ],
+      "source": "사용자 제공 원본 이미지 및 정답표 기준 추출·대조 / CBT 1~7회 중복문제 특훈 대표문제",
+      "no": 3,
+      "set": "CBT 중복문제 특훈",
+      "duplicateGroupId": "CBT_DUP_003",
+      "isDuplicate": true,
+      "duplicateRefs": [
+        "CBT 2회 2번",
+        "CBT 4회 4번"
+      ],
+      "duplicateNote": "검토 필요: 해설 차이",
+      "duplicateReviewNeeded": true,
+      "duplicateMethod": "문제문 정규화 비교(띄어쓰기·괄호·단위·문장부호 차이 제거)",
+      "_repeatRefs": [
+        {
+          "level": "에너지_CBT적중모의고사_2",
+          "label": "CBT 2회",
+          "no": 2
+        },
+        {
+          "level": "에너지_CBT적중모의고사_4",
+          "label": "CBT 4회",
+          "no": 4
+        }
+      ],
+      "_repeatScope": "CBT 중복문제 특훈 기준 · 검토 필요",
+      "_repeatMethod": "문제문 정규화 비교(띄어쓰기·괄호·단위·문장부호 차이 제거)",
+      "_repeatCount": 2,
+      "originalNo": 2,
+      "originalLevel": "에너지_CBT적중모의고사_2",
+      "originalRef": "CBT 2회 2번",
+      "duplicateRepresentative": true
+    },
+    {
+      "cat": "에너지관리기능사 / CBT 중복문제 특훈",
+      "q": "보일러 집진장치의 형식과 종류를 서로 짝지은 것으로 틀린 것은?",
+      "opts": [
+        "가압수식 - 벤트리 스크러버",
+        "여과식 - 타이젠 와셔",
+        "원심력식 - 사이클론",
+        "전기식 - 코트렐"
+      ],
+      "ans": 1,
+      "ex": "여과식에는 원통식, 평판식, 역기류분사식 등이 있고, 타이젠 와셔는 회전식 습식 집진장치이다.",
+      "page": "사용자 제공 원본 이미지 p.428~435",
+      "keywords": [
+        "에너지관리기능사",
+        "CBT 대비 적중모의고사",
+        "2회",
+        "TTS 문제풀이"
+      ],
+      "source": "사용자 제공 원본 이미지 및 정답표 기준 추출·대조 / CBT 1~7회 중복문제 특훈 대표문제",
+      "no": 4,
+      "set": "CBT 중복문제 특훈",
+      "duplicateGroupId": "CBT_DUP_004",
+      "isDuplicate": true,
+      "duplicateRefs": [
+        "CBT 2회 24번",
+        "CBT 4회 11번"
+      ],
+      "duplicateNote": "검토 필요: 해설 차이",
+      "duplicateReviewNeeded": true,
+      "duplicateMethod": "문제문 정규화 비교(띄어쓰기·괄호·단위·문장부호 차이 제거)",
+      "_repeatRefs": [
+        {
+          "level": "에너지_CBT적중모의고사_2",
+          "label": "CBT 2회",
+          "no": 24
+        },
+        {
+          "level": "에너지_CBT적중모의고사_4",
+          "label": "CBT 4회",
+          "no": 11
+        }
+      ],
+      "_repeatScope": "CBT 중복문제 특훈 기준 · 검토 필요",
+      "_repeatMethod": "문제문 정규화 비교(띄어쓰기·괄호·단위·문장부호 차이 제거)",
+      "_repeatCount": 2,
+      "originalNo": 24,
+      "originalLevel": "에너지_CBT적중모의고사_2",
+      "originalRef": "CBT 2회 24번",
+      "duplicateRepresentative": true
+    },
+    {
+      "cat": "에너지관리기능사 / CBT 중복문제 특훈",
+      "q": "보일러 부속장치에 관한 설명으로 틀린 것은?",
+      "opts": [
+        "기수분리기 : 증기 중에 혼입된 수분을 분리하는 장치",
+        "슈트 블로워 : 보일러 동 저면의 스케일, 침전물 등을 밖으로 배출하는 장치",
+        "오일 스트레이너 : 연료속의 불순물 방지 및 유량계, 펌프 등의 고장을 방지하는 장치",
+        "스팀 트랩 : 응축수를 자동으로 배출하는 장치"
+      ],
+      "ans": 1,
+      "ex": "슈트 블로워는 증기나 공기를 분사하여 전열면에 부착된 그을음을 제거하여 전열을 좋게 하기 위한 장치이다.",
+      "page": "사용자 제공 원본 이미지 p.428~435",
+      "keywords": [
+        "에너지관리기능사",
+        "CBT 대비 적중모의고사",
+        "2회",
+        "TTS 문제풀이"
+      ],
+      "source": "사용자 제공 원본 이미지 및 정답표 기준 추출·대조 / CBT 1~7회 중복문제 특훈 대표문제",
+      "no": 5,
+      "set": "CBT 중복문제 특훈",
+      "duplicateGroupId": "CBT_DUP_005",
+      "isDuplicate": true,
+      "duplicateRefs": [
+        "CBT 2회 33번",
+        "CBT 4회 12번"
+      ],
+      "duplicateNote": "검토 필요: 정답 보기문구 차이, 정답 번호 차이, 해설 차이",
+      "duplicateReviewNeeded": true,
+      "duplicateMethod": "문제문 정규화 비교(띄어쓰기·괄호·단위·문장부호 차이 제거)",
+      "_repeatRefs": [
+        {
+          "level": "에너지_CBT적중모의고사_2",
+          "label": "CBT 2회",
+          "no": 33
+        },
+        {
+          "level": "에너지_CBT적중모의고사_4",
+          "label": "CBT 4회",
+          "no": 12
+        }
+      ],
+      "_repeatScope": "CBT 중복문제 특훈 기준 · 검토 필요",
+      "_repeatMethod": "문제문 정규화 비교(띄어쓰기·괄호·단위·문장부호 차이 제거)",
+      "_repeatCount": 2,
+      "originalNo": 33,
+      "originalLevel": "에너지_CBT적중모의고사_2",
+      "originalRef": "CBT 2회 33번",
+      "duplicateRepresentative": true
+    },
+    {
+      "cat": "에너지관리기능사 / CBT 중복문제 특훈",
+      "q": "프로판가스를 완전연소 시킬 때 발생하는 것은?",
+      "opts": [
+        "CO 및 C₃H₈",
+        "CH₄과 CO₂",
+        "CO₂ 및 H₂O",
+        "CO와 CO₂"
+      ],
+      "ans": 2,
+      "ex": "프로판가스 C₃H₈의 완전연소 반응식은 C₃H₈ + 5O₂ → 3CO₂ + 4H₂O이다.",
+      "page": "사용자 제공 원본 이미지 p.428~435",
+      "keywords": [
+        "에너지관리기능사",
+        "CBT 대비 적중모의고사",
+        "2회",
+        "TTS 문제풀이"
+      ],
+      "source": "사용자 제공 원본 이미지 및 정답표 기준 추출·대조 / CBT 1~7회 중복문제 특훈 대표문제",
+      "no": 6,
+      "set": "CBT 중복문제 특훈",
+      "duplicateGroupId": "CBT_DUP_006",
+      "isDuplicate": true,
+      "duplicateRefs": [
+        "CBT 2회 43번",
+        "CBT 4회 17번"
+      ],
+      "duplicateNote": "검토 필요: 해설 차이",
+      "duplicateReviewNeeded": true,
+      "duplicateMethod": "문제문 정규화 비교(띄어쓰기·괄호·단위·문장부호 차이 제거)",
+      "_repeatRefs": [
+        {
+          "level": "에너지_CBT적중모의고사_2",
+          "label": "CBT 2회",
+          "no": 43
+        },
+        {
+          "level": "에너지_CBT적중모의고사_4",
+          "label": "CBT 4회",
+          "no": 17
+        }
+      ],
+      "_repeatScope": "CBT 중복문제 특훈 기준 · 검토 필요",
+      "_repeatMethod": "문제문 정규화 비교(띄어쓰기·괄호·단위·문장부호 차이 제거)",
+      "_repeatCount": 2,
+      "originalNo": 43,
+      "originalLevel": "에너지_CBT적중모의고사_2",
+      "originalRef": "CBT 2회 43번",
+      "duplicateRepresentative": true
+    },
+    {
+      "cat": "에너지관리기능사 / CBT 중복문제 특훈",
+      "q": "증기난방과 비교한 온수난방의 특징 설명으로 틀린 것은?",
+      "opts": [
+        "물의 잠열을 이용하여 난방하는 방식이다.",
+        "예열에 시간이 걸리지만 쉽게 냉각되지 않는다.",
+        "방열면의 표면온도가 증기의 경우에 비하여 낮다.",
+        "동일방열량에 대해 방열면적이 많이 필요하다."
+      ],
+      "ans": 0,
+      "ex": "온수난방 : 물의 현열을 이용",
+      "page": "사용자 제공 원본 이미지 p.445~452",
+      "keywords": [
+        "에너지관리기능사",
+        "CBT 대비 적중모의고사",
+        "4회",
+        "TTS 문제풀이"
+      ],
+      "source": "사용자 제공 원본 이미지 및 정답표 기준 추출·대조 / CBT 1~7회 중복문제 특훈 대표문제",
+      "no": 7,
+      "set": "CBT 중복문제 특훈",
+      "duplicateGroupId": "CBT_DUP_007",
+      "isDuplicate": true,
+      "duplicateRefs": [
+        "CBT 4회 25번",
+        "CBT 6회 25번"
+      ],
+      "duplicateNote": "검토 필요: 정답 보기문구 차이, 정답 번호 차이, 해설 차이",
+      "duplicateReviewNeeded": true,
+      "duplicateMethod": "문제문 정규화 비교(띄어쓰기·괄호·단위·문장부호 차이 제거)",
+      "_repeatRefs": [
+        {
+          "level": "에너지_CBT적중모의고사_4",
+          "label": "CBT 4회",
+          "no": 25
+        },
+        {
+          "level": "에너지_CBT적중모의고사_6",
+          "label": "CBT 6회",
+          "no": 25
+        }
+      ],
+      "_repeatScope": "CBT 중복문제 특훈 기준 · 검토 필요",
+      "_repeatMethod": "문제문 정규화 비교(띄어쓰기·괄호·단위·문장부호 차이 제거)",
+      "_repeatCount": 2,
+      "originalNo": 25,
+      "originalLevel": "에너지_CBT적중모의고사_4",
+      "originalRef": "CBT 4회 25번",
+      "duplicateRepresentative": true
+    },
+    {
+      "cat": "에너지관리기능사 / CBT 중복문제 특훈",
+      "q": "보일러 연소 중에 발생하는 맥동연소의 원인이 아닌 것은?",
+      "opts": [
+        "연료속에 수분이 많은 경우",
+        "연료량이 심히 고르지 못한 경우",
+        "공급공기량에 심한 과부족이 생긴 경우",
+        "연도 단면의 변화가 적은 경우"
+      ],
+      "ans": 3,
+      "ex": "맥동연소 : 연도에 공기포켓이 있거나 굴곡이 심한 경우",
+      "page": "사용자 제공 원본 이미지 p.445~452",
+      "keywords": [
+        "에너지관리기능사",
+        "CBT 대비 적중모의고사",
+        "4회",
+        "TTS 문제풀이"
+      ],
+      "source": "사용자 제공 원본 이미지 및 정답표 기준 추출·대조 / CBT 1~7회 중복문제 특훈 대표문제",
+      "no": 8,
+      "set": "CBT 중복문제 특훈",
+      "duplicateGroupId": "CBT_DUP_008",
+      "isDuplicate": true,
+      "duplicateRefs": [
+        "CBT 4회 38번",
+        "CBT 7회 39번"
+      ],
+      "duplicateNote": "검토 필요: 해설 차이",
+      "duplicateReviewNeeded": true,
+      "duplicateMethod": "문제문 정규화 비교(띄어쓰기·괄호·단위·문장부호 차이 제거)",
+      "_repeatRefs": [
+        {
+          "level": "에너지_CBT적중모의고사_4",
+          "label": "CBT 4회",
+          "no": 38
+        },
+        {
+          "level": "에너지_CBT적중모의고사_7",
+          "label": "CBT 7회",
+          "no": 39
+        }
+      ],
+      "_repeatScope": "CBT 중복문제 특훈 기준 · 검토 필요",
+      "_repeatMethod": "문제문 정규화 비교(띄어쓰기·괄호·단위·문장부호 차이 제거)",
+      "_repeatCount": 2,
+      "originalNo": 38,
+      "originalLevel": "에너지_CBT적중모의고사_4",
+      "originalRef": "CBT 4회 38번",
+      "duplicateRepresentative": true
+    },
+    {
+      "cat": "에너지관리기능사 / CBT 중복문제 특훈",
+      "q": "공기량이 지나치게 많을 때 나타나는 현상 중 틀린 것은?",
+      "opts": [
+        "연소실 온도가 떨어진다.",
+        "열효율이 저하한다.",
+        "연료소비량이 증가한다.",
+        "배기가스 온도가 높아진다."
+      ],
+      "ans": 3,
+      "ex": "공기량이 지나치게 많을 때 : 연소실 온도가 낮아지고 배기가스량이 많아져 열손실이 증가한다.",
+      "page": "사용자 제공 원본 이미지 p.445~452",
+      "keywords": [
+        "에너지관리기능사",
+        "CBT 대비 적중모의고사",
+        "4회",
+        "TTS 문제풀이"
+      ],
+      "source": "사용자 제공 원본 이미지 및 정답표 기준 추출·대조 / CBT 1~7회 중복문제 특훈 대표문제",
+      "no": 9,
+      "set": "CBT 중복문제 특훈",
+      "duplicateGroupId": "CBT_DUP_009",
+      "isDuplicate": true,
+      "duplicateRefs": [
+        "CBT 4회 45번",
+        "CBT 6회 31번"
+      ],
+      "duplicateNote": "검토 필요: 해설 차이",
+      "duplicateReviewNeeded": true,
+      "duplicateMethod": "문제문 정규화 비교(띄어쓰기·괄호·단위·문장부호 차이 제거)",
+      "_repeatRefs": [
+        {
+          "level": "에너지_CBT적중모의고사_4",
+          "label": "CBT 4회",
+          "no": 45
+        },
+        {
+          "level": "에너지_CBT적중모의고사_6",
+          "label": "CBT 6회",
+          "no": 31
+        }
+      ],
+      "_repeatScope": "CBT 중복문제 특훈 기준 · 검토 필요",
+      "_repeatMethod": "문제문 정규화 비교(띄어쓰기·괄호·단위·문장부호 차이 제거)",
+      "_repeatCount": 2,
+      "originalNo": 45,
+      "originalLevel": "에너지_CBT적중모의고사_4",
+      "originalRef": "CBT 4회 45번",
+      "duplicateRepresentative": true
+    },
+    {
+      "cat": "에너지관리기능사 / CBT 중복문제 특훈",
+      "q": "보일러 용량을 결정하는 정격출력에 포함되어 고려할 사항이 아닌 것은?",
+      "opts": [
+        "배관부하",
+        "급탕부하",
+        "채광부하",
+        "예열부하"
+      ],
+      "ans": 2,
+      "ex": "온수보일러의 정격부하 = 난방부하 + 급탕부하 + 배관부하 + 예열부하",
+      "page": "사용자 제공 원본 이미지 p.453~460",
+      "keywords": [
+        "에너지관리기능사",
+        "CBT 대비 적중모의고사",
+        "5회",
+        "TTS 문제풀이"
+      ],
+      "source": "사용자 제공 원본 이미지 및 정답표 기준 추출·대조 / CBT 1~7회 중복문제 특훈 대표문제",
+      "no": 10,
+      "set": "CBT 중복문제 특훈",
+      "duplicateGroupId": "CBT_DUP_010",
+      "isDuplicate": true,
+      "duplicateRefs": [
+        "CBT 5회 23번",
+        "CBT 7회 33번"
+      ],
+      "duplicateNote": "CBT 중복 출제",
+      "duplicateReviewNeeded": false,
+      "duplicateMethod": "문제문 정규화 비교(띄어쓰기·괄호·단위·문장부호 차이 제거)",
+      "_repeatRefs": [
+        {
+          "level": "에너지_CBT적중모의고사_5",
+          "label": "CBT 5회",
+          "no": 23
+        },
+        {
+          "level": "에너지_CBT적중모의고사_7",
+          "label": "CBT 7회",
+          "no": 33
+        }
+      ],
+      "_repeatScope": "CBT 중복문제 특훈 기준",
+      "_repeatMethod": "문제문 정규화 비교(띄어쓰기·괄호·단위·문장부호 차이 제거)",
+      "_repeatCount": 2,
+      "originalNo": 23,
+      "originalLevel": "에너지_CBT적중모의고사_5",
+      "originalRef": "CBT 5회 23번",
+      "duplicateRepresentative": true
+    },
+    {
+      "cat": "에너지관리기능사 / CBT 중복문제 특훈",
+      "q": "보일러 수면계의 개수와 관련된 사항 중 잘못 설명된 것은?",
+      "opts": [
+        "증기보일러에는 2개 이상의 유리수면계를 부착한다.",
+        "소용량 및 소형관류보일러에는 2개 이상의 유리수면계를 부착한다.",
+        "최고사용압력 1MPa 이하로서 동체 안지름이 750mm 미만인 경우에 있어서는 수면계 중 1개는 다른 종류의 수면측정 장치로 할 수 있다.",
+        "2개 이상의 원격지시 수면계를 시설하는 경우에 한하여 유리 수면계를 1개 이상으로 할 수 있다."
+      ],
+      "ans": 1,
+      "ex": "소용량 및 소형 관류 보일러 : 수면계를 1개 이상 설치한다.",
+      "page": "사용자 제공 원본 이미지 p.453~460",
+      "keywords": [
+        "에너지관리기능사",
+        "CBT 대비 적중모의고사",
+        "5회",
+        "TTS 문제풀이"
+      ],
+      "source": "사용자 제공 원본 이미지 및 정답표 기준 추출·대조 / CBT 1~7회 중복문제 특훈 대표문제",
+      "no": 11,
+      "set": "CBT 중복문제 특훈",
+      "duplicateGroupId": "CBT_DUP_011",
+      "isDuplicate": true,
+      "duplicateRefs": [
+        "CBT 5회 28번",
+        "CBT 7회 35번"
+      ],
+      "duplicateNote": "검토 필요: 해설 차이",
+      "duplicateReviewNeeded": true,
+      "duplicateMethod": "문제문 정규화 비교(띄어쓰기·괄호·단위·문장부호 차이 제거)",
+      "_repeatRefs": [
+        {
+          "level": "에너지_CBT적중모의고사_5",
+          "label": "CBT 5회",
+          "no": 28
+        },
+        {
+          "level": "에너지_CBT적중모의고사_7",
+          "label": "CBT 7회",
+          "no": 35
+        }
+      ],
+      "_repeatScope": "CBT 중복문제 특훈 기준 · 검토 필요",
+      "_repeatMethod": "문제문 정규화 비교(띄어쓰기·괄호·단위·문장부호 차이 제거)",
+      "_repeatCount": 2,
+      "originalNo": 28,
+      "originalLevel": "에너지_CBT적중모의고사_5",
+      "originalRef": "CBT 5회 28번",
+      "duplicateRepresentative": true
+    },
+    {
+      "cat": "에너지관리기능사 / CBT 중복문제 특훈",
+      "q": "다음 중 용어별 사용단위가 틀린 것은?",
+      "opts": [
+        "열전도율 : kcal/mh℃",
+        "열관류율 : kcal/m²h℃",
+        "열전달율 : kcal/mh℃",
+        "열저항 : m²h℃/kcal"
+      ],
+      "ans": 2,
+      "ex": "열전달율 : kcal/m²h℃",
+      "page": "사용자 제공 원본 이미지 p.453~460",
+      "keywords": [
+        "에너지관리기능사",
+        "CBT 대비 적중모의고사",
+        "5회",
+        "TTS 문제풀이"
+      ],
+      "source": "사용자 제공 원본 이미지 및 정답표 기준 추출·대조 / CBT 1~7회 중복문제 특훈 대표문제",
+      "no": 12,
+      "set": "CBT 중복문제 특훈",
+      "duplicateGroupId": "CBT_DUP_012",
+      "isDuplicate": true,
+      "duplicateRefs": [
+        "CBT 5회 30번",
+        "CBT 7회 36번"
+      ],
+      "duplicateNote": "CBT 중복 출제",
+      "duplicateReviewNeeded": false,
+      "duplicateMethod": "문제문 정규화 비교(띄어쓰기·괄호·단위·문장부호 차이 제거)",
+      "_repeatRefs": [
+        {
+          "level": "에너지_CBT적중모의고사_5",
+          "label": "CBT 5회",
+          "no": 30
+        },
+        {
+          "level": "에너지_CBT적중모의고사_7",
+          "label": "CBT 7회",
+          "no": 36
+        }
+      ],
+      "_repeatScope": "CBT 중복문제 특훈 기준",
+      "_repeatMethod": "문제문 정규화 비교(띄어쓰기·괄호·단위·문장부호 차이 제거)",
+      "_repeatCount": 2,
+      "originalNo": 30,
+      "originalLevel": "에너지_CBT적중모의고사_5",
+      "originalRef": "CBT 5회 30번",
+      "duplicateRepresentative": true
+    },
+    {
+      "cat": "에너지관리기능사 / CBT 중복문제 특훈",
+      "q": "코르니시 보일러의 노통 길이가 4500mm이고, 외경이 3000mm, 두께가 10mm일 때 전열면적은 약 몇 m²인가?",
+      "opts": [
+        "54.0",
+        "45.7",
+        "46.4",
+        "42.4"
+      ],
+      "ans": 3,
+      "ex": "코르니시 보일러의 전열면적 = πD · ℓ\n= 3.14 × 3 × 4.5 = 42.39m²",
+      "page": "사용자 제공 원본 이미지 p.453~460",
+      "keywords": [
+        "에너지관리기능사",
+        "CBT 대비 적중모의고사",
+        "5회",
+        "TTS 문제풀이"
+      ],
+      "source": "사용자 제공 원본 이미지 및 정답표 기준 추출·대조 / CBT 1~7회 중복문제 특훈 대표문제",
+      "no": 13,
+      "set": "CBT 중복문제 특훈",
+      "duplicateGroupId": "CBT_DUP_013",
+      "isDuplicate": true,
+      "duplicateRefs": [
+        "CBT 5회 40번",
+        "CBT 7회 44번"
+      ],
+      "duplicateNote": "검토 필요: 해설 차이",
+      "duplicateReviewNeeded": true,
+      "duplicateMethod": "문제문 정규화 비교(띄어쓰기·괄호·단위·문장부호 차이 제거)",
+      "_repeatRefs": [
+        {
+          "level": "에너지_CBT적중모의고사_5",
+          "label": "CBT 5회",
+          "no": 40
+        },
+        {
+          "level": "에너지_CBT적중모의고사_7",
+          "label": "CBT 7회",
+          "no": 44
+        }
+      ],
+      "_repeatScope": "CBT 중복문제 특훈 기준 · 검토 필요",
+      "_repeatMethod": "문제문 정규화 비교(띄어쓰기·괄호·단위·문장부호 차이 제거)",
+      "_repeatCount": 2,
+      "originalNo": 40,
+      "originalLevel": "에너지_CBT적중모의고사_5",
+      "originalRef": "CBT 5회 40번",
+      "duplicateRepresentative": true
+    },
+    {
+      "cat": "에너지관리기능사 / CBT 중복문제 특훈",
+      "q": "특정열사용기자재 중 검사대상기기를 설치하거나 개조하여 사용하려는 자는 누구의 검사를 받아야 하는가?",
+      "opts": [
+        "검사대상기기 제조업자",
+        "시·도지사",
+        "한국에너지공단이사장",
+        "시공업자단체의 장"
+      ],
+      "ans": 2,
+      "ex": "검사대상기기의 검사 : 한국에너지공단이사장",
+      "page": "사용자 제공 원본 이미지 p.453~460",
+      "keywords": [
+        "에너지관리기능사",
+        "CBT 대비 적중모의고사",
+        "5회",
+        "TTS 문제풀이"
+      ],
+      "source": "사용자 제공 원본 이미지 및 정답표 기준 추출·대조 / CBT 1~7회 중복문제 특훈 대표문제",
+      "no": 14,
+      "set": "CBT 중복문제 특훈",
+      "duplicateGroupId": "CBT_DUP_014",
+      "isDuplicate": true,
+      "duplicateRefs": [
+        "CBT 5회 56번",
+        "CBT 7회 37번"
+      ],
+      "duplicateNote": "검토 필요: 정답 보기문구 차이, 해설 차이",
+      "duplicateReviewNeeded": true,
+      "duplicateMethod": "문제문 정규화 비교(띄어쓰기·괄호·단위·문장부호 차이 제거)",
+      "_repeatRefs": [
+        {
+          "level": "에너지_CBT적중모의고사_5",
+          "label": "CBT 5회",
+          "no": 56
+        },
+        {
+          "level": "에너지_CBT적중모의고사_7",
+          "label": "CBT 7회",
+          "no": 37
+        }
+      ],
+      "_repeatScope": "CBT 중복문제 특훈 기준 · 검토 필요",
+      "_repeatMethod": "문제문 정규화 비교(띄어쓰기·괄호·단위·문장부호 차이 제거)",
+      "_repeatCount": 2,
+      "originalNo": 56,
+      "originalLevel": "에너지_CBT적중모의고사_5",
+      "originalRef": "CBT 5회 56번",
+      "duplicateRepresentative": true
     }
   ],
   "가스_예상_1_01_온도": [],
@@ -43319,6 +44693,7 @@ const DB = {
     }
   ]
 };
+
 const QUESTION_TOC = [
   "에너지_예상_1_01_열및증기",
   "에너지_예상_1_02_보일러종류특징",
@@ -43345,6 +44720,7 @@ const QUESTION_TOC = [
   "에너지_CBT적중모의고사_5",
   "에너지_CBT적중모의고사_6",
   "에너지_CBT적중모의고사_7",
+  "에너지_CBT중복문제특훈",
   "가스_예상_1_01_온도",
   "가스_예상_1_02_열량",
   "가스_예상_1_03_비열과열용량",
