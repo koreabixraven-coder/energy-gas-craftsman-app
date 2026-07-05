@@ -1,12 +1,12 @@
-// v2.43: 가스기능사 2010년 4회 60문제 추가 + 캐시 강제 갱신.
-const CACHE_NAME = 'energy-gas-v2-43-gas-2010-4-60-cache-strict-original-ex';
+// v2.44: 가스기능사 2011년 1회 60문제 추가 + 캐시 강제 갱신.
+const CACHE_NAME = 'energy-gas-v2-44-gas-2011-1-60-cache-strict-original-ex';
 const ASSETS = [
   './',
-  './index.html?v=2.43',
-  './manifest.json?v=2.43',
-  './questions.js?v=2.43',
-  './theory.js?v=2.43',
-  './sw.js?v=2.43',
+  './index.html?v=2.44',
+  './manifest.json?v=2.44',
+  './questions.js?v=2.44',
+  './theory.js?v=2.44',
+  './sw.js?v=2.44',
   './icon-72.png',
   './icon-96.png',
   './icon-128.png',
@@ -34,7 +34,7 @@ self.addEventListener('activate', event => {
     await self.clients.claim();
     const clientList = await self.clients.matchAll({type: 'window', includeUncontrolled: true});
     for (const client of clientList) {
-      client.postMessage({type: 'SW_UPDATED', version: 'v2.43'});
+      client.postMessage({type: 'SW_UPDATED', version: 'v2.44'});
     }
   })());
 });
@@ -59,7 +59,7 @@ async function networkFirst(req) {
   } catch (err) {
     const cached = await caches.match(req);
     if (cached) return cached;
-    return caches.match('./index.html?v=2.43') || caches.match('./index.html') || Response.error();
+    return caches.match('./index.html?v=2.44') || caches.match('./index.html') || Response.error();
   }
 }
 
@@ -78,7 +78,7 @@ self.addEventListener('fetch', event => {
       await cache.put(event.request, res.clone()).catch(() => null);
       return res;
     } catch (err) {
-      return caches.match('./index.html?v=2.43') || caches.match('./index.html') || Response.error();
+      return caches.match('./index.html?v=2.44') || caches.match('./index.html') || Response.error();
     }
   })());
 });

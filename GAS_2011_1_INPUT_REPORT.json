@@ -1,0 +1,18 @@
+{
+  "version": "v2.44",
+  "tag": "GAS_2011_1_60_CACHE_STRICT_ORIGINAL_EX",
+  "total_questions": 2497,
+  "added": {
+    "exam": "가스기능사",
+    "year_round": "2011년 1회",
+    "count": 60,
+    "key": "가스_기출_2011_1"
+  },
+  "cache_name": "energy-gas-v2-44-gas-2011-1-60-cache-strict-original-ex",
+  "preserved": [
+    "TTS 자동읽기 로직",
+    "설정창",
+    "오답노트",
+    "암기완료 기능"
+  ]
+}
