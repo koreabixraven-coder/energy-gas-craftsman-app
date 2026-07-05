@@ -1,0 +1,20 @@
+{
+  "version": "v2.40",
+  "added": "가스기능사 / 기출문제 / 2010년 1회",
+  "added_count": 60,
+  "total_questions": 2257,
+  "cache_version": "2.40",
+  "touched": [
+    "questions.js",
+    "index.html",
+    "manifest.json",
+    "sw.js",
+    "README.md"
+  ],
+  "preserved": [
+    "TTS 자동읽기",
+    "설정창",
+    "오답노트",
+    "암기완료 기능"
+  ]
+}
