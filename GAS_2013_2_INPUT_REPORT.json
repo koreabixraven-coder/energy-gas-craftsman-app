@@ -1,0 +1,17 @@
+{
+  "version": "v2.53",
+  "set_key": "가스_기출_2013_2",
+  "exam": "가스기능사 2013년 2회",
+  "count": 60,
+  "total_questions": 3037,
+  "source_pages": "사용자 제공 원본 이미지 p.230~238",
+  "deleted_by_user_instruction": [
+    "1번 해설 표",
+    "2번 해설 표",
+    "30번 해설"
+  ],
+  "tts_pronunciation_check": [
+    "56번 화학식 C₃H₈/C₄H₁₀/CH₄/C₂H₂",
+    "58번 1atm/N/m²/lb/in²/mH₂O"
+  ]
+}
