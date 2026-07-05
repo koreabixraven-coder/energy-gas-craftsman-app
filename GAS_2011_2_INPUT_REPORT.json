@@ -1,0 +1,13 @@
+{
+  "version": "v2.45 GAS_2011_2_60_CACHE_STRICT_ORIGINAL_EX",
+  "added": "가스기능사 / 기출문제 / 2011년 2회 60문제",
+  "total_questions": 2557,
+  "cache_name": "energy-gas-v2-45-gas-2011-2-60-cache-strict-original-ex",
+  "preserved": [
+    "TTS 자동읽기 로직",
+    "설정창",
+    "오답노트",
+    "암기완료 기능"
+  ],
+  "source": "사용자 제공 원본 이미지에서 추출 및 대조"
+}

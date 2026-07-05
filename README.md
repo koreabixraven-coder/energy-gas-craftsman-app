@@ -1,3 +1,75 @@
+# energy-gas-craftsman-app v2.47
+GAS_2011_4_60_CACHE_STRICT_ORIGINAL_EX
+
+## v2.47 변경
+- 기준본 v2.46 내용 유지
+- 가스기능사 / 기출문제 / 2011년 4회 60문제 추가
+- 가스기능사 기출문제 메뉴: 2009년 1회 / 2009년 2회 / 2009년 3회 / 2009년 4회 / 2010년 1회 / 2010년 2회 / 2010년 3회 / 2010년 4회 / 2011년 1회 / 2011년 2회 / 2011년 3회 / 2011년 4회 카드 유지
+- 전체 문제 수: 2677문제
+- questions.js?v=2.47 반영
+- theory.js?v=2.47 반영
+- manifest.json?v=2.47 반영
+- sw.js?v=2.47 반영
+- Service Worker CACHE_NAME: energy-gas-v2-47-gas-2011-4-60-cache-strict-original-ex
+- TTS 자동읽기 로직, 설정창, 오답노트, 암기완료 기능은 변경하지 않음
+- 원본 사진의 문제·보기·정답·해설만 반영
+- GitHub Pages 정적 배포 안정화를 위해 .nojekyll 포함
+
+## 업로드 방법
+압축을 풀고 GitHub `energy-gas-craftsman-app` 저장소에 전체 파일을 덮어 업로드합니다.
+
+업로드 후 GitHub Pages 배포가 초록 체크로 완료된 뒤, 앱 주소에 `?v=2.47`을 붙여 확인합니다.
+
+---
+
+# energy-gas-craftsman-app v2.46
+GAS_2011_3_60_CACHE_STRICT_ORIGINAL_EX
+
+## v2.46 변경
+- 기준본 v2.45 내용 유지
+- 가스기능사 / 기출문제 / 2011년 3회 60문제 추가
+- 가스기능사 기출문제 메뉴: 2009년 1회 / 2009년 2회 / 2009년 3회 / 2009년 4회 / 2010년 1회 / 2010년 2회 / 2010년 3회 / 2010년 4회 / 2011년 1회 / 2011년 2회 / 2011년 3회 카드 유지
+- 전체 문제 수: 2617문제
+- questions.js?v=2.46 반영
+- theory.js?v=2.46 반영
+- manifest.json?v=2.46 반영
+- sw.js?v=2.46 반영
+- Service Worker CACHE_NAME: energy-gas-v2-46-gas-2011-3-60-cache-strict-original-ex
+- TTS 자동읽기 로직, 설정창, 오답노트, 암기완료 기능은 변경하지 않음
+- 원본 사진의 문제·보기·정답·해설만 반영
+- GitHub Pages 정적 배포 안정화를 위해 .nojekyll 포함
+
+## 업로드 방법
+압축을 풀고 GitHub `energy-gas-craftsman-app` 저장소에 전체 파일을 덮어 업로드합니다.
+
+업로드 후 GitHub Pages 배포가 초록 체크로 완료된 뒤, 앱 주소에 `?v=2.46`을 붙여 확인합니다.
+
+---
+
+# energy-gas-craftsman-app v2.45
+GAS_2011_2_60_CACHE_STRICT_ORIGINAL_EX
+
+## v2.45 변경
+- 기준본 v2.44 내용 유지
+- 가스기능사 / 기출문제 / 2011년 2회 60문제 추가
+- 가스기능사 기출문제 메뉴: 2009년 1회 / 2009년 2회 / 2009년 3회 / 2009년 4회 / 2010년 1회 / 2010년 2회 / 2010년 3회 / 2010년 4회 / 2011년 1회 / 2011년 2회 카드 유지
+- 전체 문제 수: 2557문제
+- questions.js?v=2.45 반영
+- theory.js?v=2.45 반영
+- manifest.json?v=2.45 반영
+- sw.js?v=2.45 반영
+- Service Worker CACHE_NAME: energy-gas-v2-45-gas-2011-2-60-cache-strict-original-ex
+- TTS 자동읽기 로직, 설정창, 오답노트, 암기완료 기능은 변경하지 않음
+- 원본 사진의 문제·보기·정답·해설만 반영
+- GitHub Pages 정적 배포 안정화를 위해 .nojekyll 포함
+
+## 업로드 방법
+압축을 풀고 GitHub `energy-gas-craftsman-app` 저장소에 전체 파일을 덮어 업로드합니다.
+
+업로드 후 GitHub Pages 배포가 초록 체크로 완료된 뒤, 앱 주소에 `?v=2.45`를 붙여 확인합니다.
+
+---
+
 # energy-gas-craftsman-app v2.44
 GAS_2011_1_60_CACHE_STRICT_ORIGINAL_EX
 

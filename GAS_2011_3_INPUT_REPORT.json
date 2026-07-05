@@ -1,0 +1,14 @@
+{
+  "version": "v2.46 GAS_2011_3_60_CACHE_STRICT_ORIGINAL_EX",
+  "added": "가스기능사 / 기출문제 / 2011년 3회 60문제",
+  "total_questions": 2617,
+  "cache_name": "energy-gas-v2-46-gas-2011-3-60-cache-strict-original-ex",
+  "question_key": "가스_기출_2011_3",
+  "source": "사용자 제공 원본 이미지에서 추출 및 대조",
+  "preserved": [
+    "TTS 자동읽기 로직",
+    "설정창",
+    "오답노트",
+    "암기완료 기능"
+  ]
+}

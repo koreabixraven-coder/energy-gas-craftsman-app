@@ -1,0 +1,17 @@
+{
+  "version": "v2.47 GAS_2011_4_60_CACHE_STRICT_ORIGINAL_EX",
+  "added": "가스기능사 / 기출문제 / 2011년 4회 60문제",
+  "total_questions": 2677,
+  "cache_name": "energy-gas-v2-47-gas-2011-4-60-cache-strict-original-ex",
+  "question_key": "가스_기출_2011_4",
+  "source": "사용자 제공 원본 이미지에서 추출 및 대조",
+  "notes": [
+    "2011년 4회 53번은 하단 ANSWER 기준 정답 보존, 해설에 확인 필요 메모 추가"
+  ],
+  "preserved": [
+    "TTS 자동읽기 로직",
+    "설정창",
+    "오답노트",
+    "암기완료 기능"
+  ]
+}
