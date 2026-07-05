@@ -1,5 +1,14 @@
 # energy-gas-craftsman-app v2.29 CBT_MOCK_4_60_MENU_FIX_STRICT_ORIGINAL_EX
 
+
+
+## v2.30 변경
+- 기준본 v2.29 내용 유지
+- CBT 대비 적중모의고사 1~4회 하위 카드 메뉴 유지
+- 캐시 강제 갱신: questions.js?v=2.30, theory.js?v=2.30, manifest.json?v=2.30
+- Service Worker 등록 sw.js?v=2.30 반영
+- Service Worker CACHE_NAME: energy-gas-v2-30-cache-force-menu-fix-strict-original-ex
+- 문제 데이터와 TTS 로직은 건드리지 않음
 배관기능장 안정본 TTS 로직 기반의 에너지관리기능사·가스기능사 통합 학습앱입니다.
 
 ## v2.20 변경

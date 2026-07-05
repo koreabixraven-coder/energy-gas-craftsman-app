@@ -4,15 +4,16 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <meta name="theme-color" content="#121212">
-<!-- v2.29 CBT_MOCK_4_60_MENU_FIX_STRICT_ORIGINAL_EX: CBT 대비 적중모의고사 4회 60문제 추가 + 1~4회 카드 메뉴 분리; TTS logic preserved -->
+<!-- v2.30 CACHE_FORCE_MENU_FIX_STRICT_ORIGINAL_EX: cache version forced up; CBT 대비 적중모의고사 1~4회 카드 메뉴 유지; TTS logic preserved -->
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
 <title>RavenBix · 에너지·가스 기능사</title>
-<link rel="manifest" href="manifest.json">
+<!-- APP_VERSION: v2.30 CACHE_FORCE_MENU_FIX -->
+<link rel="manifest" href="manifest.json?v=2.30">
 <link rel="apple-touch-icon" href="icon-192.png">
-<script src="theory.js"></script>
-<script src="questions.js?v=2.29"></script>
+<script src="theory.js?v=2.30"></script>
+<script src="questions.js?v=2.30"></script>
 <script>
 /* ── v30.22 패드 화면 확장 설정 선적용 ── */
 (function(){
@@ -4757,7 +4758,7 @@ setTimeout(updateHomeCounts,200);
 /* Service Worker 등록 */
 if('serviceWorker' in navigator){
   window.addEventListener('load', ()=>{
-    navigator.serviceWorker.register('sw.js?v=2.05')
+    navigator.serviceWorker.register('sw.js?v=2.30')
       .then(()=>console.log('SW 등록 완료'))
       .catch(e=>console.log('SW 등록 실패',e));
   });

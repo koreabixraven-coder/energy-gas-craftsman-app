@@ -1,4 +1,4 @@
-/* energy-gas questions.js · v2.29 CBT_MOCK_4_60_MENU_FIX_STRICT_ORIGINAL_EX
+/* energy-gas questions.js · v2.30 CACHE_FORCE_MENU_FIX_STRICT_ORIGINAL_EX
    에너지관리기능사 제1장 01. 열 및 증기 46문제 유지.
    에너지관리기능사 제1장 02. 보일러의 종류 및 특징 81문제 유지.
    에너지관리기능사 제1장 03. 보일러 부속장치 182문제 유지.
