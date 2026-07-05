@@ -1,3 +1,80 @@
+# energy-gas-craftsman-app v2.33 CBT_MOCK_7_60_CACHE_MENU_STRICT_ORIGINAL_EX
+
+배관기능장 안정본 TTS 로직 기반의 에너지관리기능사·가스기능사 통합 학습앱입니다.
+
+## v2.33 변경
+- 기준본 v2.32 내용 유지
+- 에너지관리기능사 / CBT 대비 적중모의고사 / 7회 60문제 추가
+- CBT 대비 적중모의고사 메뉴: 1회 / 2회 / 3회 / 4회 / 5회 / 6회 / 7회 카드 유지
+- 전체 문제 수: 1899문제
+- questions.js?v=2.33 반영
+- theory.js?v=2.33 반영
+- manifest.json?v=2.33 반영
+- Service Worker 등록 sw.js?v=2.33 반영
+- Service Worker CACHE_NAME: energy-gas-v2-33-cbt-mock-7-60-cache-menu-strict-original-ex
+- TTS 자동읽기 로직, 설정창, 오답노트, 암기완료 기능은 변경하지 않음
+- 원본 사진의 문제·보기·정답·해설만 반영
+- 캐시버전 동시 업데이트 완료
+
+## 업로드 방법
+압축을 풀고 GitHub `energy-gas-craftsman-app` 저장소에 전체 파일을 덮어 업로드합니다.
+
+업로드 후 GitHub Pages 배포 완료 시간을 확인하고, 앱 주소에 `?v=2.33`을 붙여 확인합니다.
+
+
+---
+
+# energy-gas-craftsman-app v2.32 CBT_MOCK_6_60_CACHE_MENU_STRICT_ORIGINAL_EX
+
+배관기능장 안정본 TTS 로직 기반의 에너지관리기능사·가스기능사 통합 학습앱입니다.
+
+## v2.32 변경
+- 기준본 v2.31 내용 유지
+- 에너지관리기능사 / CBT 대비 적중모의고사 / 6회 60문제 추가
+- CBT 대비 적중모의고사 메뉴: 1회 / 2회 / 3회 / 4회 / 5회 / 6회 카드 유지
+- 전체 문제 수: 1839문제
+- questions.js?v=2.32 반영
+- theory.js?v=2.32 반영
+- manifest.json?v=2.32 반영
+- Service Worker 등록 sw.js?v=2.32 반영
+- Service Worker CACHE_NAME: energy-gas-v2-32-cbt-mock-6-60-cache-menu-strict-original-ex
+- TTS 자동읽기 로직, 설정창, 오답노트, 암기완료 기능은 변경하지 않음
+- 원본 해설 없음 원칙 유지: 원본 회색 해설박스가 없을 경우 `원문 해설 없음`만 입력
+- 확인 필요 메모: 6회 2번은 정답표와 문제·해설이 불일치하여 정답은 정답표 기준으로 보존하고 해설에 확인 필요 메모를 반영함
+
+## 업로드 방법
+압축을 풀고 GitHub `energy-gas-craftsman-app` 저장소에 전체 파일을 덮어 업로드합니다.
+
+업로드 후 GitHub Pages 배포 완료 시간을 확인하고, 앱 주소에 `?v=2.32`를 붙여 확인합니다.
+
+
+---
+
+# energy-gas-craftsman-app v2.31 CBT_MOCK_5_60_CACHE_MENU_STRICT_ORIGINAL_EX
+
+배관기능장 안정본 TTS 로직 기반의 에너지관리기능사·가스기능사 통합 학습앱입니다.
+
+## v2.31 변경
+- 기준본 v2.30 내용 유지
+- 에너지관리기능사 / CBT 대비 적중모의고사 / 5회 60문제 추가
+- CBT 대비 적중모의고사 메뉴: 1회 / 2회 / 3회 / 4회 / 5회 카드 유지
+- 전체 문제 수: 1779문제
+- questions.js?v=2.31 반영
+- theory.js?v=2.31 반영
+- manifest.json?v=2.31 반영
+- Service Worker 등록 sw.js?v=2.31 반영
+- Service Worker CACHE_NAME: energy-gas-v2-31-cbt-mock-5-60-cache-menu-strict-original-ex
+- TTS 자동읽기 로직, 설정창, 오답노트, 암기완료 기능은 변경하지 않음
+- 원본 해설 없음 원칙 유지: 원본 회색 해설박스가 없을 경우 `원문 해설 없음`만 입력
+
+## 업로드 방법
+압축을 풀고 GitHub `energy-gas-craftsman-app` 저장소에 전체 파일을 덮어 업로드합니다.
+
+업로드 후 GitHub Pages 배포 완료 시간을 확인하고, 앱 주소에 `?v=2.31`을 붙여 확인합니다.
+
+
+---
+
 # energy-gas-craftsman-app v2.29 CBT_MOCK_4_60_MENU_FIX_STRICT_ORIGINAL_EX
 
 

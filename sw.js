@@ -1,4 +1,5 @@
-const CACHE_NAME = 'energy-gas-v2-30-cache-force-menu-fix-strict-original-ex';
+// v2.33: CBT 대비 적중모의고사 7회 60문제 추가, 1~7회 카드 메뉴 유지, 캐시버전 강제 갱신.
+const CACHE_NAME = 'energy-gas-v2-33-cbt-mock-7-60-cache-menu-strict-original-ex';
 const ASSETS = [
   './',
   './index.html',
@@ -119,3 +120,7 @@ self.addEventListener('fetch', e => {
 
 
 // v2.30: cache version forced up; index registers sw.js?v=2.30 and core JS uses cache-busted query strings.
+
+// v2.31: CBT 대비 적중모의고사 5회 60문제 추가, 1~5회 카드 메뉴 유지, 캐시버전 강제 갱신.
+
+// v2.32: CBT 대비 적중모의고사 6회 60문제 추가, 1~6회 카드 메뉴 유지, 캐시버전 강제 갱신.
