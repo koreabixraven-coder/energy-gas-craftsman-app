@@ -1,0 +1,14 @@
+{
+  "version": "v2.38 GAS_2009_3_60_CACHE_STRICT_ORIGINAL_EX",
+  "base": "v2.37 GAS_2009_2_60_CACHE_STRICT_ORIGINAL_EX",
+  "added": "가스기능사 기출문제 2009년 3회 60문제",
+  "total_questions": 2137,
+  "cache": [
+    "questions.js?v=2.38",
+    "theory.js?v=2.38",
+    "manifest.json?v=2.38",
+    "sw.js?v=2.38"
+  ],
+  "cache_name": "energy-gas-v2-38-gas-2009-3-60-cache-strict-original-ex",
+  "preserved": "TTS/설정창/오답노트/암기완료 기능 변경 없음"
+}
