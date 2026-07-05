@@ -1,0 +1,1454 @@
+{
+  "version": "v2.35 CBT_PAST_DUPLICATE_DEEP_LEARNING_CACHE_MENU_STRICT_ORIGINAL_EX",
+  "sourceOriginalCounts": {
+    "energyPastExamOriginals": 600,
+    "energyCbtOriginals": 420
+  },
+  "duplicateCards": {
+    "에너지_기출중복문제": {
+      "representativeQuestions": 3,
+      "sourceDuplicateItems": 6,
+      "groups": [
+        {
+          "groupId": "PAST_DUP_001",
+          "question": "배관 중간이나 밸브, 펌프, 열교환기 등의 접속을 위해 사용되는 이음쇠로서 분해, 조립이 필요한 경우에 사용되는 것은?",
+          "refs": [
+            "기출 2014년 2회 49번",
+            "기출 2016년 3회 36번"
+          ],
+          "status": "검토 필요",
+          "answerMismatch": false,
+          "explanationMismatch": true,
+          "note": "기출 중복 출제 / 문제문 정규화 기준 / 검토 필요: 해설 차이 있음"
+        },
+        {
+          "groupId": "PAST_DUP_002",
+          "question": "에너지이용합리화법상 열사용기자재가 아닌 것은?",
+          "refs": [
+            "기출 2014년 2회 55번",
+            "기출 2016년 3회 56번"
+          ],
+          "status": "검토 필요",
+          "answerMismatch": false,
+          "explanationMismatch": true,
+          "note": "기출 중복 출제 / 문제문 정규화 기준 / 검토 필요: 해설 차이 있음"
+        },
+        {
+          "groupId": "PAST_DUP_003",
+          "question": "절탄기에 대한 설명으로 옳은 것은?",
+          "refs": [
+            "기출 2016년 1회 13번",
+            "기출 2016년 3회 4번"
+          ],
+          "status": "검토 필요",
+          "answerMismatch": true,
+          "explanationMismatch": true,
+          "note": "기출 중복 출제 / 문제문 정규화 기준 / 검토 필요: 정답·해설 차이 있음"
+        }
+      ]
+    },
+    "에너지_CBT대비모의고사중복문제": {
+      "representativeQuestions": 14,
+      "sourceDuplicateItems": 28,
+      "groups": [
+        {
+          "groupId": "CBT_DUP_001",
+          "question": "배관 보온재의 선정 시 고려해야 할 사항으로 가장 거리가 먼 것은?",
+          "refs": [
+            "CBT 1회 51번",
+            "CBT 5회 53번"
+          ],
+          "status": "검토 필요",
+          "answerMismatch": false,
+          "explanationMismatch": true,
+          "note": "CBT 대비모의고사 중복 출제 / 문제문 정규화 기준 / 검토 필요: 해설 차이 있음"
+        },
+        {
+          "groupId": "CBT_DUP_002",
+          "question": "에너지이용 합리화법규상 냉난방온도제한 건물에 냉난방 제한온도를 적용할 때의 기준으로 옳은 것은? 단, 판매시설 및 공항의 경우는 제외한다.",
+          "refs": [
+            "CBT 1회 55번",
+            "CBT 6회 11번"
+          ],
+          "status": "검토 필요",
+          "answerMismatch": false,
+          "explanationMismatch": true,
+          "note": "CBT 대비모의고사 중복 출제 / 문제문 정규화 기준 / 검토 필요: 해설 차이 있음"
+        },
+        {
+          "groupId": "CBT_DUP_003",
+          "question": "물을 가열하여 증기를 발생시키는 경우 압력을 높이면 그 값이 작아지는 것은?",
+          "refs": [
+            "CBT 2회 2번",
+            "CBT 4회 4번"
+          ],
+          "status": "검토 필요",
+          "answerMismatch": false,
+          "explanationMismatch": true,
+          "note": "CBT 대비모의고사 중복 출제 / 문제문 정규화 기준 / 검토 필요: 해설 차이 있음"
+        },
+        {
+          "groupId": "CBT_DUP_004",
+          "question": "보일러 집진장치의 형식과 종류를 서로 짝지은 것으로 틀린 것은?",
+          "refs": [
+            "CBT 2회 24번",
+            "CBT 4회 11번"
+          ],
+          "status": "검토 필요",
+          "answerMismatch": false,
+          "explanationMismatch": true,
+          "note": "CBT 대비모의고사 중복 출제 / 문제문 정규화 기준 / 검토 필요: 해설 차이 있음"
+        },
+        {
+          "groupId": "CBT_DUP_005",
+          "question": "보일러 부속장치에 관한 설명으로 틀린 것은?",
+          "refs": [
+            "CBT 2회 33번",
+            "CBT 4회 12번"
+          ],
+          "status": "검토 필요",
+          "answerMismatch": true,
+          "explanationMismatch": true,
+          "note": "CBT 대비모의고사 중복 출제 / 문제문 정규화 기준 / 검토 필요: 정답·해설 차이 있음"
+        },
+        {
+          "groupId": "CBT_DUP_006",
+          "question": "프로판가스를 완전연소 시킬 때 발생하는 것은?",
+          "refs": [
+            "CBT 2회 43번",
+            "CBT 4회 17번"
+          ],
+          "status": "검토 필요",
+          "answerMismatch": false,
+          "explanationMismatch": true,
+          "note": "CBT 대비모의고사 중복 출제 / 문제문 정규화 기준 / 검토 필요: 해설 차이 있음"
+        },
+        {
+          "groupId": "CBT_DUP_007",
+          "question": "증기난방과 비교한 온수난방의 특징 설명으로 틀린 것은?",
+          "refs": [
+            "CBT 4회 25번",
+            "CBT 6회 25번"
+          ],
+          "status": "검토 필요",
+          "answerMismatch": true,
+          "explanationMismatch": true,
+          "note": "CBT 대비모의고사 중복 출제 / 문제문 정규화 기준 / 검토 필요: 정답·해설 차이 있음"
+        },
+        {
+          "groupId": "CBT_DUP_008",
+          "question": "보일러 연소 중에 발생하는 맥동연소의 원인이 아닌 것은?",
+          "refs": [
+            "CBT 4회 38번",
+            "CBT 7회 39번"
+          ],
+          "status": "검토 필요",
+          "answerMismatch": false,
+          "explanationMismatch": true,
+          "note": "CBT 대비모의고사 중복 출제 / 문제문 정규화 기준 / 검토 필요: 해설 차이 있음"
+        },
+        {
+          "groupId": "CBT_DUP_009",
+          "question": "공기량이 지나치게 많을 때 나타나는 현상 중 틀린 것은?",
+          "refs": [
+            "CBT 4회 45번",
+            "CBT 6회 31번"
+          ],
+          "status": "검토 필요",
+          "answerMismatch": false,
+          "explanationMismatch": true,
+          "note": "CBT 대비모의고사 중복 출제 / 문제문 정규화 기준 / 검토 필요: 해설 차이 있음"
+        },
+        {
+          "groupId": "CBT_DUP_010",
+          "question": "보일러 용량을 결정하는 정격출력에 포함되어 고려할 사항이 아닌 것은?",
+          "refs": [
+            "CBT 5회 23번",
+            "CBT 7회 33번"
+          ],
+          "status": "자동확정",
+          "answerMismatch": false,
+          "explanationMismatch": false,
+          "note": "CBT 대비모의고사 중복 출제 / 문제문 정규화 기준 / 자동확정"
+        },
+        {
+          "groupId": "CBT_DUP_011",
+          "question": "보일러 수면계의 개수와 관련된 사항 중 잘못 설명된 것은?",
+          "refs": [
+            "CBT 5회 28번",
+            "CBT 7회 35번"
+          ],
+          "status": "검토 필요",
+          "answerMismatch": false,
+          "explanationMismatch": true,
+          "note": "CBT 대비모의고사 중복 출제 / 문제문 정규화 기준 / 검토 필요: 해설 차이 있음"
+        },
+        {
+          "groupId": "CBT_DUP_012",
+          "question": "다음 중 용어별 사용단위가 틀린 것은?",
+          "refs": [
+            "CBT 5회 30번",
+            "CBT 7회 36번"
+          ],
+          "status": "자동확정",
+          "answerMismatch": false,
+          "explanationMismatch": false,
+          "note": "CBT 대비모의고사 중복 출제 / 문제문 정규화 기준 / 자동확정"
+        },
+        {
+          "groupId": "CBT_DUP_013",
+          "question": "코르니시 보일러의 노통 길이가 4500mm이고, 외경이 3000mm, 두께가 10mm일 때 전열면적은 약 몇 m²인가?",
+          "refs": [
+            "CBT 5회 40번",
+            "CBT 7회 44번"
+          ],
+          "status": "검토 필요",
+          "answerMismatch": false,
+          "explanationMismatch": true,
+          "note": "CBT 대비모의고사 중복 출제 / 문제문 정규화 기준 / 검토 필요: 해설 차이 있음"
+        },
+        {
+          "groupId": "CBT_DUP_014",
+          "question": "특정열사용기자재 중 검사대상기기를 설치하거나 개조하여 사용하려는 자는 누구의 검사를 받아야 하는가?",
+          "refs": [
+            "CBT 5회 56번",
+            "CBT 7회 37번"
+          ],
+          "status": "검토 필요",
+          "answerMismatch": true,
+          "explanationMismatch": true,
+          "note": "CBT 대비모의고사 중복 출제 / 문제문 정규화 기준 / 검토 필요: 정답·해설 차이 있음"
+        }
+      ]
+    },
+    "에너지_통합중복문제": {
+      "representativeQuestions": 101,
+      "sourceDuplicateItems": 206,
+      "groups": [
+        {
+          "groupId": "ALL_DUP_001",
+          "question": "중유의 연소 상태를 개선하기 위한 첨가제의 종류가 아닌 것은?",
+          "refs": [
+            "기출 2014년 2회 14번",
+            "CBT 6회 37번"
+          ],
+          "status": "검토 필요",
+          "answerMismatch": false,
+          "explanationMismatch": true,
+          "note": "기출·CBT 통합 중복 출제 / 문제문 정규화 기준 / 검토 필요: 해설 차이 있음"
+        },
+        {
+          "groupId": "ALL_DUP_002",
+          "question": "매연분출장치에서 보일러의 고온부인 과열기나 수관부용으로 고온의 열가스 통로에 사용할 때만 사용되는 매연분출장치는?",
+          "refs": [
+            "기출 2014년 2회 21번",
+            "CBT 6회 38번"
+          ],
+          "status": "검토 필요",
+          "answerMismatch": false,
+          "explanationMismatch": true,
+          "note": "기출·CBT 통합 중복 출제 / 문제문 정규화 기준 / 검토 필요: 해설 차이 있음"
+        },
+        {
+          "groupId": "ALL_DUP_003",
+          "question": "주철제 보일러의 특징 설명으로 틀린 것은?",
+          "refs": [
+            "기출 2014년 2회 27번",
+            "CBT 5회 5번"
+          ],
+          "status": "검토 필요",
+          "answerMismatch": true,
+          "explanationMismatch": true,
+          "note": "기출·CBT 통합 중복 출제 / 문제문 정규화 기준 / 검토 필요: 정답·해설 차이 있음"
+        },
+        {
+          "groupId": "ALL_DUP_004",
+          "question": "보일러의 점화조작 시 주의사항에 대한 설명으로 잘못된 것은?",
+          "refs": [
+            "기출 2014년 2회 32번",
+            "CBT 6회 8번"
+          ],
+          "status": "자동확정",
+          "answerMismatch": false,
+          "explanationMismatch": false,
+          "note": "기출·CBT 통합 중복 출제 / 문제문 정규화 기준 / 자동확정"
+        },
+        {
+          "groupId": "ALL_DUP_005",
+          "question": "보일러 건조보존 시에 사용되는 건조제가 아닌 것은?",
+          "refs": [
+            "기출 2014년 2회 33번",
+            "CBT 6회 19번"
+          ],
+          "status": "검토 필요",
+          "answerMismatch": false,
+          "explanationMismatch": true,
+          "note": "기출·CBT 통합 중복 출제 / 문제문 정규화 기준 / 검토 필요: 해설 차이 있음"
+        },
+        {
+          "groupId": "ALL_DUP_006",
+          "question": "강철제 증기보일러의 최고사용압력이 2MPa일 때 수압시험압력은?",
+          "refs": [
+            "기출 2014년 2회 40번",
+            "CBT 7회 46번"
+          ],
+          "status": "검토 필요",
+          "answerMismatch": false,
+          "explanationMismatch": true,
+          "note": "기출·CBT 통합 중복 출제 / 문제문 정규화 기준 / 검토 필요: 해설 차이 있음"
+        },
+        {
+          "groupId": "ALL_DUP_007",
+          "question": "배관 중간이나 밸브, 펌프, 열교환기 등의 접속을 위해 사용되는 이음쇠로서 분해, 조립이 필요한 경우에 사용되는 것은?",
+          "refs": [
+            "기출 2014년 2회 49번",
+            "기출 2016년 3회 36번"
+          ],
+          "status": "검토 필요",
+          "answerMismatch": false,
+          "explanationMismatch": true,
+          "note": "통합 중복 출제(기출 내 중복) / 문제문 정규화 기준 / 검토 필요: 해설 차이 있음"
+        },
+        {
+          "groupId": "ALL_DUP_008",
+          "question": "에너지이용합리화법상 열사용기자재가 아닌 것은?",
+          "refs": [
+            "기출 2014년 2회 55번",
+            "기출 2016년 3회 56번"
+          ],
+          "status": "검토 필요",
+          "answerMismatch": false,
+          "explanationMismatch": true,
+          "note": "통합 중복 출제(기출 내 중복) / 문제문 정규화 기준 / 검토 필요: 해설 차이 있음"
+        },
+        {
+          "groupId": "ALL_DUP_009",
+          "question": "액체연료 중 경질유에 주로 사용하는 기화연소방식의 종류에 해당하지 않는 것은?",
+          "refs": [
+            "기출 2014년 3회 3번",
+            "CBT 1회 25번"
+          ],
+          "status": "검토 필요",
+          "answerMismatch": false,
+          "explanationMismatch": true,
+          "note": "기출·CBT 통합 중복 출제 / 문제문 정규화 기준 / 검토 필요: 해설 차이 있음"
+        },
+        {
+          "groupId": "ALL_DUP_010",
+          "question": "보일러 연료로 사용되는 LNG의 성분 중 함유량이 가장 많은 것은?",
+          "refs": [
+            "기출 2014년 3회 19번",
+            "CBT 2회 13번"
+          ],
+          "status": "검토 필요",
+          "answerMismatch": false,
+          "explanationMismatch": true,
+          "note": "기출·CBT 통합 중복 출제 / 문제문 정규화 기준 / 검토 필요: 해설 차이 있음"
+        },
+        {
+          "groupId": "ALL_DUP_011",
+          "question": "급유장치에서 보일러 가동 중 연소의 소화, 압력 초과 등 이상 현상 발생 시 긴급히 연료를 차단하는 것은?",
+          "refs": [
+            "기출 2014년 3회 24번",
+            "CBT 1회 10번"
+          ],
+          "status": "검토 필요",
+          "answerMismatch": false,
+          "explanationMismatch": true,
+          "note": "기출·CBT 통합 중복 출제 / 문제문 정규화 기준 / 검토 필요: 해설 차이 있음"
+        },
+        {
+          "groupId": "ALL_DUP_012",
+          "question": "증기난방과 비교한 온수난방의 특징 설명으로 틀린 것은?",
+          "refs": [
+            "기출 2014년 3회 33번",
+            "CBT 4회 25번",
+            "CBT 6회 25번"
+          ],
+          "status": "검토 필요",
+          "answerMismatch": true,
+          "explanationMismatch": true,
+          "note": "기출·CBT 통합 중복 출제 / 문제문 정규화 기준 / 검토 필요: 정답·해설 차이 있음"
+        },
+        {
+          "groupId": "ALL_DUP_013",
+          "question": "보일러의 운전정지 시 가장 뒤에 조작하는 작업은?",
+          "refs": [
+            "기출 2014년 3회 50번",
+            "CBT 6회 7번"
+          ],
+          "status": "검토 필요",
+          "answerMismatch": false,
+          "explanationMismatch": true,
+          "note": "기출·CBT 통합 중복 출제 / 문제문 정규화 기준 / 검토 필요: 해설 차이 있음"
+        },
+        {
+          "groupId": "ALL_DUP_014",
+          "question": "에너지법에 따르면 정부는 에너지기술개발계획을 수립하여야 한다. 이에 대해 옳은 것은?",
+          "refs": [
+            "기출 2014년 3회 60번",
+            "CBT 6회 55번"
+          ],
+          "status": "검토 필요",
+          "answerMismatch": false,
+          "explanationMismatch": true,
+          "note": "기출·CBT 통합 중복 출제 / 문제문 정규화 기준 / 검토 필요: 해설 차이 있음"
+        },
+        {
+          "groupId": "ALL_DUP_015",
+          "question": "연관식 보일러의 특징으로 틀린 것은?",
+          "refs": [
+            "기출 2014년 4회 11번",
+            "CBT 4회 44번"
+          ],
+          "status": "검토 필요",
+          "answerMismatch": false,
+          "explanationMismatch": true,
+          "note": "기출·CBT 통합 중복 출제 / 문제문 정규화 기준 / 검토 필요: 해설 차이 있음"
+        },
+        {
+          "groupId": "ALL_DUP_016",
+          "question": "보일러의 수위제어에 영향을 미치는 요인 중에서 보일러 수위제어시스템으로 제어할 수 없는 것은?",
+          "refs": [
+            "기출 2014년 4회 12번",
+            "CBT 6회 23번"
+          ],
+          "status": "검토 필요",
+          "answerMismatch": false,
+          "explanationMismatch": true,
+          "note": "기출·CBT 통합 중복 출제 / 문제문 정규화 기준 / 검토 필요: 해설 차이 있음"
+        },
+        {
+          "groupId": "ALL_DUP_017",
+          "question": "다음 중 압력계의 종류가 아닌 것은?",
+          "refs": [
+            "기출 2014년 4회 25번",
+            "CBT 3회 46번"
+          ],
+          "status": "검토 필요",
+          "answerMismatch": true,
+          "explanationMismatch": true,
+          "note": "기출·CBT 통합 중복 출제 / 문제문 정규화 기준 / 검토 필요: 정답·해설 차이 있음"
+        },
+        {
+          "groupId": "ALL_DUP_018",
+          "question": "건물을 구성하는 구조체 즉 바닥, 벽 등에 난방용 코일을 묻고 열매체를 통과시켜 난방을 하는 것은?",
+          "refs": [
+            "기출 2014년 4회 37번",
+            "CBT 7회 49번"
+          ],
+          "status": "검토 필요",
+          "answerMismatch": false,
+          "explanationMismatch": true,
+          "note": "기출·CBT 통합 중복 출제 / 문제문 정규화 기준 / 검토 필요: 해설 차이 있음"
+        },
+        {
+          "groupId": "ALL_DUP_019",
+          "question": "배관의 높이를 관의 중심을 기준으로 표시한 기호는?",
+          "refs": [
+            "기출 2014년 4회 38번",
+            "CBT 6회 52번"
+          ],
+          "status": "검토 필요",
+          "answerMismatch": false,
+          "explanationMismatch": true,
+          "note": "기출·CBT 통합 중복 출제 / 문제문 정규화 기준 / 검토 필요: 해설 차이 있음"
+        },
+        {
+          "groupId": "ALL_DUP_020",
+          "question": "유리솜 또는 암면의 용도와 관계없는 것은?",
+          "refs": [
+            "기출 2014년 4회 48번",
+            "CBT 4회 47번"
+          ],
+          "status": "검토 필요",
+          "answerMismatch": false,
+          "explanationMismatch": true,
+          "note": "기출·CBT 통합 중복 출제 / 문제문 정규화 기준 / 검토 필요: 해설 차이 있음"
+        },
+        {
+          "groupId": "ALL_DUP_021",
+          "question": "증기난방의 분류에서 응축수 환수방식에 해당하는 것은?",
+          "refs": [
+            "기출 2014년 4회 52번",
+            "CBT 7회 50번"
+          ],
+          "status": "검토 필요",
+          "answerMismatch": false,
+          "explanationMismatch": true,
+          "note": "기출·CBT 통합 중복 출제 / 문제문 정규화 기준 / 검토 필요: 해설 차이 있음"
+        },
+        {
+          "groupId": "ALL_DUP_022",
+          "question": "특정열사용기자재 중 산업통상자원부령으로 정하는 검사대상기기의 계속사용검사 신청서는 검사 유효기간 만료 며칠 전까지 제출해야 하는가?",
+          "refs": [
+            "기출 2014년 4회 58번",
+            "CBT 4회 56번"
+          ],
+          "status": "검토 필요",
+          "answerMismatch": false,
+          "explanationMismatch": true,
+          "note": "기출·CBT 통합 중복 출제 / 문제문 정규화 기준 / 검토 필요: 해설 차이 있음"
+        },
+        {
+          "groupId": "ALL_DUP_023",
+          "question": "증기보일러의 압력계 부착에 대한 설명으로 틀린 것은?",
+          "refs": [
+            "기출 2015년 1회 8번",
+            "CBT 6회 15번"
+          ],
+          "status": "검토 필요",
+          "answerMismatch": false,
+          "explanationMismatch": true,
+          "note": "기출·CBT 통합 중복 출제 / 문제문 정규화 기준 / 검토 필요: 해설 차이 있음"
+        },
+        {
+          "groupId": "ALL_DUP_024",
+          "question": "벨로즈형 신축이음쇠에 대한 설명으로 틀린 것은?",
+          "refs": [
+            "기출 2015년 1회 42번",
+            "CBT 1회 40번"
+          ],
+          "status": "검토 필요",
+          "answerMismatch": true,
+          "explanationMismatch": true,
+          "note": "기출·CBT 통합 중복 출제 / 문제문 정규화 기준 / 검토 필요: 정답·해설 차이 있음"
+        },
+        {
+          "groupId": "ALL_DUP_025",
+          "question": "보일러에서 라미네이션(lamination)이란?",
+          "refs": [
+            "기출 2015년 1회 51번",
+            "CBT 4회 32번"
+          ],
+          "status": "검토 필요",
+          "answerMismatch": true,
+          "explanationMismatch": true,
+          "note": "기출·CBT 통합 중복 출제 / 문제문 정규화 기준 / 검토 필요: 정답·해설 차이 있음"
+        },
+        {
+          "groupId": "ALL_DUP_026",
+          "question": "에너지이용합리화법상 에너지를 사용하여 만드는 제품의 단위당 에너지사용목표량 또는 건축물의 단위면적당 에너지사용목표량을 정하여 고시하는 자는?",
+          "refs": [
+            "기출 2015년 1회 55번",
+            "CBT 5회 55번"
+          ],
+          "status": "검토 필요",
+          "answerMismatch": false,
+          "explanationMismatch": true,
+          "note": "기출·CBT 통합 중복 출제 / 문제문 정규화 기준 / 검토 필요: 해설 차이 있음"
+        },
+        {
+          "groupId": "ALL_DUP_027",
+          "question": "정부는 국가전략을 효율적·체계적으로 이행하기 위하여 몇 년마다 저탄소 녹색성장 국가전략 5개년 계획을 수립하는가?",
+          "refs": [
+            "기출 2015년 1회 57번",
+            "CBT 2회 56번"
+          ],
+          "status": "검토 필요",
+          "answerMismatch": false,
+          "explanationMismatch": true,
+          "note": "기출·CBT 통합 중복 출제 / 문제문 정규화 기준 / 검토 필요: 해설 차이 있음"
+        },
+        {
+          "groupId": "ALL_DUP_028",
+          "question": "에너지이용합리화법상 대기전력경고표지를 하지 아니한 자에 대한 벌칙은?",
+          "refs": [
+            "기출 2015년 1회 58번",
+            "CBT 1회 57번"
+          ],
+          "status": "검토 필요",
+          "answerMismatch": false,
+          "explanationMismatch": true,
+          "note": "기출·CBT 통합 중복 출제 / 문제문 정규화 기준 / 검토 필요: 해설 차이 있음"
+        },
+        {
+          "groupId": "ALL_DUP_029",
+          "question": "기름예열기에 대한 설명 중 옳은 것은?",
+          "refs": [
+            "기출 2015년 2회 10번",
+            "CBT 1회 16번"
+          ],
+          "status": "검토 필요",
+          "answerMismatch": false,
+          "explanationMismatch": true,
+          "note": "기출·CBT 통합 중복 출제 / 문제문 정규화 기준 / 검토 필요: 해설 차이 있음"
+        },
+        {
+          "groupId": "ALL_DUP_030",
+          "question": "보일러의 자동제어 중 제어동작이 연속동작에 해당하지 않는 것은?",
+          "refs": [
+            "기출 2015년 2회 11번",
+            "CBT 2회 11번"
+          ],
+          "status": "검토 필요",
+          "answerMismatch": false,
+          "explanationMismatch": true,
+          "note": "기출·CBT 통합 중복 출제 / 문제문 정규화 기준 / 검토 필요: 해설 차이 있음"
+        },
+        {
+          "groupId": "ALL_DUP_031",
+          "question": "가스버너 연소방식 중 예혼합 연소방식이 아닌 것은?",
+          "refs": [
+            "기출 2015년 2회 21번",
+            "CBT 1회 35번"
+          ],
+          "status": "검토 필요",
+          "answerMismatch": false,
+          "explanationMismatch": true,
+          "note": "기출·CBT 통합 중복 출제 / 문제문 정규화 기준 / 검토 필요: 해설 차이 있음"
+        },
+        {
+          "groupId": "ALL_DUP_032",
+          "question": "보일러의 점화 조작시 주의사항으로 틀린 것은?",
+          "refs": [
+            "기출 2015년 2회 32번",
+            "CBT 6회 47번"
+          ],
+          "status": "자동확정",
+          "answerMismatch": false,
+          "explanationMismatch": false,
+          "note": "기출·CBT 통합 중복 출제 / 문제문 정규화 기준 / 자동확정"
+        },
+        {
+          "groupId": "ALL_DUP_033",
+          "question": "파이프 벤더에 의한 구부림 작업 시 관에 주름이 생기는 원인으로 가장 옳은 것은?",
+          "refs": [
+            "기출 2015년 2회 38번",
+            "CBT 2회 52번"
+          ],
+          "status": "자동확정",
+          "answerMismatch": false,
+          "explanationMismatch": false,
+          "note": "기출·CBT 통합 중복 출제 / 문제문 정규화 기준 / 자동확정"
+        },
+        {
+          "groupId": "ALL_DUP_034",
+          "question": "보일러의 정상 운전시 수면계에 나타나는 수위의 위치로 가장 적당한 것은?",
+          "refs": [
+            "기출 2015년 2회 40번",
+            "CBT 6회 10번"
+          ],
+          "status": "검토 필요",
+          "answerMismatch": false,
+          "explanationMismatch": true,
+          "note": "기출·CBT 통합 중복 출제 / 문제문 정규화 기준 / 검토 필요: 해설 차이 있음"
+        },
+        {
+          "groupId": "ALL_DUP_035",
+          "question": "강철제 증기보일러의 최고사용압력이 0.4MPa인 경우 수압시험 압력은?",
+          "refs": [
+            "기출 2015년 2회 49번",
+            "CBT 2회 10번"
+          ],
+          "status": "검토 필요",
+          "answerMismatch": false,
+          "explanationMismatch": true,
+          "note": "기출·CBT 통합 중복 출제 / 문제문 정규화 기준 / 검토 필요: 해설 차이 있음"
+        },
+        {
+          "groupId": "ALL_DUP_036",
+          "question": "보일러 급수 중 Fe, Mn, CO₂를 많이 함유하고 있는 경우의 급수처리 방법으로 가장 적합한 것은?",
+          "refs": [
+            "기출 2015년 2회 51번",
+            "CBT 1회 15번"
+          ],
+          "status": "자동확정",
+          "answerMismatch": false,
+          "explanationMismatch": false,
+          "note": "기출·CBT 통합 중복 출제 / 문제문 정규화 기준 / 자동확정"
+        },
+        {
+          "groupId": "ALL_DUP_037",
+          "question": "에너지이용 합리화법상 산업통상자원부장관이 에너지다소비사업자에게 개선명령을 할 수 있는 경우는 에너지관리 지도 결과 몇 % 이상 에너지 효율개선이 기대되는 경우인가?",
+          "refs": [
+            "기출 2015년 2회 57번",
+            "CBT 1회 56번"
+          ],
+          "status": "검토 필요",
+          "answerMismatch": false,
+          "explanationMismatch": true,
+          "note": "기출·CBT 통합 중복 출제 / 문제문 정규화 기준 / 검토 필요: 해설 차이 있음"
+        },
+        {
+          "groupId": "ALL_DUP_038",
+          "question": "캐비테이션의 발생 원인이 아닌 것은?",
+          "refs": [
+            "기출 2015년 3회 4번",
+            "CBT 2회 27번"
+          ],
+          "status": "검토 필요",
+          "answerMismatch": false,
+          "explanationMismatch": true,
+          "note": "기출·CBT 통합 중복 출제 / 문제문 정규화 기준 / 검토 필요: 해설 차이 있음"
+        },
+        {
+          "groupId": "ALL_DUP_039",
+          "question": "집진장치의 종류 중 건식집진장치의 종류가 아닌 것은?",
+          "refs": [
+            "기출 2015년 3회 8번",
+            "CBT 6회 18번"
+          ],
+          "status": "검토 필요",
+          "answerMismatch": false,
+          "explanationMismatch": true,
+          "note": "기출·CBT 통합 중복 출제 / 문제문 정규화 기준 / 검토 필요: 해설 차이 있음"
+        },
+        {
+          "groupId": "ALL_DUP_040",
+          "question": "공기예열기의 종류에 속하지 않는 것은?",
+          "refs": [
+            "기출 2015년 3회 10번",
+            "CBT 1회 18번"
+          ],
+          "status": "검토 필요",
+          "answerMismatch": false,
+          "explanationMismatch": true,
+          "note": "기출·CBT 통합 중복 출제 / 문제문 정규화 기준 / 검토 필요: 해설 차이 있음"
+        },
+        {
+          "groupId": "ALL_DUP_041",
+          "question": "보일러의 전열면적이 클 때의 설명으로 틀린 것은?",
+          "refs": [
+            "기출 2015년 3회 12번",
+            "CBT 7회 28번"
+          ],
+          "status": "검토 필요",
+          "answerMismatch": false,
+          "explanationMismatch": true,
+          "note": "기출·CBT 통합 중복 출제 / 문제문 정규화 기준 / 검토 필요: 해설 차이 있음"
+        },
+        {
+          "groupId": "ALL_DUP_042",
+          "question": "증기의 과열도를 옳게 표현한 것은?",
+          "refs": [
+            "기출 2015년 3회 21번",
+            "CBT 1회 1번"
+          ],
+          "status": "자동확정",
+          "answerMismatch": false,
+          "explanationMismatch": false,
+          "note": "기출·CBT 통합 중복 출제 / 문제문 정규화 기준 / 자동확정"
+        },
+        {
+          "groupId": "ALL_DUP_043",
+          "question": "보일러 연소용 공기조절장치 중 착화를 원활하게 하고 화염의 안정을 도모하는 장치는?",
+          "refs": [
+            "기출 2015년 3회 29번",
+            "CBT 6회 43번"
+          ],
+          "status": "검토 필요",
+          "answerMismatch": false,
+          "explanationMismatch": true,
+          "note": "기출·CBT 통합 중복 출제 / 문제문 정규화 기준 / 검토 필요: 해설 차이 있음"
+        },
+        {
+          "groupId": "ALL_DUP_044",
+          "question": "금속 특유의 복사열에 대한 특성을 이용한 대표적인 금속질 보온재는?",
+          "refs": [
+            "기출 2015년 3회 38번",
+            "CBT 2회 51번"
+          ],
+          "status": "검토 필요",
+          "answerMismatch": false,
+          "explanationMismatch": true,
+          "note": "기출·CBT 통합 중복 출제 / 문제문 정규화 기준 / 검토 필요: 해설 차이 있음"
+        },
+        {
+          "groupId": "ALL_DUP_045",
+          "question": "에너지이용 합리화법규상 냉난방온도제한 건물에 냉난방 제한온도를 적용할 때의 기준으로 옳은 것은? 단, 판매시설 및 공항의 경우는 제외한다.",
+          "refs": [
+            "기출 2015년 3회 58번",
+            "CBT 1회 55번",
+            "CBT 6회 11번"
+          ],
+          "status": "검토 필요",
+          "answerMismatch": false,
+          "explanationMismatch": true,
+          "note": "기출·CBT 통합 중복 출제 / 문제문 정규화 기준 / 검토 필요: 해설 차이 있음"
+        },
+        {
+          "groupId": "ALL_DUP_046",
+          "question": "중유 보일러의 연소 보조 장치에 속하지 않는 것은?",
+          "refs": [
+            "기출 2015년 4회 26번",
+            "CBT 5회 12번"
+          ],
+          "status": "검토 필요",
+          "answerMismatch": false,
+          "explanationMismatch": true,
+          "note": "기출·CBT 통합 중복 출제 / 문제문 정규화 기준 / 검토 필요: 해설 차이 있음"
+        },
+        {
+          "groupId": "ALL_DUP_047",
+          "question": "캐리오버로 인하여 나타날 수 있는 결과로 거리가 먼 것은?",
+          "refs": [
+            "기출 2015년 4회 28번",
+            "CBT 6회 12번"
+          ],
+          "status": "검토 필요",
+          "answerMismatch": false,
+          "explanationMismatch": true,
+          "note": "기출·CBT 통합 중복 출제 / 문제문 정규화 기준 / 검토 필요: 해설 차이 있음"
+        },
+        {
+          "groupId": "ALL_DUP_048",
+          "question": "보일러에 사용되는 안전밸브 및 압력방출장치 크기를 20A 이상으로 할 수 있는 보일러가 아닌 것은?",
+          "refs": [
+            "기출 2015년 4회 34번",
+            "CBT 6회 14번"
+          ],
+          "status": "검토 필요",
+          "answerMismatch": false,
+          "explanationMismatch": true,
+          "note": "기출·CBT 통합 중복 출제 / 문제문 정규화 기준 / 검토 필요: 해설 차이 있음"
+        },
+        {
+          "groupId": "ALL_DUP_049",
+          "question": "보일러 기수공발(carry over)의 원인이 아닌 것은?",
+          "refs": [
+            "기출 2015년 4회 38번",
+            "CBT 6회 29번"
+          ],
+          "status": "검토 필요",
+          "answerMismatch": false,
+          "explanationMismatch": true,
+          "note": "기출·CBT 통합 중복 출제 / 문제문 정규화 기준 / 검토 필요: 해설 차이 있음"
+        },
+        {
+          "groupId": "ALL_DUP_050",
+          "question": "보일러에서 수압시험을 하는 목적으로 틀린 것은?",
+          "refs": [
+            "기출 2015년 4회 42번",
+            "CBT 2회 28번"
+          ],
+          "status": "검토 필요",
+          "answerMismatch": false,
+          "explanationMismatch": true,
+          "note": "기출·CBT 통합 중복 출제 / 문제문 정규화 기준 / 검토 필요: 해설 차이 있음"
+        },
+        {
+          "groupId": "ALL_DUP_051",
+          "question": "보일러 운전이 끝난 후 노내와 연도에 체류하고 있는 가연성 가스를 배출시키는 작업은?",
+          "refs": [
+            "기출 2015년 4회 46번",
+            "CBT 6회 28번"
+          ],
+          "status": "검토 필요",
+          "answerMismatch": false,
+          "explanationMismatch": true,
+          "note": "기출·CBT 통합 중복 출제 / 문제문 정규화 기준 / 검토 필요: 해설 차이 있음"
+        },
+        {
+          "groupId": "ALL_DUP_052",
+          "question": "에너지이용 합리화법상 법을 위반하여 검사대상기기관리자를 선임하지 아니한 자에 대한 벌칙 기준으로 옳은 것은?",
+          "refs": [
+            "기출 2015년 4회 60번",
+            "CBT 6회 57번"
+          ],
+          "status": "자동확정",
+          "answerMismatch": false,
+          "explanationMismatch": false,
+          "note": "기출·CBT 통합 중복 출제 / 문제문 정규화 기준 / 자동확정"
+        },
+        {
+          "groupId": "ALL_DUP_053",
+          "question": "보일러의 수위제어 검출방식의 종류로 가장 거리가 먼 것은?",
+          "refs": [
+            "기출 2016년 1회 2번",
+            "CBT 5회 46번"
+          ],
+          "status": "검토 필요",
+          "answerMismatch": false,
+          "explanationMismatch": true,
+          "note": "기출·CBT 통합 중복 출제 / 문제문 정규화 기준 / 검토 필요: 해설 차이 있음"
+        },
+        {
+          "groupId": "ALL_DUP_054",
+          "question": "일반적으로 보일러의 상용수위는 수면계의 어느 위치와 일치시키는가?",
+          "refs": [
+            "기출 2016년 1회 4번",
+            "CBT 3회 38번"
+          ],
+          "status": "검토 필요",
+          "answerMismatch": false,
+          "explanationMismatch": true,
+          "note": "기출·CBT 통합 중복 출제 / 문제문 정규화 기준 / 검토 필요: 해설 차이 있음"
+        },
+        {
+          "groupId": "ALL_DUP_055",
+          "question": "어떤 물질 500kg을 20℃에서 50℃로 올리는데 3000kcal의 열량이 필요하였다. 이 물질의 비열은?",
+          "refs": [
+            "기출 2016년 1회 6번",
+            "CBT 2회 23번"
+          ],
+          "status": "검토 필요",
+          "answerMismatch": false,
+          "explanationMismatch": true,
+          "note": "기출·CBT 통합 중복 출제 / 문제문 정규화 기준 / 검토 필요: 해설 차이 있음"
+        },
+        {
+          "groupId": "ALL_DUP_056",
+          "question": "동작유체의 상태변화에서 에너지의 이동이 없는 변화는?",
+          "refs": [
+            "기출 2016년 1회 7번",
+            "CBT 5회 9번"
+          ],
+          "status": "자동확정",
+          "answerMismatch": false,
+          "explanationMismatch": false,
+          "note": "기출·CBT 통합 중복 출제 / 문제문 정규화 기준 / 자동확정"
+        },
+        {
+          "groupId": "ALL_DUP_057",
+          "question": "보일러 유류연료 연소 시에 가스폭발이 발생하는 원인이 아닌 것은?",
+          "refs": [
+            "기출 2016년 1회 8번",
+            "CBT 5회 48번"
+          ],
+          "status": "검토 필요",
+          "answerMismatch": false,
+          "explanationMismatch": true,
+          "note": "기출·CBT 통합 중복 출제 / 문제문 정규화 기준 / 검토 필요: 해설 차이 있음"
+        },
+        {
+          "groupId": "ALL_DUP_058",
+          "question": "보일러 1마력에 대한 표시로 옳은 것은?",
+          "refs": [
+            "기출 2016년 1회 10번",
+            "CBT 1회 5번"
+          ],
+          "status": "자동확정",
+          "answerMismatch": false,
+          "explanationMismatch": false,
+          "note": "기출·CBT 통합 중복 출제 / 문제문 정규화 기준 / 자동확정"
+        },
+        {
+          "groupId": "ALL_DUP_059",
+          "question": "과열증기에서 과열도는 무엇인가?",
+          "refs": [
+            "기출 2016년 1회 12번",
+            "CBT 7회 1번"
+          ],
+          "status": "검토 필요",
+          "answerMismatch": false,
+          "explanationMismatch": true,
+          "note": "기출·CBT 통합 중복 출제 / 문제문 정규화 기준 / 검토 필요: 해설 차이 있음"
+        },
+        {
+          "groupId": "ALL_DUP_060",
+          "question": "절탄기에 대한 설명으로 옳은 것은?",
+          "refs": [
+            "기출 2016년 1회 13번",
+            "기출 2016년 3회 4번"
+          ],
+          "status": "검토 필요",
+          "answerMismatch": true,
+          "explanationMismatch": true,
+          "note": "통합 중복 출제(기출 내 중복) / 문제문 정규화 기준 / 검토 필요: 정답·해설 차이 있음"
+        },
+        {
+          "groupId": "ALL_DUP_061",
+          "question": "세정식 집진장치 중 하나인 회전식 집진장치의 특징에 관한 설명으로 가장 거리가 먼 것은?",
+          "refs": [
+            "기출 2016년 1회 16번",
+            "CBT 6회 33번"
+          ],
+          "status": "검토 필요",
+          "answerMismatch": false,
+          "explanationMismatch": true,
+          "note": "기출·CBT 통합 중복 출제 / 문제문 정규화 기준 / 검토 필요: 해설 차이 있음"
+        },
+        {
+          "groupId": "ALL_DUP_062",
+          "question": "제어장치에서 인터록(inter lock)이란?",
+          "refs": [
+            "기출 2016년 1회 23번",
+            "CBT 1회 24번"
+          ],
+          "status": "검토 필요",
+          "answerMismatch": false,
+          "explanationMismatch": true,
+          "note": "기출·CBT 통합 중복 출제 / 문제문 정규화 기준 / 검토 필요: 해설 차이 있음"
+        },
+        {
+          "groupId": "ALL_DUP_063",
+          "question": "열정산의 방법에서 입열 항목에 속하지 않는 것은?",
+          "refs": [
+            "기출 2016년 1회 26번",
+            "CBT 2회 16번"
+          ],
+          "status": "검토 필요",
+          "answerMismatch": false,
+          "explanationMismatch": true,
+          "note": "기출·CBT 통합 중복 출제 / 문제문 정규화 기준 / 검토 필요: 해설 차이 있음"
+        },
+        {
+          "groupId": "ALL_DUP_064",
+          "question": "유류용 온수보일러에서 버너가 정지하고 리셋버튼이 돌출하는 경우는?",
+          "refs": [
+            "기출 2016년 1회 28번",
+            "CBT 5회 16번"
+          ],
+          "status": "검토 필요",
+          "answerMismatch": false,
+          "explanationMismatch": true,
+          "note": "기출·CBT 통합 중복 출제 / 문제문 정규화 기준 / 검토 필요: 해설 차이 있음"
+        },
+        {
+          "groupId": "ALL_DUP_065",
+          "question": "가스보일러에서 가스폭발의 예방을 위한 유의사항으로 틀린 것은?",
+          "refs": [
+            "기출 2016년 1회 44번",
+            "CBT 2회 41번"
+          ],
+          "status": "검토 필요",
+          "answerMismatch": false,
+          "explanationMismatch": true,
+          "note": "기출·CBT 통합 중복 출제 / 문제문 정규화 기준 / 검토 필요: 해설 차이 있음"
+        },
+        {
+          "groupId": "ALL_DUP_066",
+          "question": "압축기 진동과 서징, 관의 수격작용, 지진 등에서 발생하는 진동을 억제하기 위해 사용되는 지지장치는?",
+          "refs": [
+            "기출 2016년 1회 46번",
+            "CBT 5회 52번"
+          ],
+          "status": "자동확정",
+          "answerMismatch": false,
+          "explanationMismatch": false,
+          "note": "기출·CBT 통합 중복 출제 / 문제문 정규화 기준 / 자동확정"
+        },
+        {
+          "groupId": "ALL_DUP_067",
+          "question": "보일러수 내처리 방법으로 용도에 따른 청관제로 틀린 것은?",
+          "refs": [
+            "기출 2016년 1회 49번",
+            "CBT 6회 26번"
+          ],
+          "status": "검토 필요",
+          "answerMismatch": true,
+          "explanationMismatch": false,
+          "note": "기출·CBT 통합 중복 출제 / 문제문 정규화 기준 / 검토 필요: 정답 차이 있음"
+        },
+        {
+          "groupId": "ALL_DUP_068",
+          "question": "증기보일러에는 2개 이상의 안전밸브를 설치하여야 하는 반면에 1개 이상으로 설치 가능한 보일러의 최대 전열면적은?",
+          "refs": [
+            "기출 2016년 1회 54번",
+            "CBT 6회 13번"
+          ],
+          "status": "검토 필요",
+          "answerMismatch": false,
+          "explanationMismatch": true,
+          "note": "기출·CBT 통합 중복 출제 / 문제문 정규화 기준 / 검토 필요: 해설 차이 있음"
+        },
+        {
+          "groupId": "ALL_DUP_069",
+          "question": "압력에 대한 설명으로 옳은 것은?",
+          "refs": [
+            "기출 2016년 2회 1번",
+            "CBT 1회 3번"
+          ],
+          "status": "검토 필요",
+          "answerMismatch": false,
+          "explanationMismatch": true,
+          "note": "기출·CBT 통합 중복 출제 / 문제문 정규화 기준 / 검토 필요: 해설 차이 있음"
+        },
+        {
+          "groupId": "ALL_DUP_070",
+          "question": "증기 보일러의 효율 계산식을 바르게 나타낸 것은?",
+          "refs": [
+            "기출 2016년 2회 3번",
+            "CBT 1회 33번"
+          ],
+          "status": "검토 필요",
+          "answerMismatch": true,
+          "explanationMismatch": true,
+          "note": "기출·CBT 통합 중복 출제 / 문제문 정규화 기준 / 검토 필요: 정답·해설 차이 있음"
+        },
+        {
+          "groupId": "ALL_DUP_071",
+          "question": "보일러의 안전장치에 해당되지 않는 것은?",
+          "refs": [
+            "기출 2016년 2회 9번",
+            "CBT 5회 38번"
+          ],
+          "status": "검토 필요",
+          "answerMismatch": false,
+          "explanationMismatch": true,
+          "note": "기출·CBT 통합 중복 출제 / 문제문 정규화 기준 / 검토 필요: 해설 차이 있음"
+        },
+        {
+          "groupId": "ALL_DUP_072",
+          "question": "보일러의 자동연소제어와 관련이 없는 것은?",
+          "refs": [
+            "기출 2016년 2회 11번",
+            "CBT 1회 23번"
+          ],
+          "status": "검토 필요",
+          "answerMismatch": false,
+          "explanationMismatch": true,
+          "note": "기출·CBT 통합 중복 출제 / 문제문 정규화 기준 / 검토 필요: 해설 차이 있음"
+        },
+        {
+          "groupId": "ALL_DUP_073",
+          "question": "보일러 부속장치에 관한 설명으로 틀린 것은?",
+          "refs": [
+            "기출 2016년 2회 15번",
+            "CBT 2회 33번",
+            "CBT 4회 12번"
+          ],
+          "status": "검토 필요",
+          "answerMismatch": true,
+          "explanationMismatch": true,
+          "note": "기출·CBT 통합 중복 출제 / 문제문 정규화 기준 / 검토 필요: 정답·해설 차이 있음"
+        },
+        {
+          "groupId": "ALL_DUP_074",
+          "question": "보일러용 오일 연료에서 성분분석 결과 수소 12.0%, 수분 0.3%라면, 저위발열량은? 단, 연료의 고위발열량은 10600kcal/kg이다.",
+          "refs": [
+            "기출 2016년 2회 20번",
+            "CBT 1회 31번"
+          ],
+          "status": "자동확정",
+          "answerMismatch": false,
+          "explanationMismatch": false,
+          "note": "기출·CBT 통합 중복 출제 / 문제문 정규화 기준 / 자동확정"
+        },
+        {
+          "groupId": "ALL_DUP_075",
+          "question": "보일러 윈드박스 주위에 설치되는 장치 또는 부품과 가장 거리가 먼 것은?",
+          "refs": [
+            "기출 2016년 2회 23번",
+            "CBT 1회 6번"
+          ],
+          "status": "검토 필요",
+          "answerMismatch": false,
+          "explanationMismatch": true,
+          "note": "기출·CBT 통합 중복 출제 / 문제문 정규화 기준 / 검토 필요: 해설 차이 있음"
+        },
+        {
+          "groupId": "ALL_DUP_076",
+          "question": "도시가스 배관의 설치에서 배관의 이음부(용접이음매 제외)의 전기점멸기 및 전기접속기와의 거리는 최소 얼마 이상 유지해야 하는가?",
+          "refs": [
+            "기출 2016년 2회 31번",
+            "CBT 2회 31번"
+          ],
+          "status": "검토 필요",
+          "answerMismatch": false,
+          "explanationMismatch": true,
+          "note": "기출·CBT 통합 중복 출제 / 문제문 정규화 기준 / 검토 필요: 해설 차이 있음"
+        },
+        {
+          "groupId": "ALL_DUP_077",
+          "question": "배관 보온재의 선정 시 고려해야 할 사항으로 가장 거리가 먼 것은?",
+          "refs": [
+            "기출 2016년 2회 33번",
+            "CBT 1회 51번",
+            "CBT 5회 53번"
+          ],
+          "status": "검토 필요",
+          "answerMismatch": false,
+          "explanationMismatch": true,
+          "note": "기출·CBT 통합 중복 출제 / 문제문 정규화 기준 / 검토 필요: 해설 차이 있음"
+        },
+        {
+          "groupId": "ALL_DUP_078",
+          "question": "파이프와 파이프를 홈 조인트로 체결하기 위하여 파이프 끝을 가공하는 기계는?",
+          "refs": [
+            "기출 2016년 2회 35번",
+            "CBT 5회 54번"
+          ],
+          "status": "검토 필요",
+          "answerMismatch": false,
+          "explanationMismatch": true,
+          "note": "기출·CBT 통합 중복 출제 / 문제문 정규화 기준 / 검토 필요: 해설 차이 있음"
+        },
+        {
+          "groupId": "ALL_DUP_079",
+          "question": "수질이 불량하여 보일러에 미치는 영향으로 가장 거리가 먼 것은?",
+          "refs": [
+            "기출 2016년 2회 41번",
+            "CBT 6회 48번"
+          ],
+          "status": "검토 필요",
+          "answerMismatch": true,
+          "explanationMismatch": true,
+          "note": "기출·CBT 통합 중복 출제 / 문제문 정규화 기준 / 검토 필요: 정답·해설 차이 있음"
+        },
+        {
+          "groupId": "ALL_DUP_080",
+          "question": "관의 접속상태·결합방식의 표시방법에서 용접이음을 나타내는 그림기호로 맞는 것은?",
+          "refs": [
+            "기출 2016년 2회 43번",
+            "CBT 1회 52번"
+          ],
+          "status": "검토 필요",
+          "answerMismatch": false,
+          "explanationMismatch": true,
+          "note": "기출·CBT 통합 중복 출제 / 문제문 정규화 기준 / 검토 필요: 해설 차이 있음"
+        },
+        {
+          "groupId": "ALL_DUP_081",
+          "question": "보일러 점화불량의 원인으로 가장 거리가 먼 것은?",
+          "refs": [
+            "기출 2016년 2회 44번",
+            "CBT 2회 30번"
+          ],
+          "status": "검토 필요",
+          "answerMismatch": false,
+          "explanationMismatch": true,
+          "note": "기출·CBT 통합 중복 출제 / 문제문 정규화 기준 / 검토 필요: 해설 차이 있음"
+        },
+        {
+          "groupId": "ALL_DUP_082",
+          "question": "보일러 내부부식에 속하지 않는 것은?",
+          "refs": [
+            "기출 2016년 2회 50번",
+            "CBT 6회 32번"
+          ],
+          "status": "검토 필요",
+          "answerMismatch": false,
+          "explanationMismatch": true,
+          "note": "기출·CBT 통합 중복 출제 / 문제문 정규화 기준 / 검토 필요: 해설 차이 있음"
+        },
+        {
+          "groupId": "ALL_DUP_083",
+          "question": "보일러 내부의 건조방식에 대한 설명 중 틀린 것은?",
+          "refs": [
+            "기출 2016년 2회 51번",
+            "CBT 6회 20번"
+          ],
+          "status": "자동확정",
+          "answerMismatch": false,
+          "explanationMismatch": false,
+          "note": "기출·CBT 통합 중복 출제 / 문제문 정규화 기준 / 자동확정"
+        },
+        {
+          "groupId": "ALL_DUP_084",
+          "question": "에너지이용합리화법에 따라 고시한 효율관리기자재 운용규정에 따라 가정용 가스보일러의 최저소비효율 기준은 몇 %인가?",
+          "refs": [
+            "기출 2016년 2회 55번",
+            "CBT 6회 56번"
+          ],
+          "status": "검토 필요",
+          "answerMismatch": false,
+          "explanationMismatch": true,
+          "note": "기출·CBT 통합 중복 출제 / 문제문 정규화 기준 / 검토 필요: 해설 차이 있음"
+        },
+        {
+          "groupId": "ALL_DUP_085",
+          "question": "에너지이용합리화법에서 효율관리기자재의 제조업자 또는 수입업자가 효율관리기자재의 에너지 사용량을 측정 받는 기관은?",
+          "refs": [
+            "기출 2016년 2회 59번",
+            "CBT 7회 57번"
+          ],
+          "status": "검토 필요",
+          "answerMismatch": false,
+          "explanationMismatch": true,
+          "note": "기출·CBT 통합 중복 출제 / 문제문 정규화 기준 / 검토 필요: 해설 차이 있음"
+        },
+        {
+          "groupId": "ALL_DUP_086",
+          "question": "연관보일러에서 연관에 대한 설명으로 옳은 것은?",
+          "refs": [
+            "기출 2016년 3회 20번",
+            "CBT 1회 7번"
+          ],
+          "status": "검토 필요",
+          "answerMismatch": false,
+          "explanationMismatch": true,
+          "note": "기출·CBT 통합 중복 출제 / 문제문 정규화 기준 / 검토 필요: 해설 차이 있음"
+        },
+        {
+          "groupId": "ALL_DUP_087",
+          "question": "유류 보일러 시스템에서 중유를 사용할 때 흡입측의 여과망 눈 크기로 적합한 것은?",
+          "refs": [
+            "기출 2016년 3회 22번",
+            "CBT 2회 38번"
+          ],
+          "status": "검토 필요",
+          "answerMismatch": false,
+          "explanationMismatch": true,
+          "note": "기출·CBT 통합 중복 출제 / 문제문 정규화 기준 / 검토 필요: 해설 차이 있음"
+        },
+        {
+          "groupId": "ALL_DUP_088",
+          "question": "보일러 효율 시험방법에 관한 설명으로 틀린 것은?",
+          "refs": [
+            "기출 2016년 3회 23번",
+            "CBT 6회 46번"
+          ],
+          "status": "검토 필요",
+          "answerMismatch": false,
+          "explanationMismatch": true,
+          "note": "기출·CBT 통합 중복 출제 / 문제문 정규화 기준 / 검토 필요: 해설 차이 있음"
+        },
+        {
+          "groupId": "ALL_DUP_089",
+          "question": "중력환수식 온수난방법의 설명으로 틀린 것은?",
+          "refs": [
+            "기출 2016년 3회 32번",
+            "CBT 2회 47번"
+          ],
+          "status": "검토 필요",
+          "answerMismatch": false,
+          "explanationMismatch": true,
+          "note": "기출·CBT 통합 중복 출제 / 문제문 정규화 기준 / 검토 필요: 해설 차이 있음"
+        },
+        {
+          "groupId": "ALL_DUP_090",
+          "question": "급수 중 불순물에 의한 장해나 처리방법에 대한 설명으로 틀린 것은?",
+          "refs": [
+            "기출 2016년 3회 37번",
+            "CBT 6회 9번"
+          ],
+          "status": "자동확정",
+          "answerMismatch": false,
+          "explanationMismatch": false,
+          "note": "기출·CBT 통합 중복 출제 / 문제문 정규화 기준 / 자동확정"
+        },
+        {
+          "groupId": "ALL_DUP_091",
+          "question": "보일러 강판의 가성취화 현상의 특징에 관한 설명으로 틀린 것은?",
+          "refs": [
+            "기출 2016년 3회 49번",
+            "CBT 2회 39번"
+          ],
+          "status": "검토 필요",
+          "answerMismatch": false,
+          "explanationMismatch": true,
+          "note": "기출·CBT 통합 중복 출제 / 문제문 정규화 기준 / 검토 필요: 해설 차이 있음"
+        },
+        {
+          "groupId": "ALL_DUP_092",
+          "question": "물을 가열하여 증기를 발생시키는 경우 압력을 높이면 그 값이 작아지는 것은?",
+          "refs": [
+            "CBT 2회 2번",
+            "CBT 4회 4번"
+          ],
+          "status": "검토 필요",
+          "answerMismatch": false,
+          "explanationMismatch": true,
+          "note": "통합 중복 출제(CBT 내 중복) / 문제문 정규화 기준 / 검토 필요: 해설 차이 있음"
+        },
+        {
+          "groupId": "ALL_DUP_093",
+          "question": "보일러 집진장치의 형식과 종류를 서로 짝지은 것으로 틀린 것은?",
+          "refs": [
+            "CBT 2회 24번",
+            "CBT 4회 11번"
+          ],
+          "status": "검토 필요",
+          "answerMismatch": false,
+          "explanationMismatch": true,
+          "note": "통합 중복 출제(CBT 내 중복) / 문제문 정규화 기준 / 검토 필요: 해설 차이 있음"
+        },
+        {
+          "groupId": "ALL_DUP_094",
+          "question": "프로판가스를 완전연소 시킬 때 발생하는 것은?",
+          "refs": [
+            "CBT 2회 43번",
+            "CBT 4회 17번"
+          ],
+          "status": "검토 필요",
+          "answerMismatch": false,
+          "explanationMismatch": true,
+          "note": "통합 중복 출제(CBT 내 중복) / 문제문 정규화 기준 / 검토 필요: 해설 차이 있음"
+        },
+        {
+          "groupId": "ALL_DUP_095",
+          "question": "보일러 연소 중에 발생하는 맥동연소의 원인이 아닌 것은?",
+          "refs": [
+            "CBT 4회 38번",
+            "CBT 7회 39번"
+          ],
+          "status": "검토 필요",
+          "answerMismatch": false,
+          "explanationMismatch": true,
+          "note": "통합 중복 출제(CBT 내 중복) / 문제문 정규화 기준 / 검토 필요: 해설 차이 있음"
+        },
+        {
+          "groupId": "ALL_DUP_096",
+          "question": "공기량이 지나치게 많을 때 나타나는 현상 중 틀린 것은?",
+          "refs": [
+            "CBT 4회 45번",
+            "CBT 6회 31번"
+          ],
+          "status": "검토 필요",
+          "answerMismatch": false,
+          "explanationMismatch": true,
+          "note": "통합 중복 출제(CBT 내 중복) / 문제문 정규화 기준 / 검토 필요: 해설 차이 있음"
+        },
+        {
+          "groupId": "ALL_DUP_097",
+          "question": "보일러 용량을 결정하는 정격출력에 포함되어 고려할 사항이 아닌 것은?",
+          "refs": [
+            "CBT 5회 23번",
+            "CBT 7회 33번"
+          ],
+          "status": "자동확정",
+          "answerMismatch": false,
+          "explanationMismatch": false,
+          "note": "통합 중복 출제(CBT 내 중복) / 문제문 정규화 기준 / 자동확정"
+        },
+        {
+          "groupId": "ALL_DUP_098",
+          "question": "보일러 수면계의 개수와 관련된 사항 중 잘못 설명된 것은?",
+          "refs": [
+            "CBT 5회 28번",
+            "CBT 7회 35번"
+          ],
+          "status": "검토 필요",
+          "answerMismatch": false,
+          "explanationMismatch": true,
+          "note": "통합 중복 출제(CBT 내 중복) / 문제문 정규화 기준 / 검토 필요: 해설 차이 있음"
+        },
+        {
+          "groupId": "ALL_DUP_099",
+          "question": "다음 중 용어별 사용단위가 틀린 것은?",
+          "refs": [
+            "CBT 5회 30번",
+            "CBT 7회 36번"
+          ],
+          "status": "자동확정",
+          "answerMismatch": false,
+          "explanationMismatch": false,
+          "note": "통합 중복 출제(CBT 내 중복) / 문제문 정규화 기준 / 자동확정"
+        },
+        {
+          "groupId": "ALL_DUP_100",
+          "question": "코르니시 보일러의 노통 길이가 4500mm이고, 외경이 3000mm, 두께가 10mm일 때 전열면적은 약 몇 m²인가?",
+          "refs": [
+            "CBT 5회 40번",
+            "CBT 7회 44번"
+          ],
+          "status": "검토 필요",
+          "answerMismatch": false,
+          "explanationMismatch": true,
+          "note": "통합 중복 출제(CBT 내 중복) / 문제문 정규화 기준 / 검토 필요: 해설 차이 있음"
+        },
+        {
+          "groupId": "ALL_DUP_101",
+          "question": "특정열사용기자재 중 검사대상기기를 설치하거나 개조하여 사용하려는 자는 누구의 검사를 받아야 하는가?",
+          "refs": [
+            "CBT 5회 56번",
+            "CBT 7회 37번"
+          ],
+          "status": "검토 필요",
+          "answerMismatch": true,
+          "explanationMismatch": true,
+          "note": "통합 중복 출제(CBT 내 중복) / 문제문 정규화 기준 / 검토 필요: 정답·해설 차이 있음"
+        }
+      ]
+    }
+  },
+  "totalQuestionsAfterBuild": 2017,
+  "principles": [
+    "원본 문제/보기/정답/해설 미수정",
+    "원본 기출/CBT 문제 삭제 없음",
+    "중복 여부만 메타데이터 표시",
+    "중복 특훈 카드에는 대표문제 복사본만 사용"
+  ]
+}
