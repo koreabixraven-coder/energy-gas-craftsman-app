@@ -1,3 +1,36 @@
+# energy-gas-craftsman-app v2.36
+LOCK_OVERLAY_COMMENT_FIX_CACHE_STRICT_ORIGINAL_EX
+
+## v2.36 긴급 수정
+- v2.35 심화학습 4번 카드와 중복문제 데이터 전체 유지
+- index.html의 APP_VERSION 주석 닫힘 오류 수정
+- 첫 화면에 화면잠금 자물쇠가 크게 노출되는 문제 수정
+- 잠금 오버레이 초기 강제 숨김 안전장치 추가
+- questions.js?v=2.36 / theory.js?v=2.36 / manifest.json?v=2.36 / sw.js?v=2.36 반영
+- Service Worker CACHE_NAME: energy-gas-v2-36-lock-overlay-comment-fix-cache-strict-original-ex
+- 원본 문제·보기·정답·해설은 수정하지 않음
+
+---
+
+# energy-gas-craftsman-app v2.35
+CBT_PAST_DUPLICATE_DEEP_LEARNING_CACHE_MENU_STRICT_ORIGINAL_EX
+
+## v2.35 변경
+- 에너지관리기능사 문제풀이 탭에 4번 카드 `심화학습` 추가
+- 심화학습 하위 카드 3개 추가
+  1. 기출중복문제: 3문제
+  2. CBT대비모의고사중복문제: 14문제
+  3. 통합중복문제: 101문제
+- 원본 기출문제 10회차 600문제 유지
+- 원본 CBT 대비 적중모의고사 1~7회 420문제 유지
+- 원본 문제·보기·정답·해설은 수정하지 않고 중복 메타데이터만 추가
+- 전체 문제 수: 2017문제
+- questions.js?v=2.35 / theory.js?v=2.35 / manifest.json?v=2.35 / sw.js?v=2.35 반영
+- Service Worker CACHE_NAME: energy-gas-v2-35-cbt-past-duplicate-deep-learning-cache-menu-strict-original-ex
+- 중복 상세 리포트: DUPLICATE_DEEP_LEARNING_REPORT.json
+
+---
+
 # energy-gas-craftsman-app v2.34 CBT_DUPLICATE_CARD_CACHE_MENU_STRICT_ORIGINAL_EX
 
 배관기능장 안정본 TTS 로직 기반의 에너지관리기능사·가스기능사 통합 학습앱입니다.

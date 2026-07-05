@@ -1,8 +1,8 @@
 {
   "name": "RavenBix · 에너지·가스 기능사 통합 TTS",
   "short_name": "에너지·가스",
-  "description": "에너지관리기능사·가스기능사 통합 TTS 기출 반복학습 앱",
-  "start_url": "./",
+  "description": "에너지관리기능사·가스기능사 통합 TTS 기출 반복학습 앱 v2.36",
+  "start_url": "./?v=2.36",
   "display": "standalone",
   "background_color": "#121212",
   "theme_color": "#1D9E75",

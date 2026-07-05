@@ -1,12 +1,12 @@
-// v2.34: CBT 1~7회 중복문제 표시 및 CBT 중복문제 특훈 카드 추가, 캐시버전 강제 갱신.
-const CACHE_NAME = 'energy-gas-v2-34-cbt-duplicate-card-cache-menu-strict-original-ex';
+// v2.36: v2.35 심화학습 중복문제 유지 + 화면잠금 초기노출 긴급 수정 + 캐시 강제 갱신.
+const CACHE_NAME = 'energy-gas-v2-36-lock-overlay-comment-fix-cache-strict-original-ex';
 const ASSETS = [
   './',
-  './index.html',
-  './manifest.json',
-  './questions.js',
-  './theory.js',
-  './sw.js',
+  './index.html?v=2.36',
+  './manifest.json?v=2.36',
+  './questions.js?v=2.36',
+  './theory.js?v=2.36',
+  './sw.js?v=2.36',
   './icon-72.png',
   './icon-96.png',
   './icon-128.png',
@@ -14,115 +14,71 @@ const ASSETS = [
   './icon-512.png'
 ];
 
-self.addEventListener('install', e => {
-  e.waitUntil(
-    caches.open(CACHE_NAME).then(cache => cache.addAll(ASSETS)).catch(() => null)
-  );
+self.addEventListener('install', event => {
+  event.waitUntil((async () => {
+    const keys = await caches.keys();
+    await Promise.all(keys.map(k => {
+      if (k.startsWith('energy-gas') || k.includes('energy-gas')) return caches.delete(k);
+      return Promise.resolve(false);
+    }));
+    const cache = await caches.open(CACHE_NAME);
+    await cache.addAll(ASSETS).catch(() => null);
+  })());
   self.skipWaiting();
 });
 
-self.addEventListener('activate', e => {
-  e.waitUntil(
-    caches.keys().then(keys =>
-      Promise.all(keys
-        .filter(k => k !== CACHE_NAME && (k.startsWith('energy-gas') || k.includes('energy-gas')))
-        .map(k => caches.delete(k))
-      )
-    )
-  );
-  self.clients.claim();
+self.addEventListener('activate', event => {
+  event.waitUntil((async () => {
+    const keys = await caches.keys();
+    await Promise.all(keys.map(k => k !== CACHE_NAME ? caches.delete(k) : Promise.resolve(false)));
+    await self.clients.claim();
+    const clientList = await self.clients.matchAll({type: 'window', includeUncontrolled: true});
+    for (const client of clientList) {
+      client.postMessage({type: 'SW_UPDATED', version: 'v2.36'});
+    }
+  })());
 });
 
-function isAppCoreRequest(req){
+function isCoreRequest(req) {
   const url = new URL(req.url);
   return req.mode === 'navigate'
+    || url.pathname.endsWith('/')
     || url.pathname.endsWith('/index.html')
-    || url.pathname.endsWith('/theory.js')
     || url.pathname.endsWith('/questions.js')
-    || url.pathname.endsWith('/sw.js')
-    || url.pathname.endsWith('/manifest.json');
+    || url.pathname.endsWith('/theory.js')
+    || url.pathname.endsWith('/manifest.json')
+    || url.pathname.endsWith('/sw.js');
 }
 
-self.addEventListener('fetch', e => {
-  if (e.request.method !== 'GET') return;
+async function networkFirst(req) {
+  try {
+    const fresh = await fetch(req, { cache: 'no-store' });
+    const cache = await caches.open(CACHE_NAME);
+    await cache.put(req, fresh.clone()).catch(() => null);
+    return fresh;
+  } catch (err) {
+    const cached = await caches.match(req);
+    if (cached) return cached;
+    return caches.match('./index.html?v=2.36') || caches.match('./index.html') || Response.error();
+  }
+}
 
-  if (isAppCoreRequest(e.request)) {
-    e.respondWith(
-      fetch(e.request, { cache: 'no-store' }).then(res => {
-        const clone = res.clone();
-        caches.open(CACHE_NAME).then(cache => cache.put(e.request, clone)).catch(() => null);
-        return res;
-      }).catch(() => caches.match(e.request).then(cached => cached || caches.match('./index.html')))
-    );
+self.addEventListener('fetch', event => {
+  if (event.request.method !== 'GET') return;
+  if (isCoreRequest(event.request)) {
+    event.respondWith(networkFirst(event.request));
     return;
   }
-
-  e.respondWith(
-    caches.match(e.request).then(cached => {
-      return cached || fetch(e.request).then(res => {
-        const clone = res.clone();
-        caches.open(CACHE_NAME).then(cache => cache.put(e.request, clone)).catch(() => null);
-        return res;
-      });
-    }).catch(() => caches.match('./index.html'))
-  );
+  event.respondWith((async () => {
+    const cached = await caches.match(event.request);
+    if (cached) return cached;
+    try {
+      const res = await fetch(event.request);
+      const cache = await caches.open(CACHE_NAME);
+      await cache.put(event.request, res.clone()).catch(() => null);
+      return res;
+    } catch (err) {
+      return caches.match('./index.html?v=2.36') || caches.match('./index.html') || Response.error();
+    }
+  })());
 });
-
-// v31.06: Galaxy Tab TTS rate slider sync fix added on v31.05; data, TTS unit symbol read fix, and question jump list retained
-
-// v31.07: 2007-41회 10번 정답 ④ 및 해설 사용자 제공 원본 사진 기준 교정
-
-// v31.08: 2007-41회 53번 정답 ①, 2007-42회 4번 정답 ② 및 해설 교정
-
-// v31.09: 2025-1회 CBT 복원문제 60문항 원본 사진 및 HTML 대조 반영, ★ 표시
-
-// v31.10: 기출회차41회~63회 탑재 데이터 기준 반복·유사 출제 표시 기능 추가
-
-// v31.11: 문제 번호 이동창 1~60 번호판에 반복출제 뱃지(예: 🔁2, 🔁3)를 표시. 문제/보기/정답/해설 데이터 변경 없음
-
-
-// v31.13: 태블릿 가로모드 문제풀이 화면 1행 로고/조작아이콘 고정, 2행 본문 독립 스크롤 영역 적용.
-
-// v31.14: 2025년 배관기능장 CBT 필기시험 복원문제(2) 60문항 원본대조 추가.
-// v31.15: 기출복원문제에도 반복출제 뱃지와 암기완료 청취 제외 기능 적용.
-
-// v31.16: 기출복원문제 반복출제 뱃지 미표시 방지용 런타임 보정 및 questions.js 캐시버스터 갱신.
-
-// v31.17: 기출복원문제 번호이동창 반복뱃지가 DB 메타데이터뿐 아니라 index 내 복원 반복참조표를 직접 참조하도록 보정.
-
-// v31.18: 문제번호 이동창에서 암기완료 문제를 녹색 테두리와 ✓암기 뱃지로 더 명확히 표시.
-
-// v31.20: 버그 수정 및 데드코드 정리.
-//   BUG: 재생아이콘 자동갱신 .active→.show 클래스 오타 수정 (4019행).
-//   BUG: 기출63회 DB 미존재 — QUIZ_GROUPS에서 제거.
-//   중복: synth.onvoiceschanged + tryLoadV() 2중 호출 삭제.
-//   데드코드: 빈 stub 함수 6개, 미사용 유틸 함수 10개, ttsStop 별칭 삭제.
-
-// v31.21: 교차회차 암기완료 제외 버그 수정.
-//   isMemorizedQuestion()가 직접키만 확인 → _repeatRefs 교차참조도 확인하도록 보강.
-//   "현재 문제 암기완료"만 눌러도 다른 회차의 동일문제가 재생에서 제외됨.
-//   설정에 "해설 낭독 제외 (정답만 듣기)" 토글 추가. ON이면 정답+보기만 낭독하고 해설 건너뜀.
-//   중복출제 핵심문제 탭 추가 (기출회차+기출복원 반복문제 클러스터 취합).
-//   모의고사 점수(scoreData) localStorage 영속 저장 추가 (pipe_master_score_v31_21).
-//   가로모드 문제풀이 2분할: 문제 상단고정 + 보기/해설 하단독립스크롤. quizTtsFocus 스크롤 대상 분리.
-
-// v2.02: 가스기능사 출제예상문제 1~8장, 기출문제, CBT 실전모의고사 카드 추가. 기존 에너지 카드 유지.
-
-// v2.03: 가스기능사 문제풀이를 출제예상문제 → 장 → 세부항목의 계층형 카드 구조로 수정. TTS 로직 변경 없음.
-
-// v2.06: 가스기능사 기출문제 2009년 1회 60문제 입력.
-
-// v2.07: 에너지관리기능사 출제예상문제 02. 보일러의 종류 및 특징 81문제 입력.
-
-// v2.28: CBT 대비 적중모의고사 3회 60문항 원본 사진 및 정답표 기준 추가.
-
-// v2.29: CBT 대비 적중모의고사 4회 60문제 추가 및 1~4회 카드 메뉴 분리.
-
-
-// v2.30: cache version forced up; index registers sw.js?v=2.30 and core JS uses cache-busted query strings.
-
-// v2.31: CBT 대비 적중모의고사 5회 60문제 추가, 1~5회 카드 메뉴 유지, 캐시버전 강제 갱신.
-
-// v2.32: CBT 대비 적중모의고사 6회 60문제 추가, 1~6회 카드 메뉴 유지, 캐시버전 강제 갱신.
-
-// v2.34: CBT 1~7회 중복문제 14그룹/28문항 메타표시 및 CBT 중복문제 특훈 14문제 카드 추가.
