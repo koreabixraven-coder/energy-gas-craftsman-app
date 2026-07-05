@@ -1,0 +1,15 @@
+{
+  "version": "v2.52",
+  "added_set": "가스기능사 2013년 1회",
+  "added_count": 60,
+  "previous_total": 2917,
+  "current_total": 2977,
+  "question_key": "가스_기출_2013_1",
+  "cache_name": "energy-gas-v2-52-gas-2013-1-60-cache-strict-original-ex",
+  "preserved": [
+    "TTS 자동읽기",
+    "설정창",
+    "오답노트",
+    "암기완료"
+  ]
+}
