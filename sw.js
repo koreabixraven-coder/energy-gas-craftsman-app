@@ -1,4 +1,4 @@
-const CACHE_NAME = 'energy-gas-v2-25-cbt-mock-1-60';
+const CACHE_NAME = 'energy-gas-v2-28-cbt-mock-3-60-strict-original-ex';
 const ASSETS = [
   './',
   './index.html',
@@ -112,3 +112,5 @@ self.addEventListener('fetch', e => {
 // v2.06: 가스기능사 기출문제 2009년 1회 60문제 입력.
 
 // v2.07: 에너지관리기능사 출제예상문제 02. 보일러의 종류 및 특징 81문제 입력.
+
+// v2.28: CBT 대비 적중모의고사 3회 60문항 원본 사진 및 정답표 기준 추가.
