@@ -1,16 +1,28 @@
-# energy-gas-craftsman-app v2.33 CBT_MOCK_7_60_CACHE_MENU_STRICT_ORIGINAL_EX
+# energy-gas-craftsman-app v2.34
+CBT_MOCK_7_60_CACHE_FORCE_REDEPLOY_STRICT_ORIGINAL_EX
 
-배관기능장 안정본 TTS 로직 기반의 에너지관리기능사·가스기능사 통합 학습앱입니다.
+배관기능장 안정된 TTS 로직 기반의 에너지관리기능사·가스기능사 통합 학습앱입니다.
 
-## v2.33 변경
+## v2.34 긴급 캐시 강제 갱신
+- v2.33 데이터 유지
+- CBT 대비 적중모의고사 1~7회 카드 유지
+- 전체 문제 수: 1899문제 유지
+- index/questions/theory/manifest/sw 캐시버스터 v2.34 적용
+- Service Worker CACHE_NAME v2.34 적용
+- 이전 energy-gas 계열 캐시 전체 삭제
+- install 단계에서 skipWaiting 적용
+- activate 단계에서 clients.claim 적용
+- 핵심 파일(index/questions/theory/manifest/sw)은 network-first + no-store 적용
+
+## v2.34 변경
 - 기준본 v2.32 내용 유지
 - 에너지관리기능사 / CBT 대비 적중모의고사 / 7회 60문제 추가
 - CBT 대비 적중모의고사 메뉴: 1회 / 2회 / 3회 / 4회 / 5회 / 6회 / 7회 카드 유지
 - 전체 문제 수: 1899문제
-- questions.js?v=2.33 반영
-- theory.js?v=2.33 반영
-- manifest.json?v=2.33 반영
-- Service Worker 등록 sw.js?v=2.33 반영
+- questions.js?v=2.34 반영
+- theory.js?v=2.34 반영
+- manifest.json?v=2.34 반영
+- Service Worker 등록 sw.js?v=2.34 반영
 - Service Worker CACHE_NAME: energy-gas-v2-33-cbt-mock-7-60-cache-menu-strict-original-ex
 - TTS 자동읽기 로직, 설정창, 오답노트, 암기완료 기능은 변경하지 않음
 - 원본 사진의 문제·보기·정답·해설만 반영
