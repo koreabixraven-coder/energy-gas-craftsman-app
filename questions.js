@@ -1,8 +1,9 @@
-/* energy-gas questions.js · v2.52 GAS_2013_1_60_CACHE_STRICT_ORIGINAL_EX
+/* energy-gas questions.js · v2.52A GAS_2013_1_60_MENU_FIX_CACHE_STRICT_ORIGINAL_EX
    v2.51 가스기능사 2012년 4회 유지.
    가스기능사 기출문제 2013년 1회 60문제 추가.
    TTS 자동읽기/설정창/오답노트/암기완료 로직 변경 없음.
-   전체 문제 수 2977문제. */
+   전체 문제 수 2977문제.
+   v2.52A: 2012년 4회/2013년 1회 메뉴 표시 보완. */
 const DB = {
   "에너지_예상_1_01_열및증기": [
     {

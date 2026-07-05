@@ -1,11 +1,11 @@
-// v2.52: 가스기능사 2013년 1회 60문제 추가 + 캐시 강제 갱신.
-const CACHE_NAME = 'energy-gas-v2-52-gas-2013-1-60-cache-strict-original-ex';
+// v2.52A: 2012년 4회/2013년 1회 기출 메뉴 표시 보완 + 캐시 강제 갱신.
+const CACHE_NAME = 'energy-gas-v2-52a-gas-2013-1-60-menu-fix-cache-strict-original-ex';
 const ASSETS = [
   './',
   './index.html?v=2.52',
-  './manifest.json?v=2.52',
-  './questions.js?v=2.52',
-  './theory.js?v=2.52',
+  './manifest.json?v=2.52A',
+  './questions.js?v=2.52A',
+  './theory.js?v=2.52A',
   './sw.js?v=2.52',
   './icon-72.png',
   './icon-96.png',
@@ -34,7 +34,7 @@ self.addEventListener('activate', event => {
     await self.clients.claim();
     const clientList = await self.clients.matchAll({type: 'window', includeUncontrolled: true});
     for (const client of clientList) {
-      client.postMessage({type: 'SW_UPDATED', version: 'v2.52'});
+      client.postMessage({type: 'SW_UPDATED', version: 'v2.52A'});
     }
   })());
 });
