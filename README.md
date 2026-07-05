@@ -1,18 +1,18 @@
-# energy-gas-craftsman-app v2.49
+# energy-gas-craftsman-app v2.51
 
-GAS_2012_2_60_CACHE_STRICT_ORIGINAL_EX
+GAS_2012_4_60_CACHE_STRICT_ORIGINAL_EX
 
-## v2.49 변경
+## v2.51 변경
 
-- 기존본 v2.48 내용 유지
-- 가스기능사 / 기출문제 / 2012년 2회 60문제 추가
-- 가스기능사 기출문제 메뉴: 2009년 1회 / 2009년 2회 / 2009년 3회 / 2009년 4회 / 2010년 1회 / 2010년 2회 / 2010년 3회 / 2010년 4회 / 2011년 1회 / 2011년 2회 / 2011년 3회 / 2011년 4회 / 2012년 1회 / 2012년 2회 카드 유지
-- 전체 문제 수: 2797문제
-- questions.js?v=2.49 반영
-- theory.js?v=2.49 반영
-- manifest.json?v=2.49 반영
-- sw.js?v=2.49 반영
-- Service Worker CACHE_NAME: energy-gas-v2-49-gas-2012-2-60-cache-strict-original-ex
+- 기존본 v2.50 내용 유지
+- 가스기능사 / 기출문제 / 2012년 4회 60문제 추가
+- 가스기능사 기출문제 메뉴: 2009년 1회 / 2009년 2회 / 2009년 3회 / 2009년 4회 / 2010년 1회 / 2010년 2회 / 2010년 3회 / 2010년 4회 / 2011년 1회 / 2011년 2회 / 2011년 3회 / 2011년 4회 / 2012년 1회 / 2012년 2회 / 2012년 3회 / 2012년 4회 카드 유지
+- 전체 문제 수: 2917문제
+- questions.js?v=2.51 반영
+- theory.js?v=2.51 반영
+- manifest.json?v=2.51 반영
+- sw.js?v=2.51 반영
+- Service Worker CACHE_NAME: energy-gas-v2-51-gas-2012-4-60-cache-strict-original-ex
 - TTS 자동읽기 로직, 설정창, 오답노트, 암기완료 기능은 변경하지 않음
 - 원본 사진의 문제·보기·정답·해설만 반영
 - GitHub Pages 정적 배포 안정화를 위해 .nojekyll 포함
@@ -21,11 +21,11 @@ GAS_2012_2_60_CACHE_STRICT_ORIGINAL_EX
 
 압축을 풀고 GitHub `energy-gas-craftsman-app` 저장소에 전체 파일을 덮어 업로드합니다.
 
-업로드 후 GitHub Pages 배포가 초록 체크로 완료된 뒤, 앱 주소에 `?v=2.49`를 붙여 확인합니다.
+업로드 후 GitHub Pages 배포가 초록 체크로 완료된 뒤, 앱 주소에 `?v=2.51`를 붙여 확인합니다.
 
 ## 기준
 
-- 이전 기준본: v2.48 GAS_2012_1_60_CACHE_STRICT_ORIGINAL_EX
-- 현재 기준본: v2.49 GAS_2012_2_60_CACHE_STRICT_ORIGINAL_EX
-- 이전 전체 문제 수: 2737문제
-- 현재 전체 문제 수: 2797문제
+- 이전 기준본: v2.50 GAS_2012_3_60_CACHE_STRICT_ORIGINAL_EX
+- 현재 기준본: v2.51 GAS_2012_4_60_CACHE_STRICT_ORIGINAL_EX
+- 이전 전체 문제 수: 2857문제
+- 현재 전체 문제 수: 2917문제
