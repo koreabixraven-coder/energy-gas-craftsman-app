@@ -1,20 +1,9 @@
-v2.56 GAS_2014_1_60_CACHE_STRICT_ORIGINAL_EX
+v2.57 GAS_2014_2_60_CACHE_STRICT_ORIGINAL_EX
 
-- 가스기능사 2014년 1회 60문제 추가
-- 전체 문제 수 3217문제
-- questions.js?v=2.56 / manifest.json?v=2.56 / sw.js?v=2.56
-- CACHE_NAME energy-gas-v2-56-gas-2014-1-60-cache-strict-original-ex
-- 기존 TTS / 설정창 / 오답노트 / 암기완료 기능 미수정
-
-energy-gas-craftsman-app v2.55 GAS_2013_4_60_CACHE_STRICT_ORIGINAL_EX
-
-- 기준본: v2.54 GAS_2013_3_60_CACHE_STRICT_ORIGINAL_EX
-- 가스기능사 2013년 4회 60문제 추가
-- 전체 문제 수: 3157문제
-- 새 회차 key: 가스_기출_2013_4
-- questions.js?v=2.55
-- manifest.json?v=2.55
-- sw.js?v=2.55
-- CACHE_NAME: energy-gas-v2-55-gas-2013-4-60-cache-strict-original-ex
+- 가스기능사 2014년 2회 60문제 추가
+- 전체 문제 수: 3277문제
+- questions.js?v=2.57 / manifest.json?v=2.57 / sw.js?v=2.57
+- CACHE_NAME energy-gas-v2-57-gas-2014-2-60-cache-strict-original-ex
 - .nojekyll 포함
-- 기존 TTS / 설정창 / 오답노트 / 암기완료 / 홈 화면 구조는 수정하지 않음
+- 기존 TTS / 설정창 / 오답노트 / 암기완료 기능은 수정하지 않음
+- 새 회차 key: 가스_기출_2014_2

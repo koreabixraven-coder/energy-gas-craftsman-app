@@ -1,0 +1,14 @@
+{
+  "version": "v2.57",
+  "key": "가스_기출_2014_2",
+  "title": "가스기능사 2014년 2회",
+  "count": 60,
+  "total_questions": 3277,
+  "source": "사용자 제공 원본 이미지 p.265~272",
+  "cache": {
+    "questions.js": "questions.js?v=2.57",
+    "manifest.json": "manifest.json?v=2.57",
+    "sw.js": "sw.js?v=2.57",
+    "CACHE_NAME": "energy-gas-v2-57-gas-2014-2-60-cache-strict-original-ex"
+  }
+}
