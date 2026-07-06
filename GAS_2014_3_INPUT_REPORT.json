@@ -1,0 +1,20 @@
+{
+  "version": "v2.58",
+  "basis": "v2.57 GAS_2014_2_60_CACHE_STRICT_ORIGINAL_EX",
+  "added_set": "가스_기출_2014_3",
+  "added_questions": 60,
+  "total_questions": 3337,
+  "cache": {
+    "questions.js": "questions.js?v=2.58",
+    "manifest.json": "manifest.json?v=2.58",
+    "sw.js": "sw.js?v=2.58",
+    "CACHE_NAME": "energy-gas-v2-58-gas-2014-3-60-cache-strict-original-ex"
+  },
+  "protected_features": [
+    "TTS",
+    "settings modal",
+    "wrong-answer note",
+    "memorized/completed feature",
+    "home/menu structure except new round card"
+  ]
+}

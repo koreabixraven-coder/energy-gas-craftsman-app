@@ -1,0 +1,23 @@
+{
+  "version": "v2.60",
+  "key": "가스_기출_2015_1",
+  "title": "가스기능사 2015년 1회",
+  "count": 60,
+  "total_questions": 3457,
+  "source": "사용자 제공 원본 이미지 p.290~298",
+  "cache": {
+    "questions.js": "questions.js?v=2.60",
+    "manifest.json": "manifest.json?v=2.60",
+    "sw.js": "sw.js?v=2.60",
+    "CACHE_NAME": "energy-gas-v2-60-gas-2015-1-60-cache-strict-original-ex"
+  },
+  "checks": {
+    "new_key_count": 60,
+    "do_not_touch": [
+      "TTS",
+      "설정창",
+      "오답노트",
+      "암기완료"
+    ]
+  }
+}

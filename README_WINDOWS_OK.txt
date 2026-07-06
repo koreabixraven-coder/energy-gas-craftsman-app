@@ -1,1 +1,2 @@
-Windows 압축해제 정상 확인: v2.50 GAS_2012_3_60_CACHE_STRICT_ORIGINAL_EX
+v2.60 Windows OK
+가스기능사 2015년 1회 60문제 추가

@@ -1,0 +1,23 @@
+{
+  "version": "v2.59",
+  "key": "가스_기출_2014_4",
+  "title": "가스기능사 2014년 4회",
+  "count": 60,
+  "total_questions": 3397,
+  "source": "사용자 제공 원본 이미지 p.282~289",
+  "cache": {
+    "questions.js": "questions.js?v=2.59",
+    "manifest.json": "manifest.json?v=2.59",
+    "sw.js": "sw.js?v=2.59",
+    "CACHE_NAME": "energy-gas-v2-59-gas-2014-4-60-cache-strict-original-ex"
+  },
+  "checks": {
+    "new_key_count": 60,
+    "do_not_touch": [
+      "TTS",
+      "설정창",
+      "오답노트",
+      "암기완료"
+    ]
+  }
+}
