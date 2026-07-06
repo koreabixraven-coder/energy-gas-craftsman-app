@@ -1,0 +1,9 @@
+{
+  "version": "v2.56",
+  "added_key": "가스_기출_2014_1",
+  "added_set": "가스기능사 2014년 1회",
+  "added_count": 60,
+  "total_count_expected": 3217,
+  "basis": "v2.55 GAS_2013_4_60_CACHE_STRICT_ORIGINAL_EX",
+  "cache": "energy-gas-v2-56-gas-2014-1-60-cache-strict-original-ex"
+}

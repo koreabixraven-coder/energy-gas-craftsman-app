@@ -1,3 +1,11 @@
+v2.56 GAS_2014_1_60_CACHE_STRICT_ORIGINAL_EX
+
+- 가스기능사 2014년 1회 60문제 추가
+- 전체 문제 수 3217문제
+- questions.js?v=2.56 / manifest.json?v=2.56 / sw.js?v=2.56
+- CACHE_NAME energy-gas-v2-56-gas-2014-1-60-cache-strict-original-ex
+- 기존 TTS / 설정창 / 오답노트 / 암기완료 기능 미수정
+
 energy-gas-craftsman-app v2.55 GAS_2013_4_60_CACHE_STRICT_ORIGINAL_EX
 
 - 기준본: v2.54 GAS_2013_3_60_CACHE_STRICT_ORIGINAL_EX

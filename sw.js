@@ -1,12 +1,12 @@
-// v2.55: 2013년 4회 기출 60문제 추가 + 캐시 강제 갱신.
-const CACHE_NAME = 'energy-gas-v2-55-gas-2013-4-60-cache-strict-original-ex';
+// v2.56: 2014년 1회 기출 60문제 추가 + 캐시 강제 갱신.
+const CACHE_NAME = 'energy-gas-v2-56-gas-2014-1-60-cache-strict-original-ex';
 const ASSETS = [
   './',
-  './index.html?v=2.55',
-  './manifest.json?v=2.55',
-  './questions.js?v=2.55',
-  './theory.js?v=2.55',
-  './sw.js?v=2.55',
+  './index.html?v=2.56',
+  './manifest.json?v=2.56',
+  './questions.js?v=2.56',
+  './theory.js?v=2.56',
+  './sw.js?v=2.56',
   './icon-72.png',
   './icon-96.png',
   './icon-128.png',
@@ -59,7 +59,7 @@ async function networkFirst(req) {
   } catch (err) {
     const cached = await caches.match(req);
     if (cached) return cached;
-    return caches.match('./index.html?v=2.55') || caches.match('./index.html') || Response.error();
+    return caches.match('./index.html?v=2.56') || caches.match('./index.html') || Response.error();
   }
 }
 
@@ -78,7 +78,7 @@ self.addEventListener('fetch', event => {
       await cache.put(event.request, res.clone()).catch(() => null);
       return res;
     } catch (err) {
-      return caches.match('./index.html?v=2.55') || caches.match('./index.html') || Response.error();
+      return caches.match('./index.html?v=2.56') || caches.match('./index.html') || Response.error();
     }
   })());
 });
