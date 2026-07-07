@@ -1,12 +1,12 @@
-// v2.61A: 모바일 하단 시스템/안전영역 다크 보정 + 캐시 강제 갱신.
-const CACHE_NAME = 'energy-gas-v2-61a-gas-2015-2-60-mobile-bottom-dark-safe';
+// v2.62: 2015년 3회 기출 60문제 추가 + 모바일 하단 다크 보정 유지 + 캐시 강제 갱신.
+const CACHE_NAME = 'energy-gas-v2-62-gas-2015-3-60-mobile-bottom-dark-safe';
 const ASSETS = [
   './',
-  './index.html?v=2.61A',
-  './manifest.json?v=2.61A',
-  './questions.js?v=2.61A',
-  './theory.js?v=2.61A',
-  './sw.js?v=2.61A',
+  './index.html?v=2.62',
+  './manifest.json?v=2.62',
+  './questions.js?v=2.62',
+  './theory.js?v=2.62',
+  './sw.js?v=2.62',
   './icon-72.png',
   './icon-96.png',
   './icon-128.png',
@@ -34,7 +34,7 @@ self.addEventListener('activate', event => {
     await self.clients.claim();
     const clientList = await self.clients.matchAll({type: 'window', includeUncontrolled: true});
     for (const client of clientList) {
-      client.postMessage({type: 'SW_UPDATED', version: 'v2.61A'});
+      client.postMessage({type: 'SW_UPDATED', version: 'v2.62'});
     }
   })());
 });
@@ -59,7 +59,7 @@ async function networkFirst(req) {
   } catch (err) {
     const cached = await caches.match(req);
     if (cached) return cached;
-    return caches.match('./index.html?v=2.61A') || caches.match('./index.html') || Response.error();
+    return caches.match('./index.html?v=2.62') || caches.match('./index.html') || Response.error();
   }
 }
 
@@ -78,7 +78,7 @@ self.addEventListener('fetch', event => {
       await cache.put(event.request, res.clone()).catch(() => null);
       return res;
     } catch (err) {
-      return caches.match('./index.html?v=2.61A') || caches.match('./index.html') || Response.error();
+      return caches.match('./index.html?v=2.62') || caches.match('./index.html') || Response.error();
     }
   })());
 });
