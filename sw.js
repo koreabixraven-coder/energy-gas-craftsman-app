@@ -1,12 +1,12 @@
-// v2.76: 가스기능사 2002년 10월 06일 필기 기출문제 60문제 추가 + 기존 기능 유지 + 캐시 강제 갱신.
-const CACHE_NAME = 'energy-gas-v2-76-gas-2002-10-06-60-past-exam-auto-chain-mobile-bottom-dark-safe';
+// v2.77: 가스기능사 2003년 01월 26일 필기 기출문제 60문제 추가 + 기존 기능 유지 + 캐시 강제 갱신.
+const CACHE_NAME = 'energy-gas-v2-77-gas-2003-01-26-60-past-exam-auto-chain-mobile-bottom-dark-safe';
 const ASSETS = [
   './',
-  './index.html?v=2.76',
-  './manifest.json?v=2.76',
-  './questions.js?v=2.76',
-  './theory.js?v=2.76',
-  './sw.js?v=2.76',
+  './index.html?v=2.77',
+  './manifest.json?v=2.77',
+  './questions.js?v=2.77',
+  './theory.js?v=2.77',
+  './sw.js?v=2.77',
   './icon-72.png',
   './icon-96.png',
   './icon-128.png',
@@ -34,7 +34,7 @@ self.addEventListener('activate', event => {
     await self.clients.claim();
     const clientList = await self.clients.matchAll({type: 'window', includeUncontrolled: true});
     for (const client of clientList) {
-      client.postMessage({type: 'SW_UPDATED', version: 'v2.76'});
+      client.postMessage({type: 'SW_UPDATED', version: 'v2.77'});
     }
   })());
 });
@@ -59,7 +59,7 @@ async function networkFirst(req) {
   } catch (err) {
     const cached = await caches.match(req);
     if (cached) return cached;
-    return caches.match('./index.html?v=2.76') || caches.match('./index.html') || Response.error();
+    return caches.match('./index.html?v=2.77') || caches.match('./index.html') || Response.error();
   }
 }
 
@@ -78,7 +78,7 @@ self.addEventListener('fetch', event => {
       await cache.put(event.request, res.clone()).catch(() => null);
       return res;
     } catch (err) {
-      return caches.match('./index.html?v=2.76') || caches.match('./index.html') || Response.error();
+      return caches.match('./index.html?v=2.77') || caches.match('./index.html') || Response.error();
     }
   })());
 });
