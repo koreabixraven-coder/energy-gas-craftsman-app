@@ -1,1 +1,1 @@
-v2.71 Windows OK
+v2.72 Windows OK
