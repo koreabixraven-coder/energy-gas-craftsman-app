@@ -1,12 +1,12 @@
-// v2.70: CBT 실전모의고사 2회 60문제 입력 + 기출문제 회차 연속 자동낭독 유지 + 모바일 하단 다크 보정 유지 + 캐시 강제 갱신.
-const CACHE_NAME = 'energy-gas-v2-70-gas-cbt-mock-02-60-past-exam-auto-chain-mobile-bottom-dark-safe';
+// v2.71: 가스기능사 2001년 04월 29일 필기 기출문제 60문제 추가 + 기존 기능 유지 + 캐시 강제 갱신.
+const CACHE_NAME = 'energy-gas-v2-71-gas-2001-04-29-60-past-exam-auto-chain-mobile-bottom-dark-safe';
 const ASSETS = [
   './',
-  './index.html?v=2.70',
-  './manifest.json?v=2.70',
-  './questions.js?v=2.70',
-  './theory.js?v=2.70',
-  './sw.js?v=2.70',
+  './index.html?v=2.71',
+  './manifest.json?v=2.71',
+  './questions.js?v=2.71',
+  './theory.js?v=2.71',
+  './sw.js?v=2.71',
   './icon-72.png',
   './icon-96.png',
   './icon-128.png',
@@ -34,7 +34,7 @@ self.addEventListener('activate', event => {
     await self.clients.claim();
     const clientList = await self.clients.matchAll({type: 'window', includeUncontrolled: true});
     for (const client of clientList) {
-      client.postMessage({type: 'SW_UPDATED', version: 'v2.70'});
+      client.postMessage({type: 'SW_UPDATED', version: 'v2.71'});
     }
   })());
 });
@@ -59,7 +59,7 @@ async function networkFirst(req) {
   } catch (err) {
     const cached = await caches.match(req);
     if (cached) return cached;
-    return caches.match('./index.html?v=2.70') || caches.match('./index.html') || Response.error();
+    return caches.match('./index.html?v=2.71') || caches.match('./index.html') || Response.error();
   }
 }
 
@@ -78,7 +78,7 @@ self.addEventListener('fetch', event => {
       await cache.put(event.request, res.clone()).catch(() => null);
       return res;
     } catch (err) {
-      return caches.match('./index.html?v=2.70') || caches.match('./index.html') || Response.error();
+      return caches.match('./index.html?v=2.71') || caches.match('./index.html') || Response.error();
     }
   })());
 });
