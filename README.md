@@ -1,3 +1,327 @@
+# energy-gas-craftsman-app v2.99
+GAS_2001_2008_DUPLICATE_DEEP_178_EXISTING_DEEP_PRESERVED_GLOBAL_ANS_SAFE_MENU_CHAIN_PRESERVED_MOBILE_BOTTOM_DARK_SAFE
+
+## v2.99 변경
+
+- 기존 **심화중복문제(2009~2016) 157문제**는 그대로 보존했습니다.
+- **2001~2008년 27회차 1,620문제만** 비교하여 별도의 **심화중복문제(2001~2008) 카드 178문제**를 생성했습니다.
+- 중복 판정은 문제문 정규화 기준이며, 출제 빈도는 **4회 8문제 / 3회 23문제 / 2회 147문제**입니다.
+- 각 문제에 원본 회차·문제번호·반복횟수를 표시합니다.
+- 원본 문제·보기·정답·해설은 대표 회차에서 그대로 복사했으며 임의 해설은 추가하지 않았습니다.
+- 전체 문제 수: **5892문제** / 문제 묶음: **168개**
+- 기존 TTS, 설정, 오답노트, 암기완료, 중복표시, 이미지, 모바일 하단 다크 보정을 유지했습니다.
+
+## v2.98 변경
+
+- 기준본: v2.97 GAS_2008_07_31_60_ANSWER_DOUBLE_CHECKED_GLOBAL_ANS_SAFE_MENU_CHAIN_PRESERVED_MOBILE_BOTTOM_DARK_SAFE
+- 가스기능사 / 기출문제 / 2008년 10월 05일 필기 기출문제 60문제 추가
+- 새 key: `가스_기출_2008_10_05`
+- 전체 문제 수: 5714문제
+- 교사용 PDF 각 문제의 검은 정답표시와 마지막 1~60번 정답표 대조 완료
+- PDF 정답 ①②③④를 앱 내부 `ans: 0,1,2,3`으로 변환
+- 신규 60문제 정답 누락 0 / 범위초과 0 / 정답표 불일치 0 / `ans: 4` 없음
+- 앱 전체 정답 인덱스 0~3 유지 / `ans: 4` 없음
+- Q01 월사용예정량 산출식, Q51 탄화수소 완전연소식 원본 이미지 추가
+- v2.97 기존 5654문제, 기존 문제 이미지, 메뉴, 정답 안전상태 유지
+- `questions.js?v=2.98` / `manifest.json?v=2.98` / `sw.js?v=2.98`
+- Service Worker CACHE_NAME: `energy-gas-v2-98-gas-2008-10-05-60-answer-double-checked-q01-q51-images-global-ans-safe-menu-chain-preserved-mobile-bottom-dark-safe`
+- 기존 TTS / 설정창 / 오답노트 / 암기완료 / 심화중복문제 / 자동낭독 / 모바일 하단 다크 보정 유지
+- 원본 PDF에 별도 해설 원문이 없어 임의 해설을 추가하지 않음
+- `.nojekyll` 포함
+
+## 업로드 방법
+
+압축을 풀고 GitHub `energy-gas-craftsman-app` 저장소에 전체 파일을 덮어 업로드합니다.
+
+업로드 후 GitHub Pages 배포가 완료되면 앱 주소에 `?v=2.99`을 붙여 확인합니다.
+
+---
+
+# energy-gas-craftsman-app v2.97
+GAS_2008_07_31_60_ANSWER_DOUBLE_CHECKED_GLOBAL_ANS_SAFE_MENU_CHAIN_PRESERVED_MOBILE_BOTTOM_DARK_SAFE
+
+## v2.97 변경
+
+- 기준본: v2.96 GAS_2008_03_30_60_ANSWER_DOUBLE_CHECKED_Q51_IMAGE_GLOBAL_ANS_SAFE_MENU_CHAIN_PRESERVED_MOBILE_BOTTOM_DARK_SAFE
+- 가스기능사 / 기출문제 / 2008년 07월 31일 필기 기출문제 60문제 추가
+- 새 key: `가스_기출_2008_07_31`
+- 전체 문제 수: 5654문제
+- 교사용 PDF 각 문제의 검은 정답표시와 마지막 1~60번 정답표 대조 완료
+- PDF 정답 ①②③④를 앱 내부 `ans: 0,1,2,3`으로 변환
+- 신규 60문제 정답 누락 0 / 범위초과 0 / 정답표 불일치 0 / `ans: 4` 없음
+- 앱 전체 정답 인덱스 0~3 유지 / `ans: 4` 없음
+- v2.96 기존 5594문제, 기존 문제 이미지, 메뉴, 정답 안전상태 유지
+- `questions.js?v=2.97` / `manifest.json?v=2.97` / `sw.js?v=2.97`
+- Service Worker CACHE_NAME: `energy-gas-v2-97-gas-2008-07-31-60-answer-double-checked-global-ans-safe-menu-chain-preserved-mobile-bottom-dark-safe`
+- 기존 TTS / 설정창 / 오답노트 / 암기완료 / 심화중복문제 / 자동낭독 / 모바일 하단 다크 보정 유지
+- 원본 PDF에 별도 해설 원문이 없어 임의 해설을 추가하지 않음
+- `.nojekyll` 포함
+
+## 업로드 방법
+
+압축을 풀고 GitHub `energy-gas-craftsman-app` 저장소에 전체 파일을 덮어 업로드합니다.
+
+업로드 후 GitHub Pages 배포가 완료되면 앱 주소에 `?v=2.97`을 붙여 확인합니다.
+
+---
+
+# energy-gas-craftsman-app v2.96
+GAS_2008_03_30_60_ANSWER_DOUBLE_CHECKED_Q51_IMAGE_GLOBAL_ANS_SAFE_MENU_CHAIN_PRESERVED_MOBILE_BOTTOM_DARK_SAFE
+
+## v2.96 변경
+
+- 기준본: v2.95 GAS_2008_02_03_60_ANSWER_DOUBLE_CHECKED_Q60_IMAGE_GLOBAL_ANS_SAFE_MENU_CHAIN_PRESERVED_MOBILE_BOTTOM_DARK_SAFE
+- 가스기능사 / 기출문제 / 2008년 03월 30일 필기 기출문제 60문제 추가
+- 새 key: `가스_기출_2008_03_30`
+- 전체 문제 수: 5594문제
+- 교사용 PDF 각 문제의 검은 정답표시와 마지막 1~60번 정답표 대조 완료
+- PDF 정답 ①②③④를 앱 내부 `ans: 0,1,2,3`으로 변환
+- 신규 60문제 정답 누락 0 / 범위초과 0 / 정답표 불일치 0 / `ans: 4` 없음
+- 앱 전체 정답 인덱스 0~3 유지 / `ans: 4` 없음
+- 51번 화학반응식 원본 이미지 추가
+- v2.95 기존 5534문제, 기존 문제 이미지, 메뉴, 정답 안전상태 유지
+- `questions.js?v=2.96` / `manifest.json?v=2.96` / `sw.js?v=2.96`
+- Service Worker CACHE_NAME: `energy-gas-v2-96-gas-2008-03-30-60-answer-double-checked-q51-image-global-ans-safe-menu-chain-preserved-mobile-bottom-dark-safe`
+- 기존 TTS / 설정창 / 오답노트 / 암기완료 / 심화중복문제 / 자동낭독 / 모바일 하단 다크 보정 유지
+- 원본 PDF에 별도 해설 원문이 없어 임의 해설을 추가하지 않음
+- `.nojekyll` 포함
+
+## 업로드 방법
+
+압축을 풀고 GitHub `energy-gas-craftsman-app` 저장소에 전체 파일을 덮어 업로드합니다.
+
+업로드 후 GitHub Pages 배포가 완료되면 앱 주소에 `?v=2.96`을 붙여 확인합니다.
+
+---
+
+# energy-gas-craftsman-app v2.95
+GAS_2008_02_03_60_ANSWER_DOUBLE_CHECKED_Q60_IMAGE_GLOBAL_ANS_SAFE_MENU_CHAIN_PRESERVED_MOBILE_BOTTOM_DARK_SAFE
+
+## v2.95 변경
+
+- 기준본: v2.94 GAS_2007_09_16_60_ANSWER_DOUBLE_CHECKED_Q18_Q42_Q47_IMAGES_GLOBAL_ANS_SAFE_MENU_CHAIN_PRESERVED_MOBILE_BOTTOM_DARK_SAFE
+- 가스기능사 / 기출문제 / 2008년 02월 03일 필기 기출문제 60문제 추가
+- 새 key: `가스_기출_2008_02_03`
+- 전체 문제 수: 5534문제
+- 교사용 PDF 각 문제의 검은 정답표시와 마지막 1~60번 정답표 대조 완료
+- PDF 정답 ①②③④를 앱 내부 `ans: 0,1,2,3`으로 변환
+- 신규 60문제 정답 누락 0 / 범위초과 0 / 정답표 불일치 0 / `ans: 4` 없음
+- 앱 전체 정답 인덱스 0~3 유지 / `ans: 4` 없음
+- 60번 박스형 보기 원본 이미지 추가
+- v2.94 기존 5474문제, 기존 문제 이미지, 메뉴, 정답 안전상태 유지
+- `questions.js?v=2.95` / `manifest.json?v=2.95` / `sw.js?v=2.95`
+- Service Worker CACHE_NAME: `energy-gas-v2-95-gas-2008-02-03-60-answer-double-checked-q60-image-global-ans-safe-menu-chain-preserved-mobile-bottom-dark-safe`
+- 기존 TTS / 설정창 / 오답노트 / 암기완료 / 심화중복문제 / 자동낭독 / 모바일 하단 다크 보정 유지
+- 원본 PDF에 별도 해설 원문이 없어 임의 해설을 추가하지 않음
+- `.nojekyll` 포함
+
+## 업로드 방법
+
+압축을 풀고 GitHub `energy-gas-craftsman-app` 저장소에 전체 파일을 덮어 업로드합니다.
+
+업로드 후 GitHub Pages 배포가 완료되면 앱 주소에 `?v=2.95`를 붙여 확인합니다.
+
+---
+
+# energy-gas-craftsman-app v2.94
+GAS_2007_09_16_60_ANSWER_DOUBLE_CHECKED_Q18_Q42_Q47_IMAGES_GLOBAL_ANS_SAFE_MENU_CHAIN_PRESERVED_MOBILE_BOTTOM_DARK_SAFE
+
+## v2.94 변경
+
+- 기준본: v2.93 GAS_2007_07_15_60_ANSWER_DOUBLE_CHECKED_Q06_Q44_Q57_IMAGES_GLOBAL_ANS_SAFE_MENU_CHAIN_PRESERVED_MOBILE_BOTTOM_DARK_SAFE
+- 가스기능사 / 기출문제 / 2007년 09월 16일 필기 기출문제 60문제 추가
+- 새 key: `가스_기출_2007_09_16`
+- 전체 문제 수: 5474문제
+- 교사용 PDF 각 문제의 검은 정답표시와 마지막 1~60번 정답표 대조 완료
+- PDF 정답 ①②③④를 앱 내부 `ans: 0,1,2,3`으로 변환
+- 신규 60문제 정답 누락 0 / 범위초과 0 / 정답표 불일치 0 / `ans: 4` 없음
+- 앱 전체 정답 인덱스 0~3 유지 / `ans: 4` 없음
+- 18번 시안화수소 충전조건, 42번 저압식 공기 액화분리장치 수치, 47번 염소가스 성질 보기 원본 이미지 추가
+- v2.93 기존 5414문제, 기존 문제 이미지, 메뉴, 정답 안전상태 유지
+- `questions.js?v=2.94` / `manifest.json?v=2.94` / `sw.js?v=2.94`
+- Service Worker CACHE_NAME: `energy-gas-v2-94-gas-2007-09-16-60-answer-double-checked-q18-q42-q47-images-global-ans-safe-menu-chain-preserved-mobile-bottom-dark-safe`
+- 기존 TTS / 설정창 / 오답노트 / 암기완료 / 심화중복문제 / 자동낭독 / 모바일 하단 다크 보정 유지
+- 원본 PDF에 별도 해설이 없어 임의 해설을 추가하지 않음
+- `.nojekyll` 포함
+
+## 업로드 방법
+
+압축을 풀고 GitHub `energy-gas-craftsman-app` 저장소에 전체 파일을 덮어 업로드합니다.
+
+업로드 후 GitHub Pages 배포가 완료되면 앱 주소에 `?v=2.94`를 붙여 확인합니다.
+
+---
+
+# energy-gas-craftsman-app v2.93
+GAS_2007_07_15_60_ANSWER_DOUBLE_CHECKED_Q06_Q44_Q57_IMAGES_GLOBAL_ANS_SAFE_MENU_CHAIN_PRESERVED_MOBILE_BOTTOM_DARK_SAFE
+
+## v2.93 변경
+
+- 기준본: v2.92 GAS_2007_04_01_60_ANSWER_DOUBLE_CHECKED_GLOBAL_ANS_SAFE_MENU_CHAIN_PRESERVED_MOBILE_BOTTOM_DARK_SAFE
+- 가스기능사 / 기출문제 / 2007년 07월 15일 필기 기출문제 60문제 추가
+- 새 key: `가스_기출_2007_07_15`
+- 전체 문제 수: 5414문제
+- 교사용 PDF 각 문제의 검은 정답표시와 마지막 1~60번 정답표 대조 완료
+- PDF 정답 ①②③④를 앱 내부 `ans: 0,1,2,3`으로 변환
+- 신규 60문제 정답 누락 0 / 범위초과 0 / 정답표 불일치 0 / `ans: 4` 없음
+- 앱 전체 정답 인덱스 0~3 유지 / `ans: 4` 없음
+- 6번 안전거리 산정식, 44번 분석법 보기, 57번 절대압력 식 원본 이미지 추가
+- v2.92 기존 5354문제, 기존 문제 이미지, 메뉴, 정답 안전상태 유지
+- v2.92에서 트리에는 있었으나 평면 levels/labels/descs에서 누락된 2007년 04월 01일 회차 연결도 보완
+- `questions.js?v=2.93` / `manifest.json?v=2.93` / `sw.js?v=2.93`
+- Service Worker CACHE_NAME: `energy-gas-v2-93-gas-2007-07-15-60-answer-double-checked-q06-q44-q57-images-global-ans-safe-menu-chain-preserved-mobile-bottom-dark-safe`
+- 기존 TTS / 설정창 / 오답노트 / 암기완료 / 심화중복문제 / 자동낭독 / 모바일 하단 다크 보정 유지
+- 원본 PDF에 별도 해설이 없어 임의 해설을 추가하지 않음
+- `.nojekyll` 포함
+
+## 업로드 방법
+
+압축을 풀고 GitHub `energy-gas-craftsman-app` 저장소에 전체 파일을 덮어 업로드합니다.
+
+업로드 후 GitHub Pages 배포가 완료되면 앱 주소에 `?v=2.93`을 붙여 확인합니다.
+
+---
+
+# energy-gas-craftsman-app v2.92
+GAS_2007_04_01_60_ANSWER_DOUBLE_CHECKED_GLOBAL_ANS_SAFE_MENU_CHAIN_PRESERVED_MOBILE_BOTTOM_DARK_SAFE
+
+## v2.92 변경
+
+- 기준본: v2.91 GAS_2007_01_28_60_ANSWER_DOUBLE_CHECKED_Q21_Q30_Q32_Q39_IMAGES_GLOBAL_ANS_SAFE_MENU_CHAIN_PRESERVED_MOBILE_BOTTOM_DARK_SAFE
+- 가스기능사 / 기출문제 / 2007년 04월 01일 필기 기출문제 60문제 추가
+- 새 key: `가스_기출_2007_04_01`
+- 전체 문제 수: 5354문제
+- 교사용 PDF 각 문제의 검은 정답표시와 마지막 1~60번 정답표 대조 완료
+- PDF 정답 ①②③④를 앱 내부 `ans: 0,1,2,3`으로 변환
+- 신규 60문제 정답 누락 0 / 범위초과 0 / 정답표 불일치 0 / `ans: 4` 없음
+- 앱 전체 정답 인덱스 0~3 유지 / `ans: 4` 없음
+- v2.91 기존 5294문제, 기존 문제 이미지, 메뉴, 정답 안전상태 유지
+- `questions.js?v=2.92` / `manifest.json?v=2.92` / `sw.js?v=2.92`
+- Service Worker CACHE_NAME: `energy-gas-v2-92-gas-2007-04-01-60-answer-double-checked-global-ans-safe-menu-chain-preserved-mobile-bottom-dark-safe`
+- 기존 TTS / 설정창 / 오답노트 / 암기완료 / 심화중복문제 / 자동낭독 / 모바일 하단 다크 보정 유지
+- 원본 PDF에 별도 해설이 없어 임의 해설을 추가하지 않음
+- `.nojekyll` 포함
+
+## 업로드 방법
+
+압축을 풀고 GitHub `energy-gas-craftsman-app` 저장소에 전체 파일을 덮어 업로드합니다.
+
+업로드 후 GitHub Pages 배포가 완료되면 앱 주소에 `?v=2.92`를 붙여 확인합니다.
+
+---
+
+# energy-gas-craftsman-app v2.91
+GAS_2007_01_28_60_ANSWER_DOUBLE_CHECKED_Q21_Q30_Q32_Q39_IMAGES_GLOBAL_ANS_SAFE_MENU_CHAIN_PRESERVED_MOBILE_BOTTOM_DARK_SAFE
+
+## v2.91 변경
+
+- 기준본: v2.90 GAS_2006_10_01_60_ANSWER_DOUBLE_CHECKED_GLOBAL_ANS_SAFE_MENU_CHAIN_PRESERVED_MOBILE_BOTTOM_DARK_SAFE
+- 가스기능사 / 기출문제 / 2007년 01월 28일 필기 기출문제 60문제 추가
+- 새 key: `가스_기출_2007_01_28`
+- 전체 문제 수: 5294문제
+- 교사용 PDF 각 문제의 검은 정답표시와 마지막 1~60번 정답표 대조 완료
+- PDF 정답 ①②③④를 앱 내부 `ans: 0,1,2,3`으로 변환
+- 신규 60문제 정답 누락 0 / 범위초과 0 / 정답표 불일치 0 / `ans: 4` 없음
+- 원본 PDF에 별도 해설이 없어 신규 문제의 `ex`는 빈 문자열로 저장(임의 해설 미작성)
+- Q21 웨버지수 공식, Q30 아세틸렌 충전 박스, Q32 정압기 특징 박스, Q39 물탱크 도형 원본 이미지 추가
+- 화면 문제풀이 목차에 `가스_기출_2007_01_28` 연속 표시
+- v2.90 기존 5234문제 및 전체 `ans: 0~3` 안전상태 보존
+- `questions.js?v=2.91` / `manifest.json?v=2.91` / `sw.js?v=2.91`
+- Service Worker CACHE_NAME: `energy-gas-v2-91-gas-2007-01-28-60-answer-double-checked-q21-q30-q32-q39-images-global-ans-safe-menu-chain-preserved-mobile-bottom-dark-safe`
+- 기존 TTS / 설정창 / 오답노트 / 암기완료 / 심화중복문제 / 자동낭독 / 모바일 하단 다크 보정 유지
+- `.nojekyll` 포함
+
+---
+
+# energy-gas-craftsman-app v2.90
+GAS_2006_10_01_60_ANSWER_DOUBLE_CHECKED_GLOBAL_ANS_SAFE_MENU_CHAIN_PRESERVED_MOBILE_BOTTOM_DARK_SAFE
+
+## v2.90 변경
+
+- 기준본: v2.89 GAS_2006_07_16_60_ANSWER_DOUBLE_CHECKED_GLOBAL_ANS_SAFE_MENU_CHAIN_PRESERVED_MOBILE_BOTTOM_DARK_SAFE
+- 가스기능사 / 기출문제 / 2006년 10월 01일 필기 기출문제 60문제 추가
+- 새 key: `가스_기출_2006_10_01`
+- 전체 문제 수: 5234문제
+- 교사용 PDF 각 문제의 검은 정답표시와 마지막 1~60번 정답표 대조 완료
+- PDF 정답 ①②③④를 앱 내부 `ans: 0,1,2,3`으로 변환
+- 신규 60문제 정답 누락 0 / 범위초과 0 / 정답표 불일치 0 / `ans: 4` 없음
+- 원본 PDF에 별도 해설이 없어 신규 문제의 `ex`는 빈 문자열로 저장(임의 해설 미작성)
+- 화면 문제풀이 목차에 `가스_기출_2006_10_01` 연속 표시
+- v2.89 기존 5174문제 및 전체 `ans: 0~3` 안전상태 보존
+- `questions.js?v=2.90` / `manifest.json?v=2.90` / `sw.js?v=2.90`
+- Service Worker CACHE_NAME: `energy-gas-v2-90-gas-2006-10-01-60-answer-double-checked-global-ans-safe-menu-chain-preserved-mobile-bottom-dark-safe`
+- 기존 TTS / 설정창 / 오답노트 / 암기완료 / 심화중복문제 / 자동낭독 / 모바일 하단 다크 보정 유지
+- `.nojekyll` 포함
+
+---
+
+# energy-gas-craftsman-app v2.89
+GAS_2006_07_16_60_ANSWER_DOUBLE_CHECKED_GLOBAL_ANS_SAFE_MENU_CHAIN_PRESERVED_MOBILE_BOTTOM_DARK_SAFE
+
+## v2.89 변경
+
+- 기준본: v2.88 GAS_2006_04_02_60_ANSWER_DOUBLE_CHECKED_GLOBAL_ANS_SAFE_MENU_CHAIN_PRESERVED_MOBILE_BOTTOM_DARK_SAFE
+- 가스기능사 / 기출문제 / 2006년 07월 16일 필기 기출문제 60문제 추가
+- 새 key: `가스_기출_2006_07_16`
+- 전체 문제 수: 5174문제
+- 교사용 PDF 각 문제의 검은 정답표시와 마지막 1~60번 정답표 대조 완료
+- PDF 정답 ①②③④를 앱 내부 `ans: 0,1,2,3`으로 변환
+- 신규 60문제 정답 누락 0 / 범위초과 0 / 정답표 불일치 0 / `ans: 4` 없음
+- 원본 PDF에 별도 해설이 없어 신규 문제의 `ex`는 빈 문자열로 저장(임의 해설 미작성)
+- 화면 문제풀이 목차에 `가스_기출_2006_07_16` 연속 표시
+- v2.88 기존 5114문제 및 전체 `ans: 0~3` 안전상태 보존
+- `questions.js?v=2.89` / `manifest.json?v=2.89` / `sw.js?v=2.89`
+- Service Worker CACHE_NAME: `energy-gas-v2-89-gas-2006-07-16-60-answer-double-checked-global-ans-safe-menu-chain-preserved-mobile-bottom-dark-safe`
+- 기존 TTS / 설정창 / 오답노트 / 암기완료 / 심화중복문제 / 자동낭독 / 모바일 하단 다크 보정 유지
+- `.nojekyll` 포함
+
+---
+
+# energy-gas-craftsman-app v2.88
+GAS_2006_04_02_60_ANSWER_DOUBLE_CHECKED_GLOBAL_ANS_SAFE_MENU_CHAIN_PRESERVED_MOBILE_BOTTOM_DARK_SAFE
+
+## v2.88 변경
+
+- 기준본: v2.87 GAS_2006_01_22_60_ANSWER_DOUBLE_CHECKED_Q54_IMAGE_GLOBAL_ANS_SAFE_MENU_CHAIN_PRESERVED_MOBILE_BOTTOM_DARK_SAFE
+- 가스기능사 / 기출문제 / 2006년 04월 02일 필기 기출문제 60문제 추가
+- 새 key: `가스_기출_2006_04_02`
+- 전체 문제 수: 5114문제
+- 교사용 PDF 각 문제의 검은 정답표시와 마지막 1~60번 정답표 대조 완료
+- PDF 정답 ①②③④를 앱 내부 `ans: 0,1,2,3`으로 변환
+- 신규 60문제 정답 누락 0 / 범위초과 0 / 정답표 불일치 0 / `ans: 4` 없음
+- 원본 PDF에 별도 해설이 없어 신규 문제의 `ex`는 빈 문자열로 저장(임의 해설 미작성)
+- 화면 문제풀이 목차에 `가스_기출_2006_04_02` 연속 표시
+- v2.87 기존 5054문제 및 전체 `ans: 0~3` 안전상태 보존
+- `questions.js?v=2.88` / `manifest.json?v=2.88` / `sw.js?v=2.88`
+- Service Worker CACHE_NAME: `energy-gas-v2-88-gas-2006-04-02-60-answer-double-checked-global-ans-safe-menu-chain-preserved-mobile-bottom-dark-safe`
+- 기존 TTS / 설정창 / 오답노트 / 암기완료 / 심화중복문제 / 자동낭독 / 모바일 하단 다크 보정 유지
+- `.nojekyll` 포함
+
+---
+
+# energy-gas-craftsman-app v2.87
+GAS_2006_01_22_60_ANSWER_DOUBLE_CHECKED_Q54_IMAGE_GLOBAL_ANS_SAFE_MENU_CHAIN_PRESERVED_MOBILE_BOTTOM_DARK_SAFE
+
+## v2.87 변경
+
+- 기준본: v2.86 GAS_2005_10_02_60_ANSWER_DOUBLE_CHECKED_GLOBAL_ANS4_HOTFIX_MENU_CHAIN_PRESERVED_MOBILE_BOTTOM_DARK_SAFE
+- 가스기능사 / 기출문제 / 2006년 01월 22일 필기 기출문제 60문제 추가
+- 새 key: `가스_기출_2006_01_22`
+- 전체 문제 수: 5054문제
+- 교사용 PDF 각 문제의 검은 정답표시와 마지막 1~60번 정답표 대조 완료
+- PDF 정답 ①②③④를 앱 내부 `ans: 0,1,2,3`으로 변환
+- 신규 60문제 정답 누락 0 / 범위초과 0 / 정답표 불일치 0 / `ans: 4` 없음
+- 원본 PDF에 별도 해설이 없어 신규 문제의 `ex`는 빈 문자열로 저장(임의 해설 미작성)
+- 54번의 박스형 보기 자료는 `assets/2006_01_22_q54.png`로 원본 그림 표시
+- 화면 문제풀이 목차에 `가스_기출_2006_01_22` 연속 표시
+- v2.86 기존 4994문제 및 전체 `ans: 0~3` 안전상태 보존
+- `questions.js?v=2.87` / `manifest.json?v=2.87` / `sw.js?v=2.87`
+- Service Worker CACHE_NAME: `energy-gas-v2-87-gas-2006-01-22-60-answer-double-checked-q54-image-global-ans-safe-menu-chain-preserved-mobile-bottom-dark-safe`
+- 기존 TTS / 설정창 / 오답노트 / 암기완료 / 심화중복문제 / 자동낭독 / 모바일 하단 다크 보정 유지
+- `.nojekyll` 포함
+
+---
+
 # energy-gas-craftsman-app v2.86
 GAS_2005_10_02_60_ANSWER_DOUBLE_CHECKED_MENU_CHAIN_HOTFIX_PRESERVED_MOBILE_BOTTOM_DARK_SAFE
 

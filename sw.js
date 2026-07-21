@@ -1,14 +1,29 @@
-// v2.86: 가스기능사 2005년 10월 02일 60문제 추가 + 2005년 10월 02일 목차 표시 추가 + 기존 정답 인덱스 수정 유지 + 잔여 ans:4 24개 추가 보정 + 모바일 하단 다크 보정 유지.
-const CACHE_NAME = 'energy-gas-v2-86-gas-2005-10-02-60-answer-double-checked-menu-chain-hotfix-preserved-mobile-bottom-dark-safe';
+// v2.99: 가스기능사 2001~2008 기출 중복 심화카드 178문제 추가 + 기존 2009~2016 심화카드 보존 + 전체 ans 0~3 및 모바일 하단 다크 보정 유지.
+const CACHE_NAME = 'energy-gas-v2-99-gas-2001-2008-duplicate-deep-178-existing-deep-preserved-global-ans-safe-menu-chain-preserved-mobile-bottom-dark-safe';
 const ASSETS = [
   './',
-  './index.html?v=2.86',
-  './manifest.json?v=2.86',
-  './questions.js?v=2.86',
-  './theory.js?v=2.86',
-  './sw.js?v=2.86',
+  './index.html?v=2.99',
+  './manifest.json?v=2.99',
+  './questions.js?v=2.99',
+  './theory.js?v=2.99',
+  './sw.js?v=2.99',
   './assets/2005_10_02_q31.png',
   './assets/2005_10_02_q42.png',
+  './assets/2006_01_22_q54.png',
+  './assets/2007_01_28_q21.png',
+  './assets/2007_01_28_q30.png',
+  './assets/2007_01_28_q32.png',
+  './assets/2007_01_28_q39.png',
+  './assets/2007_07_15_q06.png',
+  './assets/2007_07_15_q44.png',
+  './assets/2007_07_15_q57.png',
+  './assets/2007_09_16_q18.png',
+  './assets/2007_09_16_q42.png',
+  './assets/2007_09_16_q47.png',
+  './assets/2008_02_03_q60.png',
+  './assets/2008_03_30_q51.png',
+  './assets/2008_10_05_q01.png',
+  './assets/2008_10_05_q51.png',
   './icon-72.png',
   './icon-96.png',
   './icon-128.png',
@@ -36,7 +51,7 @@ self.addEventListener('activate', event => {
     await self.clients.claim();
     const clientList = await self.clients.matchAll({type: 'window', includeUncontrolled: true});
     for (const client of clientList) {
-      client.postMessage({type: 'SW_UPDATED', version: 'v2.86'});
+      client.postMessage({type: 'SW_UPDATED', version: 'v2.99'});
     }
   })());
 });
@@ -61,7 +76,7 @@ async function networkFirst(req) {
   } catch (err) {
     const cached = await caches.match(req);
     if (cached) return cached;
-    return caches.match('./index.html?v=2.86') || caches.match('./index.html') || Response.error();
+    return caches.match('./index.html?v=2.99') || caches.match('./index.html') || Response.error();
   }
 }
 
@@ -80,7 +95,7 @@ self.addEventListener('fetch', event => {
       await cache.put(event.request, res.clone()).catch(() => null);
       return res;
     } catch (err) {
-      return caches.match('./index.html?v=2.86') || caches.match('./index.html') || Response.error();
+      return caches.match('./index.html?v=2.99') || caches.match('./index.html') || Response.error();
     }
   })());
 });
