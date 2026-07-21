@@ -1,8 +1,8 @@
 {
   "name": "RavenBix · 에너지·가스 기능사 통합 TTS",
   "short_name": "에너지·가스",
-  "description": "에너지관리기능사·가스기능사 통합 TTS 기출 반복학습 앱 v3.01 · 기간별 심화중복문제 2개 카드를 심화종합반에 편입",
-  "start_url": "./?v=3.01",
+  "description": "에너지관리기능사·가스기능사 통합 TTS 기출 반복학습 앱 v3.14 · 에너지관리기능사 2005년 01월 30일 60문제 추가",
+  "start_url": "./?v=3.14",
   "display": "standalone",
   "background_color": "#121212",
   "theme_color": "#121212",

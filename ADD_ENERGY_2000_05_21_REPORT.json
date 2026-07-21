@@ -1,0 +1,17 @@
+{
+  "version": "v3.02",
+  "new_key": "에너지_기출_2000_05_21",
+  "label": "2000년 05월 21일",
+  "source_pdf": "에너지관리기능사20000521(교사용).pdf",
+  "questions_added": 60,
+  "base_total": 6212,
+  "final_total": 6272,
+  "base_group_count": 169,
+  "final_group_count": 170,
+  "body_marker_vs_final_table_mismatches": 0,
+  "answer_storage": "zero-based 0..3",
+  "new_explanations": "none; ex empty",
+  "special_preservation": "Q37 problem restoration failure notice and placeholder options preserved verbatim",
+  "existing_data_preserved": true,
+  "mobile_bottom_dark_safe_preserved": true
+}

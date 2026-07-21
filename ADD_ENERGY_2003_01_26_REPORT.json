@@ -1,0 +1,16 @@
+{
+  "version": "v3.06",
+  "new_key": "에너지_기출_2003_01_26",
+  "date": "2003년 01월 26일",
+  "added_questions": 60,
+  "baseline_questions": 6452,
+  "total_questions": 6512,
+  "baseline_keys": 173,
+  "total_keys": 174,
+  "body_final_answer_mismatches": 0,
+  "answer_index_min": 0,
+  "answer_index_max": 3,
+  "new_images": [],
+  "invented_explanations": false,
+  "source_pdf": "에너지관리기능사20030126(교사용).pdf"
+}

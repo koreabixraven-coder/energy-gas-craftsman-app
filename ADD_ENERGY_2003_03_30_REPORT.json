@@ -1,0 +1,16 @@
+{
+  "version": "v3.07",
+  "new_key": "에너지_기출_2003_03_30",
+  "source_pdf": "에너지관리기능사20030330(교사용).pdf",
+  "added_questions": 60,
+  "old_total": 6512,
+  "new_total": 6572,
+  "old_bundle_count": 174,
+  "new_bundle_count": 175,
+  "body_final_answer_mismatches": 0,
+  "answer_storage": "zero-based 0..3",
+  "invalid_answer_4_new": 0,
+  "images_added": [],
+  "explanations_added": 0,
+  "preserved": "v3.06 existing DB, features, menu chain, gas comprehensive deep cards, assets, mobile bottom dark safe"
+}
