@@ -1,3 +1,27 @@
+# energy-gas-craftsman-app v3.01
+GAS_DEEP_CARDS_INTEGRATED_INTO_COMPREHENSIVE_CLASS_GLOBAL_ANS_SAFE_MENU_CHAIN_PRESERVED_MOBILE_BOTTOM_DARK_SAFE
+
+## v3.01 변경
+
+- **심화중복문제(2001~2008) 178문제** 카드를 기존 기출문제 구역에서 분리했습니다.
+- **심화중복문제(2009~2016) 157문제** 카드도 기존 기출문제 구역에서 분리했습니다.
+- 두 카드를 **심화종합반** 하위에 편입하여 다음 3개 카드로 정리했습니다.
+  1. 심화중복문제(2001~2008) — 178문제
+  2. 심화중복문제(2009~2016) — 157문제
+  3. 2001~2016 중복문제반 — 320문제
+- 심화종합반 합계는 **655문제**입니다.
+- 문제 데이터, 보기, 정답, 해설, 출제이력은 변경하지 않았습니다.
+- 전체 문제 **6,212문제**, 전체 문제 묶음 **169개**를 그대로 유지했습니다.
+- 기존 TTS, 설정, 오답노트, 암기완료, 이미지, 자동낭독 및 모바일 하단 다크 보정을 유지했습니다.
+
+## 업로드 방법
+
+압축을 풀고 GitHub `energy-gas-craftsman-app` 저장소에 전체 파일을 덮어 업로드합니다.
+
+업로드 후 GitHub Pages 배포가 완료되면 앱 주소에 `?v=3.01`을 붙여 확인합니다.
+
+---
+
 # energy-gas-craftsman-app v3.00
 GAS_2001_2008_DUPLICATE_DEEP_178_EXISTING_DEEP_PRESERVED_GLOBAL_ANS_SAFE_MENU_CHAIN_PRESERVED_MOBILE_BOTTOM_DARK_SAFE
 

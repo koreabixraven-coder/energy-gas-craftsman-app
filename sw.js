@@ -1,12 +1,12 @@
-// v3.00: 가스기능사 2001~2016 실제중복 심화종합반 320문제 추가 + 기존 기간별 심화카드 보존 + 전체 ans 0~3 및 모바일 하단 다크 보정 유지.
-const CACHE_NAME = 'energy-gas-v3-00-gas-2001-2016-actual-duplicate-comprehensive-320-existing-deep-preserved-global-ans-safe-menu-chain-preserved-mobile-bottom-dark-safe';
+// v3.01: 심화중복문제(2001~2008)와 심화중복문제(2009~2016) 카드를 심화종합반 하위로 편입. 문제 데이터·정답·기능은 그대로 유지.
+const CACHE_NAME = 'energy-gas-v3-01-deep-cards-integrated-into-comprehensive-class-global-ans-safe-menu-chain-preserved-mobile-bottom-dark-safe';
 const ASSETS = [
   './',
-  './index.html?v=3.00',
-  './manifest.json?v=3.00',
-  './questions.js?v=3.00',
-  './theory.js?v=3.00',
-  './sw.js?v=3.00',
+  './index.html?v=3.01',
+  './manifest.json?v=3.01',
+  './questions.js?v=3.01',
+  './theory.js?v=3.01',
+  './sw.js?v=3.01',
   './assets/2005_10_02_q31.png',
   './assets/2005_10_02_q42.png',
   './assets/2006_01_22_q54.png',
@@ -51,7 +51,7 @@ self.addEventListener('activate', event => {
     await self.clients.claim();
     const clientList = await self.clients.matchAll({type: 'window', includeUncontrolled: true});
     for (const client of clientList) {
-      client.postMessage({type: 'SW_UPDATED', version: 'v3.00'});
+      client.postMessage({type: 'SW_UPDATED', version: 'v3.01'});
     }
   })());
 });
@@ -76,7 +76,7 @@ async function networkFirst(req) {
   } catch (err) {
     const cached = await caches.match(req);
     if (cached) return cached;
-    return caches.match('./index.html?v=3.00') || caches.match('./index.html') || Response.error();
+    return caches.match('./index.html?v=3.01') || caches.match('./index.html') || Response.error();
   }
 }
 
@@ -95,7 +95,7 @@ self.addEventListener('fetch', event => {
       await cache.put(event.request, res.clone()).catch(() => null);
       return res;
     } catch (err) {
-      return caches.match('./index.html?v=3.00') || caches.match('./index.html') || Response.error();
+      return caches.match('./index.html?v=3.01') || caches.match('./index.html') || Response.error();
     }
   })());
 });
