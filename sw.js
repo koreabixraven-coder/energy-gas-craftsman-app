@@ -1,12 +1,12 @@
-// v3.16: 에너지관리기능사 2005년 07월 17일 교사용 PDF 60문제 추가. 기존 가스 심화종합반·문제·기능·이미지 보존.
-const CACHE_NAME = 'energy-gas-v3-16-energy-2005-07-17-60-answer-double-checked-global-ans-safe-menu-chain-preserved-mobile-bottom-dark-safe';
+// v3.17: 에너지관리기능사 2005년 10월 02일 교사용 PDF 60문제 추가. 기존 가스 심화종합반·문제·기능·이미지 보존.
+const CACHE_NAME = 'energy-gas-v3-17-energy-2005-10-02-60-answer-double-checked-global-ans-safe-menu-chain-preserved-mobile-bottom-dark-safe';
 const ASSETS = [
   './',
-  './index.html?v=3.16',
-  './manifest.json?v=3.16',
-  './questions.js?v=3.16',
-  './theory.js?v=3.16',
-  './sw.js?v=3.16',
+  './index.html?v=3.17',
+  './manifest.json?v=3.17',
+  './questions.js?v=3.17',
+  './theory.js?v=3.17',
+  './sw.js?v=3.17',
   './assets/2005_01_30_q45_steps.png',
   './assets/2005_04_03_q46_air_vent.png',
   './assets/2002_07_21_q22.png',
@@ -57,7 +57,7 @@ self.addEventListener('activate', event => {
     await self.clients.claim();
     const clientList = await self.clients.matchAll({type: 'window', includeUncontrolled: true});
     for (const client of clientList) {
-      client.postMessage({type: 'SW_UPDATED', version: 'v3.16'});
+      client.postMessage({type: 'SW_UPDATED', version: 'v3.17'});
     }
   })());
 });
@@ -82,7 +82,7 @@ async function networkFirst(req) {
   } catch (err) {
     const cached = await caches.match(req);
     if (cached) return cached;
-    return caches.match('./index.html?v=3.16') || caches.match('./index.html') || Response.error();
+    return caches.match('./index.html?v=3.17') || caches.match('./index.html') || Response.error();
   }
 }
 
@@ -101,7 +101,7 @@ self.addEventListener('fetch', event => {
       await cache.put(event.request, res.clone()).catch(() => null);
       return res;
     } catch (err) {
-      return caches.match('./index.html?v=3.16') || caches.match('./index.html') || Response.error();
+      return caches.match('./index.html?v=3.17') || caches.match('./index.html') || Response.error();
     }
   })());
 });
