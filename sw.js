@@ -1,12 +1,12 @@
-// v3.17: 에너지관리기능사 2005년 10월 02일 교사용 PDF 60문제 추가. 기존 가스 심화종합반·문제·기능·이미지 보존.
-const CACHE_NAME = 'energy-gas-v3-17-energy-2005-10-02-60-answer-double-checked-global-ans-safe-menu-chain-preserved-mobile-bottom-dark-safe';
+// v3.29: 에너지관리기능사 2008년 10월 05일 교사용 PDF 60문제 추가. Q37 원본 리프트피팅 이미지, Q10/Q30/Q46 좌우 단 및 Q37/Q55 페이지 연결. 기존 문제·기능·이미지 보존.
+const CACHE_NAME = 'energy-gas-v3-29-energy-2008-10-05-60-answer-double-checked-q37-source-image-q10-q30-q46-column-split-q55-page-split-global-ans-safe-menu-chain-preserved-mobile-bottom-dark-safe';
 const ASSETS = [
   './',
-  './index.html?v=3.17',
-  './manifest.json?v=3.17',
-  './questions.js?v=3.17',
-  './theory.js?v=3.17',
-  './sw.js?v=3.17',
+  './index.html?v=3.29',
+  './manifest.json?v=3.29',
+  './questions.js?v=3.29',
+  './theory.js?v=3.29',
+  './sw.js?v=3.29',
   './assets/2005_01_30_q45_steps.png',
   './assets/2005_04_03_q46_air_vent.png',
   './assets/2002_07_21_q22.png',
@@ -20,6 +20,8 @@ const ASSETS = [
   './assets/2007_01_28_q30.png',
   './assets/2007_01_28_q32.png',
   './assets/2007_01_28_q39.png',
+  './assets/2007_04_01_q28_radiator_mark.png',
+  './assets/2007_07_15_energy_q34_open_expansion_tank.png',
   './assets/2007_07_15_q06.png',
   './assets/2007_07_15_q44.png',
   './assets/2007_07_15_q57.png',
@@ -28,6 +30,9 @@ const ASSETS = [
   './assets/2007_09_16_q47.png',
   './assets/2008_02_03_q60.png',
   './assets/2008_03_30_q51.png',
+  './assets/2008_07_13_energy_q16_induced_draft_features.png',
+  './assets/2008_07_13_energy_q45_shutdown_sequence.png',
+  './assets/2008_10_05_energy_q37_lift_fitting.png',
   './assets/2008_10_05_q01.png',
   './assets/2008_10_05_q51.png',
   './icon-72.png',
@@ -57,7 +62,7 @@ self.addEventListener('activate', event => {
     await self.clients.claim();
     const clientList = await self.clients.matchAll({type: 'window', includeUncontrolled: true});
     for (const client of clientList) {
-      client.postMessage({type: 'SW_UPDATED', version: 'v3.17'});
+      client.postMessage({type: 'SW_UPDATED', version: 'v3.29'});
     }
   })());
 });
@@ -82,7 +87,7 @@ async function networkFirst(req) {
   } catch (err) {
     const cached = await caches.match(req);
     if (cached) return cached;
-    return caches.match('./index.html?v=3.17') || caches.match('./index.html') || Response.error();
+    return caches.match('./index.html?v=3.29') || caches.match('./index.html') || Response.error();
   }
 }
 
@@ -101,7 +106,7 @@ self.addEventListener('fetch', event => {
       await cache.put(event.request, res.clone()).catch(() => null);
       return res;
     } catch (err) {
-      return caches.match('./index.html?v=3.17') || caches.match('./index.html') || Response.error();
+      return caches.match('./index.html?v=3.29') || caches.match('./index.html') || Response.error();
     }
   })());
 });
