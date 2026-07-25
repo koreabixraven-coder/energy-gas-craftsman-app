@@ -1,12 +1,12 @@
-// v3.29: 에너지관리기능사 2008년 10월 05일 교사용 PDF 60문제 추가. Q37 원본 리프트피팅 이미지, Q10/Q30/Q46 좌우 단 및 Q37/Q55 페이지 연결. 기존 문제·기능·이미지 보존.
-const CACHE_NAME = 'energy-gas-v3-29-energy-2008-10-05-60-answer-double-checked-q37-source-image-q10-q30-q46-column-split-q55-page-split-global-ans-safe-menu-chain-preserved-mobile-bottom-dark-safe';
+// v3.34: 에너지관리기능사 2010년 01월 31일 교사용 PDF 60문제 추가. Q6 원본 공식 이미지, Q36 페이지 연결, Q44 좌우 단 연결. 기존 문제·기능·이미지 보존.
+const CACHE_NAME = 'energy-gas-v3-34-energy-2010-01-31-60-answer-double-checked-q06-source-image-q36-page-split-q44-column-split-global-ans-safe-menu-chain-preserved-mobile-bottom-dark-safe';
 const ASSETS = [
   './',
-  './index.html?v=3.29',
-  './manifest.json?v=3.29',
-  './questions.js?v=3.29',
-  './theory.js?v=3.29',
-  './sw.js?v=3.29',
+  './index.html?v=3.34',
+  './manifest.json?v=3.34',
+  './questions.js?v=3.34',
+  './theory.js?v=3.34',
+  './sw.js?v=3.34',
   './assets/2005_01_30_q45_steps.png',
   './assets/2005_04_03_q46_air_vent.png',
   './assets/2002_07_21_q22.png',
@@ -33,6 +33,11 @@ const ASSETS = [
   './assets/2008_07_13_energy_q16_induced_draft_features.png',
   './assets/2008_07_13_energy_q45_shutdown_sequence.png',
   './assets/2008_10_05_energy_q37_lift_fitting.png',
+  './assets/2009_01_18_energy_q39_pipe_thermal_expansion.png',
+  './assets/2009_03_29_energy_q18_sequence_interlock_box.png',
+  './assets/2009_03_29_energy_q30_emergency_low_water_sequence.png',
+  './assets/2009_03_29_energy_q36_manual_ignition_sequence.png',
+  './assets/2010_01_31_energy_q06_fan_power_formula.png',
   './assets/2008_10_05_q01.png',
   './assets/2008_10_05_q51.png',
   './icon-72.png',
@@ -62,7 +67,7 @@ self.addEventListener('activate', event => {
     await self.clients.claim();
     const clientList = await self.clients.matchAll({type: 'window', includeUncontrolled: true});
     for (const client of clientList) {
-      client.postMessage({type: 'SW_UPDATED', version: 'v3.29'});
+      client.postMessage({type: 'SW_UPDATED', version: 'v3.34'});
     }
   })());
 });
@@ -87,7 +92,7 @@ async function networkFirst(req) {
   } catch (err) {
     const cached = await caches.match(req);
     if (cached) return cached;
-    return caches.match('./index.html?v=3.29') || caches.match('./index.html') || Response.error();
+    return caches.match('./index.html?v=3.34') || caches.match('./index.html') || Response.error();
   }
 }
 
@@ -106,7 +111,7 @@ self.addEventListener('fetch', event => {
       await cache.put(event.request, res.clone()).catch(() => null);
       return res;
     } catch (err) {
-      return caches.match('./index.html?v=3.29') || caches.match('./index.html') || Response.error();
+      return caches.match('./index.html?v=3.34') || caches.match('./index.html') || Response.error();
     }
   })());
 });
