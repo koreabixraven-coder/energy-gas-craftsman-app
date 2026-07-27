@@ -1,12 +1,12 @@
-// v3.34: 에너지관리기능사 2010년 01월 31일 교사용 PDF 60문제 추가. Q6 원본 공식 이미지, Q36 페이지 연결, Q44 좌우 단 연결. 기존 문제·기능·이미지 보존.
-const CACHE_NAME = 'energy-gas-v3-34-energy-2010-01-31-60-answer-double-checked-q06-source-image-q36-page-split-q44-column-split-global-ans-safe-menu-chain-preserved-mobile-bottom-dark-safe';
+// v3.52: 에너지관리기능사 심화학습 통합중복문제에 기출중복 518문제와 기존 통합중복 101문제를 병합하고 동일 문제 39개를 통합하여 580문제로 구성. 기존 문제·기능·이미지 보존.
+const CACHE_NAME = 'energy-gas-v3-52-energy-merged-duplicates-580-past-plus-integrated-force-cache-safe';
 const ASSETS = [
   './',
-  './index.html?v=3.34',
-  './manifest.json?v=3.34',
-  './questions.js?v=3.34',
-  './theory.js?v=3.34',
-  './sw.js?v=3.34',
+  './index.html?v=3.52',
+  './manifest.json?v=3.52',
+  './questions.js?v=3.52',
+  './theory.js?v=3.52',
+  './sw.js?v=3.52',
   './assets/2005_01_30_q45_steps.png',
   './assets/2005_04_03_q46_air_vent.png',
   './assets/2002_07_21_q22.png',
@@ -38,6 +38,23 @@ const ASSETS = [
   './assets/2009_03_29_energy_q30_emergency_low_water_sequence.png',
   './assets/2009_03_29_energy_q36_manual_ignition_sequence.png',
   './assets/2010_01_31_energy_q06_fan_power_formula.png',
+  './assets/2011_02_13_energy_q35_manual_ignition_sequence.png',
+  './assets/2011_07_31_energy_q05_pipe_reducer_symbol.png',
+  './assets/2011_07_31_energy_q27_two_element_water_level_control.png',
+  './assets/2011_07_31_energy_q56_low_carbon_green_growth_purpose_box.png',
+  './assets/2012_02_12_energy_q21_check_valve_symbol.png',
+  './assets/2012_04_08_energy_q07_plate_blower_description.png',
+  './assets/2012_04_08_energy_q20_boiler_horsepower_definition.png',
+  './assets/2012_04_08_energy_q28_powered_pipe_threader.png',
+  './assets/2012_07_22_energy_q52_furnace_blower_capacity_box.png',
+  './assets/2012_10_20_energy_q42_union_symbol_options.png',
+  './assets/2012_10_20_energy_q52_rated_output_load_box.png',
+  './assets/2013_04_14_energy_q12_connection_box.png',
+  './assets/2013_04_14_energy_q24_flange_symbol_options.png',
+  './assets/2013_04_14_energy_q26_shutdown_sequence_box.png',
+  './assets/2013_04_14_energy_q47_pitting_corrosion_diagram.png',
+  './assets/2013_07_21_energy_q44_weld_symbol_options.png',
+  './assets/2013_07_21_energy_q57_rated_output_load_box.png',
   './assets/2008_10_05_q01.png',
   './assets/2008_10_05_q51.png',
   './icon-72.png',
@@ -67,7 +84,7 @@ self.addEventListener('activate', event => {
     await self.clients.claim();
     const clientList = await self.clients.matchAll({type: 'window', includeUncontrolled: true});
     for (const client of clientList) {
-      client.postMessage({type: 'SW_UPDATED', version: 'v3.34'});
+      client.postMessage({type: 'SW_UPDATED', version: 'v3.52'});
     }
   })());
 });
@@ -92,7 +109,7 @@ async function networkFirst(req) {
   } catch (err) {
     const cached = await caches.match(req);
     if (cached) return cached;
-    return caches.match('./index.html?v=3.34') || caches.match('./index.html') || Response.error();
+    return caches.match('./index.html?v=3.52') || caches.match('./index.html') || Response.error();
   }
 }
 
@@ -111,7 +128,7 @@ self.addEventListener('fetch', event => {
       await cache.put(event.request, res.clone()).catch(() => null);
       return res;
     } catch (err) {
-      return caches.match('./index.html?v=3.34') || caches.match('./index.html') || Response.error();
+      return caches.match('./index.html?v=3.52') || caches.match('./index.html') || Response.error();
     }
   })());
 });
