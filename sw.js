@@ -1,12 +1,12 @@
-// v3.52: 에너지관리기능사 심화학습 통합중복문제에 기출중복 518문제와 기존 통합중복 101문제를 병합하고 동일 문제 39개를 통합하여 580문제로 구성. 기존 문제·기능·이미지 보존.
-const CACHE_NAME = 'energy-gas-v3-52-energy-merged-duplicates-580-past-plus-integrated-force-cache-safe';
+// v3.54: 공통 핵심학습·중복출제 핵심문제 메뉴를 삭제하고 에너지·가스 공통핵심중복문제 26문제를 단일 카드에 수록. 기존 문제·기능·이미지 보존.
+const CACHE_NAME = 'energy-gas-v3-54-common-core-duplicate-26-single-card-force-cache-safe';
 const ASSETS = [
   './',
-  './index.html?v=3.52',
-  './manifest.json?v=3.52',
-  './questions.js?v=3.52',
-  './theory.js?v=3.52',
-  './sw.js?v=3.52',
+  './index.html?v=3.54',
+  './manifest.json?v=3.54',
+  './questions.js?v=3.54',
+  './theory.js?v=3.54',
+  './sw.js?v=3.54',
   './assets/2005_01_30_q45_steps.png',
   './assets/2005_04_03_q46_air_vent.png',
   './assets/2002_07_21_q22.png',
@@ -84,7 +84,7 @@ self.addEventListener('activate', event => {
     await self.clients.claim();
     const clientList = await self.clients.matchAll({type: 'window', includeUncontrolled: true});
     for (const client of clientList) {
-      client.postMessage({type: 'SW_UPDATED', version: 'v3.52'});
+      client.postMessage({type: 'SW_UPDATED', version: 'v3.54'});
     }
   })());
 });
@@ -109,7 +109,7 @@ async function networkFirst(req) {
   } catch (err) {
     const cached = await caches.match(req);
     if (cached) return cached;
-    return caches.match('./index.html?v=3.52') || caches.match('./index.html') || Response.error();
+    return caches.match('./index.html?v=3.54') || caches.match('./index.html') || Response.error();
   }
 }
 
@@ -128,7 +128,7 @@ self.addEventListener('fetch', event => {
       await cache.put(event.request, res.clone()).catch(() => null);
       return res;
     } catch (err) {
-      return caches.match('./index.html?v=3.52') || caches.match('./index.html') || Response.error();
+      return caches.match('./index.html?v=3.54') || caches.match('./index.html') || Response.error();
     }
   })());
 });
