@@ -1,12 +1,19 @@
-// v3.55: 에너지관리기능장 과년도33·CBT6·심화3 메뉴 골격 추가. 문제 내용은 입력 대기. 기존 10,172문제·기능·이미지 보존.
-const CACHE_NAME = 'energy-gas-v3-55-energy-master-craftsman-menu-scaffold-force-cache-safe';
+// v3.81: 에너지관리기능장 2018년 03월 31일 60문제 추가. 기존 11,672문제·기능·기존이미지 보존. 신규 데이터표 이미지 1개 추가. 2013년·2016년 기능장 회차는 빈 데이터 유지.
+const CACHE_NAME = 'energy-gas-v3-81-energy-master-craftsman-2018-03-31-force-cache-safe';
 const ASSETS = [
   './',
-  './index.html?v=3.55',
-  './manifest.json?v=3.55',
-  './questions.js?v=3.55',
-  './theory.js?v=3.55',
-  './sw.js?v=3.55',
+  './index.html?v=3.81',
+  './manifest.json?v=3.81',
+  './questions.js?v=3.81',
+  './theory.js?v=3.81',
+  './sw.js?v=3.81',
+  './assets/2007_07_15_master_q13_level_detector.png',
+  './assets/2007_07_15_master_q48_isometric.png',
+  './assets/2007_07_15_master_q57_formulas.png',
+  './assets/2006_07_16_master_q04_damage_box.png',
+  './assets/2005_07_17_master_q04_density_table.png',
+  './assets/2005_07_17_master_q44_isometric.png',
+  './assets/2005_07_17_master_q55_data.png',
   './assets/2005_01_30_q45_steps.png',
   './assets/2005_04_03_q46_air_vent.png',
   './assets/2002_07_21_q22.png',
@@ -57,11 +64,69 @@ const ASSETS = [
   './assets/2013_07_21_energy_q57_rated_output_load_box.png',
   './assets/2008_10_05_q01.png',
   './assets/2008_10_05_q51.png',
+  './assets/2002_04_07_master_q29_formula.png',
+  './assets/2002_04_07_master_q39_isometric.png',
+  './assets/2002_07_21_master_q43_weld_symbol.png',
+  './assets/2002_07_21_master_q56_sales_table.png',
+  './assets/2002_07_21_master_q57_u_chart_formula.png',
+  './assets/2003_03_30_master_q55_oc_curve.png',
+  './assets/2003_07_20_master_q54_shutdown_steps.png',
+  './assets/2003_07_20_master_q59_data.png',
+  './assets/2003_07_20_master_q60_process_symbols.png',
+  './assets/2004_04_04_master_q25_expansion_formula.png',
+  './assets/2004_04_04_master_q40_radiator_mark.png',
+  './assets/2004_04_04_master_q48_steam_table.png',
+  './assets/2004_04_04_master_q57_pert_network.png',
+  './assets/2004_04_04_master_q58_process_symbols.png',
+  './assets/2004_07_18_master_q42_convector.png',
+  './assets/2005_04_03_master_q02_swivel_diagrams.png',
+  './assets/2005_04_03_master_q59_maintenance_org_box.png',
+  './assets/2008_03_30_master_q39_ts_diagram.png',
+  './assets/2008_03_30_master_q47_swivel_diagrams.png',
+  './assets/2008_03_30_master_q48_isometric.png',
+  './assets/2008_07_13_master_q08_heat_release_formulas.png',
+  './assets/2008_07_13_master_q19_heating_definition_box.png',
+  './assets/2008_07_13_master_q35_pipe_diameter_formulas.png',
+  './assets/2008_07_13_master_q38_conductivity_units.png',
+  './assets/2008_07_13_master_q40_enthalpy_table.png',
+  './assets/2008_07_13_master_q57_cost_table.png',
+  './assets/2009_03_29_master_q35_carnot_formulas.png',
+  './assets/2009_03_29_master_q57_sales_table.png',
+  './assets/2009_07_12_master_q28_bernoulli_formula.png',
+  './assets/2009_07_12_master_q34_injector_steps.png',
+  './assets/2009_07_12_master_q55_xbar_rbar_formula.png',
   './icon-72.png',
   './icon-96.png',
   './icon-128.png',
   './icon-192.png',
-  './icon-512.png'
+  './icon-512.png',
+  './assets/2010_07_11_master_q53_isometric.png',
+  './assets/2011_04_17_master_q17_air_formula_options.png',
+  './assets/2011_04_17_master_q18_smoke_formula.png',
+  './assets/2011_04_17_master_q60_network.png',
+  './assets/2011_07_31_master_q20_level_control.png',
+  './assets/2012_04_08_master_q37_damage_box.png',
+  './assets/2012_04_08_master_q57_sales_table.png',
+  './assets/2012_07_22_master_q50_threaded_cap_symbols.png',
+  './assets/2014_04_06_master_q42_pipe_diameter_formulas.png',
+  './assets/2014_04_06_master_q49_pipe_projection_symbols.png',
+  './assets/2014_04_06_master_q56_sales_table.png',
+  './assets/2014_07_20_master_q26_bernoulli_formula.png',
+  './assets/2014_07_20_master_q46_swivel_diagrams.png',
+  './assets/2014_07_20_master_q58_oc_curve.png',
+  './assets/2015_04_04_master_q33_pipe_diameter_formulas.png',
+  './assets/2015_04_04_master_q36_carnot_formulas.png',
+  './assets/2015_04_04_master_q39_enthalpy_table.png',
+  './assets/2015_04_04_master_q60_cost_table.png',
+  './assets/2015_07_19_master_q09_boiler_capacity_formula.png',
+  './assets/2015_07_19_master_q50_brinell_diagram.png',
+  './assets/2017_03_05_master_q33_bernoulli_formula.png',
+  './assets/2017_07_08_master_q09_air_formula_options.png',
+  './assets/2017_07_08_master_q25_rankine_ts.png',
+  './assets/2017_07_08_master_q55_aoa_network.png',
+  './assets/2017_07_08_master_q56_standard_time_formulas.png',
+  './assets/2017_07_08_master_q59_data.png',
+  './assets/2018_03_31_master_q58_data.png',
 ];
 
 self.addEventListener('install', event => {
@@ -84,7 +149,7 @@ self.addEventListener('activate', event => {
     await self.clients.claim();
     const clientList = await self.clients.matchAll({type: 'window', includeUncontrolled: true});
     for (const client of clientList) {
-      client.postMessage({type: 'SW_UPDATED', version: 'v3.55'});
+      client.postMessage({type: 'SW_UPDATED', version: 'v3.81'});
     }
   })());
 });
@@ -109,7 +174,7 @@ async function networkFirst(req) {
   } catch (err) {
     const cached = await caches.match(req);
     if (cached) return cached;
-    return caches.match('./index.html?v=3.55') || caches.match('./index.html') || Response.error();
+    return caches.match('./index.html?v=3.81') || caches.match('./index.html') || Response.error();
   }
 }
 
@@ -128,7 +193,7 @@ self.addEventListener('fetch', event => {
       await cache.put(event.request, res.clone()).catch(() => null);
       return res;
     } catch (err) {
-      return caches.match('./index.html?v=3.55') || caches.match('./index.html') || Response.error();
+      return caches.match('./index.html?v=3.81') || caches.match('./index.html') || Response.error();
     }
   })());
 });
