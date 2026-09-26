@@ -1,12 +1,12 @@
-// v3.71: 에너지관리기능장 출제예상문제 15. 보일러 운전 및 조작 56문제 수록. 해설 제외. 전문용어/기호/단위는 화면 원문 유지, TTS 백그라운드 한글 낭독.
-const CACHE_NAME = 'energy-gas-v3-70-energy-master-expected-15-boiler-operation-control-56-tts-korean-force-cache-safe';
+// v3.73: 에너지관리기능장 문제풀이 TTS 전수 재검수. 출제예상문제 숫자·수식·기호 한국어 낭독 정비, 해설 제외. 과년도/CBT/심화 공통 TTS 규칙 준비.
+const CACHE_NAME = 'energy-gas-v3-73-energy-master-tts-audit-force-cache-safe';
 const ASSETS = [
   './',
-  './index.html?v=3.71',
-  './manifest.json?v=3.71',
-  './questions.js?v=3.71',
-  './theory.js?v=3.71',
-  './sw.js?v=3.71',
+  './index.html?v=3.73',
+  './manifest.json?v=3.73',
+  './questions.js?v=3.73',
+  './theory.js?v=3.73',
+  './sw.js?v=3.73',
   './assets/2005_01_30_q45_steps.png',
   './assets/2005_04_03_q46_air_vent.png',
   './assets/2002_07_21_q22.png',
@@ -67,6 +67,8 @@ const ASSETS = [
   './assets/energy_master_expected_12_q19_trap_dimensions.png',
   './assets/energy_master_expected_12_q33_air_vent_installation.png',
   './assets/energy_master_expected_12_q35_water_density_table.png',
+  './assets/energy_master_expected_13_q19_symbol.png',
+  './assets/energy_master_expected_13_q20_symbol.png',
   './icon-72.png',
   './icon-96.png',
   './icon-128.png',
@@ -119,7 +121,7 @@ async function networkFirst(req) {
   } catch (err) {
     const cached = await caches.match(req);
     if (cached) return cached;
-    return caches.match('./index.html?v=3.71') || caches.match('./index.html') || Response.error();
+    return caches.match('./index.html?v=3.73') || caches.match('./index.html') || Response.error();
   }
 }
 
@@ -138,7 +140,7 @@ self.addEventListener('fetch', event => {
       await cache.put(event.request, res.clone()).catch(() => null);
       return res;
     } catch (err) {
-      return caches.match('./index.html?v=3.71') || caches.match('./index.html') || Response.error();
+      return caches.match('./index.html?v=3.73') || caches.match('./index.html') || Response.error();
     }
   })());
 });

@@ -1,4 +1,4 @@
-/** energy-gas theory.js · v3.71 · 기존 이론 데이터 유지 */
+/** energy-gas theory.js · v3.73 · 기존 이론 데이터 유지 */
 const THEORY = {
   "에너지관리기능사": {
     "title": "에너지관리기능사",
