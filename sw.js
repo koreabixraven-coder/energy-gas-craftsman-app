@@ -1,12 +1,35 @@
-// v3.73: 에너지관리기능장 문제풀이 TTS 전수 재검수. 출제예상문제 숫자·수식·기호 한국어 낭독 정비, 해설 제외. 과년도/CBT/심화 공통 TTS 규칙 준비.
-const CACHE_NAME = 'energy-gas-v3-73-energy-master-tts-audit-force-cache-safe';
+// v3.86: 에너지관리기능장 과년도출제문제 2007년 07월 15일 60문제 추가. 해설 제외, TTS 숫자·수식·기호 한국어 낭독.
+const CACHE_NAME = 'energy-gas-v3-84-energy-master-past-2008-03-30-force-cache-safe';
 const ASSETS = [
+  "assets/energy_master_past_2008_03_30_q39_rankine_ts.png",
+  "assets/energy_master_past_2008_03_30_q47_swivel_options.png",
+  "assets/energy_master_past_2008_03_30_q48_isometric_options.png",
+  "assets/energy_master_past_2007_07_15_q13_level_detector.png",
+  "assets/energy_master_past_2007_07_15_q48_isometric_options.png",
+  "assets/energy_master_past_2007_07_15_q57_process_formula.png",
+  "assets/energy_master_past_2005_07_17_q59_capacity_formula.png",
+  "assets/energy_master_past_2005_07_17_q44_isometric.png",
+  "assets/energy_master_past_2005_04_03_q59_maintenance_org.png",
+  "assets/energy_master_past_2005_04_03_q02_swivel_joint.png",
+  "assets/energy_master_past_2004_07_18_q42_convector_symbol.png",
+  "assets/energy_master_past_2004_04_04_q57_pert_network.png",
+  "assets/energy_master_past_2004_04_04_q48_steam_table.png",
+  "assets/energy_master_past_2004_04_04_q60_control_chart_symbol.png",
+  "assets/energy_master_past_2004_04_04_q25_formula.png",
+  "assets/energy_master_past_2004_04_04_q58_process_symbol.png",
+  "assets/energy_master_past_2004_04_04_q40_radiator_symbol.png",
+  "assets/energy_master_past_2003_07_20_q60_process_symbol.png",
+  "assets/energy_master_past_2003_03_30_q57_pert_symbol.png",
+  "assets/energy_master_past_2003_03_30_q55_oc_curve.png",
+  "assets/energy_master_past_2002_07_21_q57_u_chart_formula.png",
+  "assets/energy_master_past_2002_07_21_q56_sales_table.png",
+  "assets/energy_master_past_2002_07_21_q43_welding_symbol.png",
   './',
-  './index.html?v=3.73',
-  './manifest.json?v=3.73',
-  './questions.js?v=3.73',
-  './theory.js?v=3.73',
-  './sw.js?v=3.73',
+  './index.html?v=3.86',
+  './manifest.json?v=3.86',
+  './questions.js?v=3.86',
+  './theory.js?v=3.86',
+  './sw.js?v=3.86',
   './assets/2005_01_30_q45_steps.png',
   './assets/2005_04_03_q46_air_vent.png',
   './assets/2002_07_21_q22.png',
@@ -69,11 +92,21 @@ const ASSETS = [
   './assets/energy_master_expected_12_q35_water_density_table.png',
   './assets/energy_master_expected_13_q19_symbol.png',
   './assets/energy_master_expected_13_q20_symbol.png',
+  './assets/energy_master_past_2002_04_07_q29_formula.png',
+  './assets/energy_master_past_2002_04_07_q39_isometric.png',
   './icon-72.png',
   './icon-96.png',
   './icon-128.png',
   './icon-192.png',
-  './icon-512.png'
+  './icon-512.png',
+  "./assets/energy_master_past_2008_07_13_q08_heat_release_formula.png",
+  "./assets/energy_master_past_2008_07_13_q19_heating_definition.png",
+  "./assets/energy_master_past_2008_07_13_q35_pipe_diameter_formula.png",
+  "./assets/energy_master_past_2008_07_13_q38_thermal_conductivity_unit.png",
+  "./assets/energy_master_past_2008_07_13_q40_throttle_enthalpy_table.png",
+  "./assets/energy_master_past_2008_07_13_q57_cost_slope_table.png",
+  "./assets/energy_master_past_2009_03_29_q35_carnot_formula.png",
+  "./assets/energy_master_past_2009_03_29_q57_sales_table.png",
 ];
 
 self.addEventListener('install', event => {
@@ -96,7 +129,7 @@ self.addEventListener('activate', event => {
     await self.clients.claim();
     const clientList = await self.clients.matchAll({type: 'window', includeUncontrolled: true});
     for (const client of clientList) {
-      client.postMessage({type: 'SW_UPDATED', version: 'v3.66'});
+      client.postMessage({type: 'SW_UPDATED', version: 'v3.86'});
     }
   })());
 });
@@ -121,7 +154,7 @@ async function networkFirst(req) {
   } catch (err) {
     const cached = await caches.match(req);
     if (cached) return cached;
-    return caches.match('./index.html?v=3.73') || caches.match('./index.html') || Response.error();
+    return caches.match('./index.html?v=3.86') || caches.match('./index.html') || Response.error();
   }
 }
 
@@ -140,7 +173,7 @@ self.addEventListener('fetch', event => {
       await cache.put(event.request, res.clone()).catch(() => null);
       return res;
     } catch (err) {
-      return caches.match('./index.html?v=3.73') || caches.match('./index.html') || Response.error();
+      return caches.match('./index.html?v=3.86') || caches.match('./index.html') || Response.error();
     }
   })());
 });

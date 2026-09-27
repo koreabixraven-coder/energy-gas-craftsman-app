@@ -1,8 +1,8 @@
 {
   "name": "RavenBix · 에너지·가스·기능장 통합 TTS",
   "short_name": "에너지·가스·기능장",
-  "description": "에너지관리기능사·가스기능사·에너지관리기능장 통합 TTS 반복학습 앱 v3.73 · 기능장 출제예상문제 TTS 숫자·수식·기호 전수 재검수 · 과년도 공통 TTS 규칙 준비 · 해설 제외",
-  "start_url": "./?v=3.73",
+  "description": "에너지관리기능사·가스기능사·에너지관리기능장 통합 TTS 반복학습 앱 v3.86 · 기능장 과년도출제문제 2007년 07월 15일 60문제 · 해설 제외 · 숫자·수식·기호 한글 TTS",
+  "start_url": "./?v=3.86",
   "display": "standalone",
   "background_color": "#121212",
   "theme_color": "#121212",

@@ -6,16 +6,16 @@
 <meta name="theme-color" content="#121212">
 <meta name="color-scheme" content="dark">
 <meta name="supported-color-schemes" content="dark">
-<!-- v3.73 ENERGY_MASTER_TTS_AUDIT_EXPECTED_PAST_EXPLANATION_EXCLUDED: 에너지관리기능장 문제풀이 TTS 숫자·수식·기호 전수 재검수 · 해설 제외 · 화면 원문 유지 · 기존 문제/정답/로직 보존 -->
+<!-- v3.86 ENERGY_MASTER_PAST_2007_07_15: 에너지관리기능장 과년도출제문제 2007년 07월 15일 60문제 추가 · 해설 제외 · TTS 한글 낭독 · 기존 데이터/로직 보존 -->
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
 <title>RavenBix · 에너지·가스 기능사</title>
-<!-- APP_VERSION: v3.73 ENERGY_MASTER_TTS_AUDIT_EXPECTED_PAST_EXPLANATION_EXCLUDED -->
-<link rel="manifest" href="manifest.json?v=3.73">
+<!-- APP_VERSION: v3.86 ENERGY_MASTER_PAST_2007_07_15 -->
+<link rel="manifest" href="manifest.json?v=3.86">
 <link rel="apple-touch-icon" href="icon-192.png">
-<script src="theory.js?v=3.73"></script>
-<script src="questions.js?v=3.73"></script>
+<script src="theory.js?v=3.86"></script>
+<script src="questions.js?v=3.86"></script>
 <script>
 /* ── v30.22 패드 화면 확장 설정 선적용 ── */
 (function(){
@@ -3366,7 +3366,7 @@ function buildLevelBar(){
   const wrap=document.createElement('div');
   wrap.className='quiz-toc-wrap';
   const total=(typeof DB!=='undefined'&&DB)?Object.values(DB).reduce((a,b)=>a+(Array.isArray(b)?b.length:0),0):0;
-  wrap.innerHTML='<div class="quiz-toc-head"><div><div class="quiz-toc-title">문제풀이 목차</div><div class="quiz-toc-gdesc">에너지관리기능사 / 에너지관리기능장 / 가스기능사 / 공통핵심중복문제 메뉴로 정리했습니다. 에너지관리기능장 출제예상문제 1. 열역학 94문제, 2. 유체역학 60문제, 3. 보일러의 종류 및 특성 51문제, 4. 보일러 용량 37문제, 5. 보일러 부속장치 및 기기 101문제, 6. 열효율 증대장치 28문제, 7. 연소 및 연소 장치 97문제, 8. 연소 계산 42문제, 9. 계측기기 일반 72문제, 10. 보일러 자동제어 43문제, 11. 보일러 열정산 15문제, 12. 난방의 종류 및 특징 60문제, 13. 난방부하 및 방열기기 41문제, 14. 보일러설치 검사기준 46문제, 15. 보일러 운전 및 조작 56문제, 16. 보일러 급수처리 36문제를 수록했습니다. 나머지 과목은 PDF 순차 입력 예정입니다.</div></div><div class="quiz-toc-sub">총 '+total+'문제 · v3.73 ENERGY_MASTER_TTS_AUDIT</div></div>';
+  wrap.innerHTML='<div class="quiz-toc-head"><div><div class="quiz-toc-title">문제풀이 목차</div><div class="quiz-toc-gdesc">에너지관리기능사 / 에너지관리기능장 / 가스기능사 / 공통핵심중복문제 메뉴로 정리했습니다. 에너지관리기능장 출제예상문제 1. 열역학 94문제, 2. 유체역학 60문제, 3. 보일러의 종류 및 특성 51문제, 4. 보일러 용량 37문제, 5. 보일러 부속장치 및 기기 101문제, 6. 열효율 증대장치 28문제, 7. 연소 및 연소 장치 97문제, 8. 연소 계산 42문제, 9. 계측기기 일반 72문제, 10. 보일러 자동제어 43문제, 11. 보일러 열정산 15문제, 12. 난방의 종류 및 특징 60문제, 13. 난방부하 및 방열기기 41문제, 14. 보일러설치 검사기준 46문제, 15. 보일러 운전 및 조작 56문제, 16. 보일러 급수처리 36문제를 수록했습니다. 나머지 과목은 PDF 순차 입력 예정입니다.</div></div><div class="quiz-toc-sub">총 '+total+'문제 · v3.86 ENERGY_MASTER_PAST_2007_07_15</div></div>';
 
   const grid=document.createElement('div');
   grid.className='quiz-toc-grid';
@@ -4872,7 +4872,7 @@ setTimeout(updateHomeCounts,200);
 /* Service Worker 등록 */
 if('serviceWorker' in navigator){
   window.addEventListener('load', ()=>{
-    navigator.serviceWorker.register('sw.js?v=3.73', {updateViaCache:'none'})
+    navigator.serviceWorker.register('sw.js?v=3.86', {updateViaCache:'none'})
       .then(()=>console.log('SW 등록 완료'))
       .catch(e=>console.log('SW 등록 실패',e));
   });
@@ -5005,7 +5005,7 @@ function quizTtsFocus(el,label){
   },70);
 }
 
-/* v3.73 ENERGY MASTER TTS FINALIZER
+/* v3.86 ENERGY MASTER TTS FINALIZER
    에너지관리기능장 문제풀이 전용: 화면 원문은 건드리지 않고 음성 텍스트만 최종 정리한다.
    출제예상문제/과년도출제문제에 공통 적용하며 해설은 읽지 않는다.
    향후 기능장 CBT/심화 DB가 채워져도 동일한 숫자·기호 낭독 규칙을 재사용할 수 있다. */
