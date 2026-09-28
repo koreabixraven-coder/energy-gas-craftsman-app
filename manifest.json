@@ -1,8 +1,8 @@
 {
   "name": "RavenBix · 에너지·가스·기능장 통합 TTS",
   "short_name": "에너지·가스·기능장",
-  "description": "에너지관리기능사·가스기능사·에너지관리기능장 통합 TTS 반복학습 앱 v4.08 · 기능장 CBT 모의고사 3회 2020년 복원문제 60문제 추가 · 해설 제외 · 숫자·수식·기호 한글 TTS",
-  "start_url": "./?v=4.08",
+  "description": "에너지관리기능사·가스기능사·에너지관리기능장 통합 TTS 반복학습 앱 v4.16 · 기능장 CBT 모의고사 12회 2024년 복원문제 (2) 60문제 추가",
+  "start_url": "./?v=4.16",
   "display": "standalone",
   "background_color": "#121212",
   "theme_color": "#121212",

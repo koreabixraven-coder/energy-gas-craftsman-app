@@ -1,6 +1,9 @@
-// v4.08: 에너지관리기능장 CBT 모의고사 3회 · 2020년 CBT 필기시험 복원문제 (1) 60문제 추가. 해설 제외, TTS 숫자·수식·기호 한국어 낭독.
-const CACHE_NAME = 'energy-gas-v4-08-energy-master-cbt-05-force-cache-safe';
+// v4.20: 에너지관리기능장 CBT 모의고사 16회에 2026년 CBT 필기시험 복원문제 (2) 60문제 추가. 기존 데이터/로직 보존.
+const CACHE_NAME = 'energy-gas-v4-20-energy-master-cbt-16-force-cache-safe';
 const ASSETS = [
+  "assets/energy_master_cbt_15_q57_oc_curve.png",
+  "assets/energy_master_cbt_12_q50_radiator_symbol.png",
+  "assets/energy_master_cbt_08_q46_cross_fitting.png",
   "assets/energy_master_cbt_03_q30_radiator_symbol.png",
   "assets/energy_master_cbt_01_q60_network.png",
   "assets/energy_master_cbt_01_q52_plan_view.png",
@@ -48,11 +51,11 @@ const ASSETS = [
   "assets/energy_master_past_2002_07_21_q56_sales_table.png",
   "assets/energy_master_past_2002_07_21_q43_welding_symbol.png",
   './',
-  './index.html?v=4.08',
-  './manifest.json?v=4.08',
-  './questions.js?v=4.08',
-  './theory.js?v=4.08',
-  './sw.js?v=4.08',
+  './index.html?v=4.19',
+  './manifest.json?v=4.19',
+  './questions.js?v=4.19',
+  './theory.js?v=4.19',
+  './sw.js?v=4.19',
   './assets/2005_01_30_q45_steps.png',
   './assets/2005_04_03_q46_air_vent.png',
   './assets/2002_07_21_q22.png',
@@ -135,6 +138,7 @@ const ASSETS = [
   './assets/energy_master_past_2012_04_08_q57_sales_table.png',
   './assets/energy_master_past_2013_04_14_q40_ts_cycle.png',
   './assets/energy_master_past_2013_04_14_q41_tensile_curve.png',
+  './assets/energy_master_cbt_06_q33_detector.png',
 ];
 
 self.addEventListener('install', event => {
@@ -182,7 +186,7 @@ async function networkFirst(req) {
   } catch (err) {
     const cached = await caches.match(req);
     if (cached) return cached;
-    return caches.match('./index.html?v=4.08') || caches.match('./index.html') || Response.error();
+    return caches.match('./index.html?v=4.19') || caches.match('./index.html') || Response.error();
   }
 }
 
@@ -201,7 +205,7 @@ self.addEventListener('fetch', event => {
       await cache.put(event.request, res.clone()).catch(() => null);
       return res;
     } catch (err) {
-      return caches.match('./index.html?v=4.08') || caches.match('./index.html') || Response.error();
+      return caches.match('./index.html?v=4.19') || caches.match('./index.html') || Response.error();
     }
   })());
 });
