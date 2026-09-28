@@ -1,6 +1,29 @@
-// v3.86: 에너지관리기능장 과년도출제문제 2007년 07월 15일 60문제 추가. 해설 제외, TTS 숫자·수식·기호 한국어 낭독.
-const CACHE_NAME = 'energy-gas-v3-84-energy-master-past-2008-03-30-force-cache-safe';
+// v4.08: 에너지관리기능장 CBT 모의고사 3회 · 2020년 CBT 필기시험 복원문제 (1) 60문제 추가. 해설 제외, TTS 숫자·수식·기호 한국어 낭독.
+const CACHE_NAME = 'energy-gas-v4-08-energy-master-cbt-05-force-cache-safe';
 const ASSETS = [
+  "assets/energy_master_cbt_03_q30_radiator_symbol.png",
+  "assets/energy_master_cbt_01_q60_network.png",
+  "assets/energy_master_cbt_01_q52_plan_view.png",
+  "assets/energy_master_past_2016_04_02_q50_isometric.png",
+  "assets/energy_master_past_2017_07_08_q25_rankine_ts.png",
+  "assets/energy_master_past_2017_07_08_q55_aoa_network.png",
+  "assets/energy_master_past_2015_07_19_q50_brinell_diagram.png",
+  "assets/energy_master_past_2015_07_19_q09_boiler_capacity_formula.png",
+  "assets/energy_master_past_2015_04_04_q60_cost_slope_table.png",
+  "assets/energy_master_past_2015_04_04_q39_enthalpy_table.png",
+  "assets/energy_master_past_2015_04_04_q36_carnot_formula.png",
+  "assets/energy_master_past_2015_04_04_q33_pipe_diameter_formula.png",
+  "assets/energy_master_past_2014_07_20_q58_oc_curve.png",
+  "assets/energy_master_past_2014_07_20_q46_swivel_options.png",
+  "assets/energy_master_past_2014_04_06_q56_sales_table.png",
+  "assets/energy_master_past_2014_04_06_q49_pipe_symbol.png",
+  "assets/energy_master_past_2014_04_06_q42_pipe_diameter_formula.png",
+  "assets/energy_master_past_2012_07_22_q50_pipe_cap_symbols.png",
+  "assets/energy_master_past_2012_07_22_q39_acid_cleaning_sequence.png",
+  "assets/energy_master_past_2012_07_22_q06_cyclone_box.png",
+  "assets/energy_master_past_2011_04_17_q17_air_formula.png",
+  "assets/energy_master_past_2011_04_17_q18_soot_formula.png",
+  "assets/energy_master_past_2011_04_17_q60_network.png",
   "assets/energy_master_past_2008_03_30_q39_rankine_ts.png",
   "assets/energy_master_past_2008_03_30_q47_swivel_options.png",
   "assets/energy_master_past_2008_03_30_q48_isometric_options.png",
@@ -25,11 +48,11 @@ const ASSETS = [
   "assets/energy_master_past_2002_07_21_q56_sales_table.png",
   "assets/energy_master_past_2002_07_21_q43_welding_symbol.png",
   './',
-  './index.html?v=3.86',
-  './manifest.json?v=3.86',
-  './questions.js?v=3.86',
-  './theory.js?v=3.86',
-  './sw.js?v=3.86',
+  './index.html?v=4.08',
+  './manifest.json?v=4.08',
+  './questions.js?v=4.08',
+  './theory.js?v=4.08',
+  './sw.js?v=4.08',
   './assets/2005_01_30_q45_steps.png',
   './assets/2005_04_03_q46_air_vent.png',
   './assets/2002_07_21_q22.png',
@@ -107,6 +130,11 @@ const ASSETS = [
   "./assets/energy_master_past_2008_07_13_q57_cost_slope_table.png",
   "./assets/energy_master_past_2009_03_29_q35_carnot_formula.png",
   "./assets/energy_master_past_2009_03_29_q57_sales_table.png",
+  './assets/energy_master_past_2010_07_11_q53_isometric_options.png',
+  './assets/energy_master_past_2011_07_31_q20_level_control.png',
+  './assets/energy_master_past_2012_04_08_q57_sales_table.png',
+  './assets/energy_master_past_2013_04_14_q40_ts_cycle.png',
+  './assets/energy_master_past_2013_04_14_q41_tensile_curve.png',
 ];
 
 self.addEventListener('install', event => {
@@ -129,7 +157,7 @@ self.addEventListener('activate', event => {
     await self.clients.claim();
     const clientList = await self.clients.matchAll({type: 'window', includeUncontrolled: true});
     for (const client of clientList) {
-      client.postMessage({type: 'SW_UPDATED', version: 'v3.86'});
+      client.postMessage({type: 'SW_UPDATED', version: 'v3.97'});
     }
   })());
 });
@@ -154,7 +182,7 @@ async function networkFirst(req) {
   } catch (err) {
     const cached = await caches.match(req);
     if (cached) return cached;
-    return caches.match('./index.html?v=3.86') || caches.match('./index.html') || Response.error();
+    return caches.match('./index.html?v=4.08') || caches.match('./index.html') || Response.error();
   }
 }
 
@@ -173,7 +201,8 @@ self.addEventListener('fetch', event => {
       await cache.put(event.request, res.clone()).catch(() => null);
       return res;
     } catch (err) {
-      return caches.match('./index.html?v=3.86') || caches.match('./index.html') || Response.error();
+      return caches.match('./index.html?v=4.08') || caches.match('./index.html') || Response.error();
     }
   })());
 });
+
