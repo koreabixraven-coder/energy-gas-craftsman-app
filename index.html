@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-<!-- v4.20 ENERGY_MASTER_CBT_16_2026_RESTORE: 기능장 CBT 모의고사 16회에 2026년 복원문제 (2) 60문제 추가 · 기존 데이터/로직 보존 -->
+<!-- v4.21 STUDY_PLAN_2027: 2027년 1월 필기시험 일일 학습계획/체크 기능 추가 · 기존 문제/이론 DB 및 풀이 로직 보존 -->
 <!-- v4.01 ENERGY_MASTER_PAST_2013_07_21: 누락 에너지관리기능장 과년도출제문제 2013년 07월 21일 60문제 보완 · 해설 제외 · TTS 한글 낭독 · 32번 원본 정답표 답없음 예외 보존 -->
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
@@ -1466,6 +1466,46 @@
     }
   }
 
+
+
+  /* ── v4.21 2027 필기 일일 학습계획 ── */
+  .home-card.study-plan{border-color:#5875c9;background:linear-gradient(180deg,rgba(60,85,160,.20),rgba(27,31,48,.92));}
+  .hc-icon.sp{background:#334a8a;color:#eef3ff;}
+  .hc-tag.sp{background:#293d72;color:#dce6ff;}
+  .study-wrap{max-width:980px;margin:0 auto;padding:18px 16px 70px;}
+  .study-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:14px;}
+  .study-title{font-size:24px;font-weight:900;letter-spacing:-.6px;}
+  .study-sub{font-size:13px;color:#aeb8c8;margin-top:5px;line-height:1.5;}
+  .study-home-btn{border:1px solid #4b5870;background:#1d2533;color:#eaf0ff;border-radius:12px;padding:10px 13px;font-weight:800;cursor:pointer;}
+  .study-hero{border:1px solid #384b75;background:#171e2c;border-radius:18px;padding:18px;margin-bottom:14px;}
+  .study-hero-top{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;flex-wrap:wrap;}
+  .study-dday{font-size:27px;font-weight:900;color:#9fbdff;}
+  .study-date{font-size:18px;font-weight:800;margin-top:5px;}
+  .study-exam-box{display:flex;align-items:center;gap:7px;flex-wrap:wrap;font-size:13px;color:#aeb8c8;}
+  .study-exam-box input{background:#10151f;border:1px solid #46536a;color:#fff;border-radius:9px;padding:8px;}
+  .study-exam-box button{background:#304b86;color:#fff;border:0;border-radius:9px;padding:9px 11px;font-weight:800;cursor:pointer;}
+  .study-progress{height:13px;background:#0e131c;border-radius:999px;overflow:hidden;margin-top:15px;border:1px solid #303c51;}
+  .study-progress>span{display:block;height:100%;background:linear-gradient(90deg,#5c7cdf,#8da8f2);width:0%;transition:width .25s ease;}
+  .study-progress-text{display:flex;justify-content:space-between;font-size:12px;color:#aeb8c8;margin-top:7px;}
+  .study-nav{display:flex;gap:8px;margin:12px 0;}
+  .study-nav button{flex:1;border:1px solid #46536a;background:#1b2433;color:#eef3ff;border-radius:11px;padding:10px;font-weight:800;cursor:pointer;}
+  .study-day-card{border:1px solid #3d4a61;background:#161c27;border-radius:18px;padding:18px;}
+  .study-phase{display:inline-block;background:#293d72;color:#dce6ff;border-radius:999px;padding:6px 10px;font-size:12px;font-weight:800;margin-bottom:10px;}
+  .study-task-main{font-size:20px;font-weight:900;line-height:1.5;margin-bottom:14px;}
+  .study-check-list{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
+  .study-check{display:flex;align-items:flex-start;gap:11px;padding:13px;border:1px solid #333f52;border-radius:13px;background:#111720;cursor:pointer;min-height:72px;}
+  .study-check input{width:23px;height:23px;accent-color:#7193ef;flex:0 0 auto;margin-top:2px;}
+  .study-check b{display:block;font-size:15px;margin-bottom:3px;}
+  .study-check span{font-size:13px;color:#aeb8c8;line-height:1.45;}
+  .study-score-row{display:flex;align-items:center;gap:8px;margin-top:12px;flex-wrap:wrap;}
+  .study-score-row input{width:95px;background:#10151f;border:1px solid #46536a;color:#fff;border-radius:9px;padding:9px;text-align:center;font-size:16px;}
+  .study-score-row textarea{flex:1;min-width:210px;background:#10151f;border:1px solid #46536a;color:#fff;border-radius:9px;padding:9px;min-height:42px;resize:vertical;}
+  .study-quick{display:flex;gap:8px;margin-top:14px;flex-wrap:wrap;}
+  .study-quick button{border:0;border-radius:10px;padding:10px 13px;font-weight:800;cursor:pointer;background:#2c384d;color:#fff;}
+  .study-quick .primary{background:#3e5fa9;}
+  .study-future{padding:20px;text-align:center;color:#aeb8c8;border:1px dashed #46536a;border-radius:14px;}
+  @media(max-width:640px){.study-check-list{grid-template-columns:1fr}.study-title{font-size:21px}.study-task-main{font-size:18px}.study-dday{font-size:24px}}
+
 </style>
 <script>
 /* v2.61A SAFE: Android/Samsung browser 하단 내비게이션 다크 유도 */
@@ -1716,11 +1756,44 @@
           <span class="hc-tag qz">중복출제 핵심</span>
         </div>
       </div>
+
+      <!-- v4.21: 2027 필기 일일 학습계획 -->
+      <div class="home-card study-plan" onclick="goScreen('screenStudyPlan')">
+        <div class="hc-top">
+          <div class="hc-icon sp">✅</div>
+          <div><div class="hc-title">2027 필기 학습계획</div></div>
+        </div>
+        <div class="hc-sub">오늘의 이론·문제·TTS·오답 목표를 체크하고 CBT 점수와 시험 D-Day를 관리합니다.</div>
+        <div class="hc-tags">
+          <span class="hc-tag sp">일일체크</span><span class="hc-tag sp">D-Day</span><span class="hc-tag sp">CBT 1~16회</span><span class="hc-tag sp">오답복습</span>
+        </div>
+      </div>
     </div>
 
     <div class="home-footer clean">
       <p>© 2025 RavenBix. All rights reserved.<br>에너지관리기능사·가스기능사·에너지관리기능장 통합 TTS 반복학습 앱 · 무단 복제 및 배포 금지</p>
     </div>
+  </div>
+</div>
+
+
+<!-- ════ v4.21 2027 필기 일일 학습계획 화면 ════ -->
+<div class="screen" id="screenStudyPlan">
+  <div class="study-wrap">
+    <div class="study-head">
+      <div><div class="study-title">2027년 1월 필기시험 학습계획</div><div class="study-sub">2026-10-01 시작 · 이론 + 예상문제 + CBT 1~16회 · 미완료 자동이월 없음</div></div>
+      <button class="study-home-btn" onclick="goHome()">⌂ 홈</button>
+    </div>
+    <div class="study-hero">
+      <div class="study-hero-top">
+        <div><div class="study-dday" id="studyDday">D-Day</div><div class="study-date" id="studySelectedDate">오늘</div></div>
+        <div class="study-exam-box">시험 예정일 <input type="date" id="studyExamDate" value="2027-01-31"><button onclick="saveStudyExamDate()">저장</button></div>
+      </div>
+      <div class="study-progress"><span id="studyProgressBar"></span></div>
+      <div class="study-progress-text"><span id="studyProgressText">완료 0/123일</span><span id="studyWeekText">이번 주 0%</span></div>
+    </div>
+    <div class="study-nav"><button onclick="shiftStudyDay(-1)">← 전날</button><button onclick="showStudyToday()">오늘</button><button onclick="shiftStudyDay(1)">다음날 →</button></div>
+    <div id="studyDayHost"></div>
   </div>
 </div>
 
@@ -2125,6 +2198,7 @@ function goScreen(id){
   window.scrollTo(0,0);
   resetQuizScrollPane();
   if(id==='screenHome') updateHomeCounts();
+  if(id==='screenStudyPlan') renderStudyPlan();
   if(id==='screenTheory') buildTheorySubjects();
   if(id==='screenQuizToc') buildQuizToc();
   if(id==='screenQuizStage') buildQuizStage();
@@ -5139,6 +5213,88 @@ function importProgress(){
   }catch(e){
     alert('백업코드를 읽지 못했습니다. 코드 전체를 다시 복사해 주세요.');
   }
+}
+
+
+/* ── v4.21 2027년 1월 필기시험 일일 학습계획 ── */
+const STUDY_PLAN_2027=[{"date":"2026-10-01","phase":"1편","theory":"열역학 및 유체역학 2~9쪽","problems":"관련 예상문제 30문제","tts":"TTS 30분","review":"오답 5문제"},{"date":"2026-10-02","phase":"1편","theory":"열역학 및 유체역학 10~14쪽","problems":"관련 예상문제 30문제","tts":"TTS 30분","review":"오답 5문제"},{"date":"2026-10-03","phase":"1편","theory":"열역학 및 유체역학 29~36쪽","problems":"관련 예상문제 30문제","tts":"TTS 30분","review":"오답 5문제"},{"date":"2026-10-04","phase":"주간복습","theory":"이번 주 이론 복습","problems":"오답 20문제","tts":"TTS 20분","review":"공식·단위 10분"},{"date":"2026-10-05","phase":"1편","theory":"열역학 및 유체역학 37~37쪽","problems":"관련 예상문제 30문제","tts":"TTS 30분","review":"오답 5문제"},{"date":"2026-10-06","phase":"2편","theory":"보일러 구조학 50~57쪽","problems":"관련 예상문제 30문제","tts":"TTS 30분","review":"오답 5문제"},{"date":"2026-10-07","phase":"2편","theory":"보일러 구조학 58~65쪽","problems":"관련 예상문제 30문제","tts":"TTS 30분","review":"오답 5문제"},{"date":"2026-10-08","phase":"2편","theory":"보일러 구조학 66~69쪽","problems":"관련 예상문제 30문제","tts":"TTS 30분","review":"오답 5문제"},{"date":"2026-10-09","phase":"2편","theory":"보일러 구조학 70~75쪽","problems":"관련 예상문제 30문제","tts":"TTS 30분","review":"오답 5문제"},{"date":"2026-10-10","phase":"2편","theory":"보일러 구조학 82~89쪽","problems":"관련 예상문제 30문제","tts":"TTS 30분","review":"오답 5문제"},{"date":"2026-10-11","phase":"주간복습","theory":"이번 주 이론 복습","problems":"오답 20문제","tts":"TTS 20분","review":"공식·단위 10분"},{"date":"2026-10-12","phase":"2편","theory":"보일러 구조학 90~97쪽","problems":"관련 예상문제 30문제","tts":"TTS 30분","review":"오답 5문제"},{"date":"2026-10-13","phase":"2편","theory":"보일러 구조학 98~101쪽","problems":"관련 예상문제 30문제","tts":"TTS 30분","review":"오답 5문제"},{"date":"2026-10-14","phase":"2편","theory":"보일러 구조학 119~122쪽","problems":"관련 예상문제 30문제","tts":"TTS 30분","review":"오답 5문제"},{"date":"2026-10-15","phase":"2편","theory":"보일러 구조학 128~135쪽","problems":"관련 예상문제 30문제","tts":"TTS 30분","review":"오답 5문제"},{"date":"2026-10-16","phase":"2편","theory":"보일러 구조학 136~143쪽","problems":"관련 예상문제 30문제","tts":"TTS 30분","review":"오답 5문제"},{"date":"2026-10-17","phase":"2편","theory":"보일러 구조학 144~151쪽","problems":"관련 예상문제 30문제","tts":"TTS 30분","review":"오답 5문제"},{"date":"2026-10-18","phase":"주간복습","theory":"이번 주 이론 복습","problems":"오답 20문제","tts":"TTS 20분","review":"공식·단위 10분"},{"date":"2026-10-19","phase":"2편","theory":"보일러 구조학 152~158쪽","problems":"관련 예상문제 30문제","tts":"TTS 30분","review":"오답 5문제"},{"date":"2026-10-20","phase":"2편","theory":"보일러 구조학 175~182쪽","problems":"관련 예상문제 30문제","tts":"TTS 30분","review":"오답 5문제"},{"date":"2026-10-21","phase":"2편","theory":"보일러 구조학 183~190쪽","problems":"관련 예상문제 30문제","tts":"TTS 30분","review":"오답 5문제"},{"date":"2026-10-22","phase":"2편","theory":"보일러 구조학 198~205쪽","problems":"관련 예상문제 30문제","tts":"TTS 30분","review":"오답 5문제"},{"date":"2026-10-23","phase":"2편","theory":"보일러 구조학 206~212쪽","problems":"관련 예상문제 30문제","tts":"TTS 30분","review":"오답 5문제"},{"date":"2026-10-24","phase":"2편","theory":"보일러 구조학 225~232쪽","problems":"관련 예상문제 30문제","tts":"TTS 30분","review":"오답 5문제"},{"date":"2026-10-25","phase":"주간복습","theory":"이번 주 이론 복습","problems":"오답 20문제","tts":"TTS 20분","review":"공식·단위 10분"},{"date":"2026-10-26","phase":"2편","theory":"보일러 구조학 233~239쪽","problems":"관련 예상문제 30문제","tts":"TTS 30분","review":"오답 5문제"},{"date":"2026-10-27","phase":"2편","theory":"보일러 구조학 247~254쪽","problems":"관련 예상문제 30문제","tts":"TTS 30분","review":"오답 5문제"},{"date":"2026-10-28","phase":"2편","theory":"보일러 구조학 255~262쪽","problems":"관련 예상문제 30문제","tts":"TTS 30분","review":"오답 5문제"},{"date":"2026-10-29","phase":"2편","theory":"보일러 구조학 263~265쪽","problems":"관련 예상문제 30문제","tts":"TTS 30분","review":"오답 5문제"},{"date":"2026-10-30","phase":"3편","theory":"보일러 시공 270~277쪽","problems":"관련 예상문제 30문제","tts":"TTS 30분","review":"오답 5문제"},{"date":"2026-10-31","phase":"3편","theory":"보일러 시공 278~285쪽","problems":"관련 예상문제 30문제","tts":"TTS 30분","review":"오답 5문제"},{"date":"2026-11-01","phase":"주간복습","theory":"이번 주 이론 복습","problems":"오답 20문제","tts":"TTS 20분","review":"공식·단위 10분"},{"date":"2026-11-02","phase":"3편","theory":"보일러 시공 286~288쪽","problems":"관련 예상문제 30문제","tts":"TTS 30분","review":"오답 5문제"},{"date":"2026-11-03","phase":"3편","theory":"보일러 시공 301~308쪽","problems":"관련 예상문제 30문제","tts":"TTS 30분","review":"오답 5문제"},{"date":"2026-11-04","phase":"3편","theory":"보일러 시공 309~309쪽","problems":"관련 예상문제 30문제","tts":"TTS 30분","review":"오답 5문제"},{"date":"2026-11-05","phase":"3편","theory":"보일러 시공 317~324쪽","problems":"관련 예상문제 30문제","tts":"TTS 30분","review":"오답 5문제"},{"date":"2026-11-06","phase":"3편","theory":"보일러 시공 325~332쪽","problems":"관련 예상문제 30문제","tts":"TTS 30분","review":"오답 5문제"},{"date":"2026-11-07","phase":"3편","theory":"보일러 시공 333~340쪽","problems":"관련 예상문제 30문제","tts":"TTS 30분","review":"오답 5문제"},{"date":"2026-11-08","phase":"주간복습","theory":"이번 주 이론 복습","problems":"오답 20문제","tts":"TTS 20분","review":"공식·단위 10분"},{"date":"2026-11-09","phase":"3편","theory":"보일러 시공 341~347쪽","problems":"관련 예상문제 30문제","tts":"TTS 30분","review":"오답 5문제"},{"date":"2026-11-10","phase":"4편","theory":"보일러 취급 및 안전관리 360~367쪽","problems":"관련 예상문제 30문제","tts":"TTS 30분","review":"오답 5문제"},{"date":"2026-11-11","phase":"4편","theory":"보일러 취급 및 안전관리 368~369쪽","problems":"관련 예상문제 30문제","tts":"TTS 30분","review":"오답 5문제"},{"date":"2026-11-12","phase":"4편","theory":"보일러 취급 및 안전관리 381~388쪽","problems":"관련 예상문제 30문제","tts":"TTS 30분","review":"오답 5문제"},{"date":"2026-11-13","phase":"4편","theory":"보일러 취급 및 안전관리 394~398쪽","problems":"관련 예상문제 30문제","tts":"TTS 30분","review":"오답 5문제"},{"date":"2026-11-14","phase":"4편","theory":"보일러 취급 및 안전관리 403~408쪽","problems":"관련 예상문제 30문제","tts":"TTS 30분","review":"오답 5문제"},{"date":"2026-11-15","phase":"주간복습","theory":"이번 주 이론 복습","problems":"오답 20문제","tts":"TTS 20분","review":"공식·단위 10분"},{"date":"2026-11-16","phase":"5편","theory":"배관일반 418~425쪽","problems":"관련 예상문제 30문제","tts":"TTS 30분","review":"오답 5문제"},{"date":"2026-11-17","phase":"5편","theory":"배관일반 426~433쪽","problems":"관련 예상문제 30문제","tts":"TTS 30분","review":"오답 5문제"},{"date":"2026-11-18","phase":"5편","theory":"배관일반 434~440쪽","problems":"관련 예상문제 30문제","tts":"TTS 30분","review":"오답 5문제"},{"date":"2026-11-19","phase":"5편","theory":"배관일반 455~462쪽","problems":"관련 예상문제 30문제","tts":"TTS 30분","review":"오답 5문제"},{"date":"2026-11-20","phase":"5편","theory":"배관일반 463~464쪽","problems":"관련 예상문제 30문제","tts":"TTS 30분","review":"오답 5문제"},{"date":"2026-11-21","phase":"문제집중","theory":"열역학 및 유체역학 약점이론 복습","problems":"예상문제 40문제","tts":"TTS 20분","review":"전날 오답 10문제"},{"date":"2026-11-22","phase":"주간복습","theory":"이번 주 오답·공식 총복습","problems":"오답 30문제","tts":"TTS 20분","review":"법규/공식 15분"},{"date":"2026-11-23","phase":"문제집중","theory":"보일러 구조학 약점이론 복습","problems":"예상문제 40문제","tts":"TTS 20분","review":"전날 오답 10문제"},{"date":"2026-11-24","phase":"문제집중","theory":"보일러 시공 약점이론 복습","problems":"예상문제 40문제","tts":"TTS 20분","review":"전날 오답 10문제"},{"date":"2026-11-25","phase":"문제집중","theory":"보일러 취급 및 안전관리 약점이론 복습","problems":"예상문제 40문제","tts":"TTS 20분","review":"전날 오답 10문제"},{"date":"2026-11-26","phase":"문제집중","theory":"배관일반 약점이론 복습","problems":"예상문제 40문제","tts":"TTS 20분","review":"전날 오답 10문제"},{"date":"2026-11-27","phase":"문제집중","theory":"보일러 재료 약점이론 복습","problems":"예상문제 40문제","tts":"TTS 20분","review":"전날 오답 10문제"},{"date":"2026-11-28","phase":"문제집중","theory":"에너지 관련 법규 약점이론 복습","problems":"예상문제 40문제","tts":"TTS 20분","review":"전날 오답 10문제"},{"date":"2026-11-29","phase":"주간복습","theory":"이번 주 오답·공식 총복습","problems":"오답 30문제","tts":"TTS 20분","review":"법규/공식 15분"},{"date":"2026-11-30","phase":"문제집중","theory":"공업경영 약점이론 복습","problems":"예상문제 40문제","tts":"TTS 20분","review":"전날 오답 10문제"},{"date":"2026-12-01","phase":"문제집중","theory":"열역학 및 유체역학 약점이론 복습","problems":"예상문제 40문제","tts":"TTS 20분","review":"전날 오답 10문제"},{"date":"2026-12-02","phase":"문제집중","theory":"보일러 구조학 약점이론 복습","problems":"예상문제 40문제","tts":"TTS 20분","review":"전날 오답 10문제"},{"date":"2026-12-03","phase":"문제집중","theory":"보일러 시공 약점이론 복습","problems":"예상문제 40문제","tts":"TTS 20분","review":"전날 오답 10문제"},{"date":"2026-12-04","phase":"문제집중","theory":"보일러 취급 및 안전관리 약점이론 복습","problems":"예상문제 40문제","tts":"TTS 20분","review":"전날 오답 10문제"},{"date":"2026-12-05","phase":"문제집중","theory":"배관일반 약점이론 복습","problems":"예상문제 40문제","tts":"TTS 20분","review":"전날 오답 10문제"},{"date":"2026-12-06","phase":"주간복습","theory":"이번 주 오답·공식 총복습","problems":"오답 30문제","tts":"TTS 20분","review":"법규/공식 15분"},{"date":"2026-12-07","phase":"문제집중","theory":"보일러 재료 약점이론 복습","problems":"예상문제 40문제","tts":"TTS 20분","review":"전날 오답 10문제"},{"date":"2026-12-08","phase":"문제집중","theory":"에너지 관련 법규 약점이론 복습","problems":"예상문제 40문제","tts":"TTS 20분","review":"전날 오답 10문제"},{"date":"2026-12-09","phase":"문제집중","theory":"공업경영 약점이론 복습","problems":"예상문제 40문제","tts":"TTS 20분","review":"전날 오답 10문제"},{"date":"2026-12-10","phase":"문제집중","theory":"열역학 및 유체역학 약점이론 복습","problems":"예상문제 40문제","tts":"TTS 20분","review":"전날 오답 10문제"},{"date":"2026-12-11","phase":"문제집중","theory":"보일러 구조학 약점이론 복습","problems":"예상문제 40문제","tts":"TTS 20분","review":"전날 오답 10문제"},{"date":"2026-12-12","phase":"문제집중","theory":"보일러 시공 약점이론 복습","problems":"예상문제 40문제","tts":"TTS 20분","review":"전날 오답 10문제"},{"date":"2026-12-13","phase":"주간복습","theory":"이번 주 오답·공식 총복습","problems":"오답 30문제","tts":"TTS 20분","review":"법규/공식 15분"},{"date":"2026-12-14","phase":"문제집중","theory":"보일러 취급 및 안전관리 약점이론 복습","problems":"예상문제 40문제","tts":"TTS 20분","review":"전날 오답 10문제"},{"date":"2026-12-15","phase":"문제집중","theory":"배관일반 약점이론 복습","problems":"예상문제 40문제","tts":"TTS 20분","review":"전날 오답 10문제"},{"date":"2026-12-16","phase":"CBT 1차","theory":"CBT 모의고사 1회","problems":"60문제 실전","tts":"틀린 문항 TTS/이론 확인","review":"오답 전부 재확인"},{"date":"2026-12-17","phase":"CBT 1차","theory":"CBT 모의고사 2회","problems":"60문제 실전","tts":"틀린 문항 TTS/이론 확인","review":"오답 전부 재확인"},{"date":"2026-12-18","phase":"CBT 1차","theory":"CBT 모의고사 3회","problems":"60문제 실전","tts":"틀린 문항 TTS/이론 확인","review":"오답 전부 재확인"},{"date":"2026-12-19","phase":"CBT 1차","theory":"CBT 모의고사 4회","problems":"60문제 실전","tts":"틀린 문항 TTS/이론 확인","review":"오답 전부 재확인"},{"date":"2026-12-20","phase":"CBT 1차","theory":"CBT 모의고사 5회","problems":"60문제 실전","tts":"틀린 문항 TTS/이론 확인","review":"오답 전부 재확인"},{"date":"2026-12-21","phase":"CBT 1차","theory":"CBT 모의고사 6회","problems":"60문제 실전","tts":"틀린 문항 TTS/이론 확인","review":"오답 전부 재확인"},{"date":"2026-12-22","phase":"CBT 1차","theory":"CBT 모의고사 7회","problems":"60문제 실전","tts":"틀린 문항 TTS/이론 확인","review":"오답 전부 재확인"},{"date":"2026-12-23","phase":"CBT 1차","theory":"CBT 모의고사 8회","problems":"60문제 실전","tts":"틀린 문항 TTS/이론 확인","review":"오답 전부 재확인"},{"date":"2026-12-24","phase":"CBT 1차","theory":"CBT 모의고사 9회","problems":"60문제 실전","tts":"틀린 문항 TTS/이론 확인","review":"오답 전부 재확인"},{"date":"2026-12-25","phase":"CBT 1차","theory":"CBT 모의고사 10회","problems":"60문제 실전","tts":"틀린 문항 TTS/이론 확인","review":"오답 전부 재확인"},{"date":"2026-12-26","phase":"CBT 1차","theory":"CBT 모의고사 11회","problems":"60문제 실전","tts":"틀린 문항 TTS/이론 확인","review":"오답 전부 재확인"},{"date":"2026-12-27","phase":"CBT 1차","theory":"CBT 모의고사 12회","problems":"60문제 실전","tts":"틀린 문항 TTS/이론 확인","review":"오답 전부 재확인"},{"date":"2026-12-28","phase":"CBT 1차","theory":"CBT 모의고사 13회","problems":"60문제 실전","tts":"틀린 문항 TTS/이론 확인","review":"오답 전부 재확인"},{"date":"2026-12-29","phase":"CBT 1차","theory":"CBT 모의고사 14회","problems":"60문제 실전","tts":"틀린 문항 TTS/이론 확인","review":"오답 전부 재확인"},{"date":"2026-12-30","phase":"CBT 1차","theory":"CBT 모의고사 15회","problems":"60문제 실전","tts":"틀린 문항 TTS/이론 확인","review":"오답 전부 재확인"},{"date":"2026-12-31","phase":"CBT 1차","theory":"CBT 모의고사 16회","problems":"60문제 실전","tts":"틀린 문항 TTS/이론 확인","review":"오답 전부 재확인"},{"date":"2027-01-01","phase":"CBT 2차","theory":"CBT 모의고사 1회 재시험","problems":"60문제 실전","tts":"취약이론 20분","review":"1차 오답 비교"},{"date":"2027-01-02","phase":"CBT 2차","theory":"CBT 모의고사 2회 재시험","problems":"60문제 실전","tts":"취약이론 20분","review":"1차 오답 비교"},{"date":"2027-01-03","phase":"CBT 2차","theory":"CBT 모의고사 3회 재시험","problems":"60문제 실전","tts":"취약이론 20분","review":"1차 오답 비교"},{"date":"2027-01-04","phase":"CBT 2차","theory":"CBT 모의고사 4회 재시험","problems":"60문제 실전","tts":"취약이론 20분","review":"1차 오답 비교"},{"date":"2027-01-05","phase":"CBT 2차","theory":"CBT 모의고사 5회 재시험","problems":"60문제 실전","tts":"취약이론 20분","review":"1차 오답 비교"},{"date":"2027-01-06","phase":"CBT 2차","theory":"CBT 모의고사 6회 재시험","problems":"60문제 실전","tts":"취약이론 20분","review":"1차 오답 비교"},{"date":"2027-01-07","phase":"CBT 2차","theory":"CBT 모의고사 7회 재시험","problems":"60문제 실전","tts":"취약이론 20분","review":"1차 오답 비교"},{"date":"2027-01-08","phase":"CBT 2차","theory":"CBT 모의고사 8회 재시험","problems":"60문제 실전","tts":"취약이론 20분","review":"1차 오답 비교"},{"date":"2027-01-09","phase":"CBT 2차","theory":"CBT 모의고사 9회 재시험","problems":"60문제 실전","tts":"취약이론 20분","review":"1차 오답 비교"},{"date":"2027-01-10","phase":"CBT 2차","theory":"CBT 모의고사 10회 재시험","problems":"60문제 실전","tts":"취약이론 20분","review":"1차 오답 비교"},{"date":"2027-01-11","phase":"CBT 2차","theory":"CBT 모의고사 11회 재시험","problems":"60문제 실전","tts":"취약이론 20분","review":"1차 오답 비교"},{"date":"2027-01-12","phase":"CBT 2차","theory":"CBT 모의고사 12회 재시험","problems":"60문제 실전","tts":"취약이론 20분","review":"1차 오답 비교"},{"date":"2027-01-13","phase":"CBT 2차","theory":"CBT 모의고사 13회 재시험","problems":"60문제 실전","tts":"취약이론 20분","review":"1차 오답 비교"},{"date":"2027-01-14","phase":"CBT 2차","theory":"CBT 모의고사 14회 재시험","problems":"60문제 실전","tts":"취약이론 20분","review":"1차 오답 비교"},{"date":"2027-01-15","phase":"CBT 2차","theory":"CBT 모의고사 15회 재시험","problems":"60문제 실전","tts":"취약이론 20분","review":"1차 오답 비교"},{"date":"2027-01-16","phase":"CBT 2차","theory":"CBT 모의고사 16회 재시험","problems":"60문제 실전","tts":"취약이론 20분","review":"1차 오답 비교"},{"date":"2027-01-17","phase":"약점집중","theory":"열역학·유체역학 공식/계산","problems":"취약문제 40문제","tts":"TTS 20분","review":"오답 15문제"},{"date":"2027-01-18","phase":"약점집중","theory":"보일러 구조학 핵심구조·부속","problems":"취약문제 40문제","tts":"TTS 20분","review":"오답 15문제"},{"date":"2027-01-19","phase":"약점집중","theory":"보일러 시공 계산·시공기준","problems":"취약문제 40문제","tts":"TTS 20분","review":"오답 15문제"},{"date":"2027-01-20","phase":"약점집중","theory":"취급·안전관리 숫자/기준","problems":"취약문제 40문제","tts":"TTS 20분","review":"오답 15문제"},{"date":"2027-01-21","phase":"약점집중","theory":"배관일반 규격·재료·이음","problems":"취약문제 40문제","tts":"TTS 20분","review":"오답 15문제"},{"date":"2027-01-22","phase":"약점집중","theory":"보일러 재료 성질·용도","problems":"취약문제 40문제","tts":"TTS 20분","review":"오답 15문제"},{"date":"2027-01-23","phase":"약점집중","theory":"에너지 관련 법규 숫자","problems":"취약문제 40문제","tts":"TTS 20분","review":"오답 15문제"},{"date":"2027-01-24","phase":"약점집중","theory":"공업경영 품질관리·작업관리","problems":"취약문제 40문제","tts":"TTS 20분","review":"오답 15문제"},{"date":"2027-01-25","phase":"최종정리","theory":"공식·단위 총정리","problems":"핵심문제 30문제","tts":"TTS 20분","review":"틀린 공식만"},{"date":"2027-01-26","phase":"최종정리","theory":"법규 숫자·안전기준 총정리","problems":"핵심문제 30문제","tts":"TTS 20분","review":"법규 오답"},{"date":"2027-01-27","phase":"최종정리","theory":"보일러 구조·시공 총정리","problems":"핵심문제 40문제","tts":"TTS 20분","review":"구조·시공 오답"},{"date":"2027-01-28","phase":"최종정리","theory":"배관·재료·공업경영 총정리","problems":"핵심문제 40문제","tts":"TTS 20분","review":"취약 오답"},{"date":"2027-01-29","phase":"실전점검","theory":"CBT 최저점 회차 재시험","problems":"60문제","tts":"틀린 이론만 확인","review":"오답 재시험"},{"date":"2027-01-30","phase":"가벼운복습","theory":"암기장·공식만 가볍게","problems":"20문제 이하","tts":"TTS 15분","review":"새 문제 금지"},{"date":"2027-01-31","phase":"시험일(임시)","theory":"시험 전 핵심 암기만 확인","problems":"문제풀이 없음","tts":"TTS 선택","review":"컨디션 우선"}];
+const STUDY_PLAN_STORE='energy_master_study_plan_2027_v1';
+const STUDY_EXAM_STORE='energy_master_study_exam_date_2027';
+let studySelectedKey='';
+function studyDateKeyLocal(d){
+  const y=d.getFullYear(),m=String(d.getMonth()+1).padStart(2,'0'),day=String(d.getDate()).padStart(2,'0');
+  return `${y}-${m}-${day}`;
+}
+function loadStudyState(){try{return JSON.parse(localStorage.getItem(STUDY_PLAN_STORE)||'{}')||{};}catch(e){return {};}}
+function saveStudyState(s){try{localStorage.setItem(STUDY_PLAN_STORE,JSON.stringify(s||{}));}catch(e){}}
+function getStudyItem(key){return STUDY_PLAN_2027.find(x=>x.date===key)||null;}
+function studyKoreanDate(key){
+  const d=new Date(key+'T00:00:00'); const w=['일','월','화','수','목','금','토'][d.getDay()];
+  return `${d.getFullYear()}년 ${d.getMonth()+1}월 ${d.getDate()}일 (${w})`;
+}
+function studyExamDate(){return localStorage.getItem(STUDY_EXAM_STORE)||'2027-01-31';}
+function saveStudyExamDate(){
+  const el=document.getElementById('studyExamDate'); if(!el||!el.value)return;
+  localStorage.setItem(STUDY_EXAM_STORE,el.value); renderStudyPlan(studySelectedKey); alert('시험 예정일을 저장했습니다.');
+}
+function studyDoneCount(){
+  const s=loadStudyState(); return STUDY_PLAN_2027.reduce((n,x)=>n+((s[x.date]&&s[x.date].checks&&s[x.date].checks.every(Boolean))?1:0),0);
+}
+function studyWeekPercent(key){
+  const d=new Date(key+'T00:00:00'); const monday=new Date(d); const day=(d.getDay()+6)%7; monday.setDate(d.getDate()-day);
+  const sunday=new Date(monday); sunday.setDate(monday.getDate()+6); const s=loadStudyState(); let total=0,done=0;
+  STUDY_PLAN_2027.forEach(x=>{const xd=new Date(x.date+'T00:00:00');if(xd>=monday&&xd<=sunday){total++;if(s[x.date]&&s[x.date].checks&&s[x.date].checks.every(Boolean))done++;}});
+  return total?Math.round(done/total*100):0;
+}
+function setStudyCheck(key,idx,val){
+  const s=loadStudyState(); const row=s[key]||{checks:[false,false,false,false],score:'',memo:''};
+  if(!Array.isArray(row.checks))row.checks=[false,false,false,false]; row.checks[idx]=!!val; s[key]=row; saveStudyState(s); renderStudyPlan(key);
+}
+function saveStudyScoreMemo(key){
+  const s=loadStudyState(); const row=s[key]||{checks:[false,false,false,false],score:'',memo:''};
+  const score=document.getElementById('studyScoreInput'), memo=document.getElementById('studyMemoInput');
+  if(score)row.score=score.value; if(memo)row.memo=memo.value; s[key]=row; saveStudyState(s);
+}
+function shiftStudyDay(delta){
+  const i=STUDY_PLAN_2027.findIndex(x=>x.date===studySelectedKey); if(i<0)return;
+  const ni=Math.max(0,Math.min(STUDY_PLAN_2027.length-1,i+delta)); renderStudyPlan(STUDY_PLAN_2027[ni].date);
+}
+function showStudyToday(){
+  const today=studyDateKeyLocal(new Date());
+  if(today<STUDY_PLAN_2027[0].date) renderStudyPlan(STUDY_PLAN_2027[0].date);
+  else if(today>STUDY_PLAN_2027[STUDY_PLAN_2027.length-1].date) renderStudyPlan(STUDY_PLAN_2027[STUDY_PLAN_2027.length-1].date);
+  else renderStudyPlan(today);
+}
+function renderStudyPlan(forceKey){
+  const host=document.getElementById('studyDayHost'); if(!host)return;
+  const today=studyDateKeyLocal(new Date());
+  let key=forceKey||studySelectedKey||today;
+  if(!getStudyItem(key)) key=today<STUDY_PLAN_2027[0].date?STUDY_PLAN_2027[0].date:STUDY_PLAN_2027[STUDY_PLAN_2027.length-1].date;
+  studySelectedKey=key; const item=getStudyItem(key); const s=loadStudyState(); const row=s[key]||{checks:[false,false,false,false],score:'',memo:''};
+  if(!Array.isArray(row.checks))row.checks=[false,false,false,false];
+  const exam=studyExamDate(); const examEl=document.getElementById('studyExamDate'); if(examEl)examEl.value=exam;
+  const diff=Math.ceil((new Date(exam+'T00:00:00')-new Date(today+'T00:00:00'))/86400000);
+  const dd=document.getElementById('studyDday'); if(dd)dd.textContent=diff>0?'D-'+diff:(diff===0?'D-Day':'시험일 경과');
+  const sd=document.getElementById('studySelectedDate'); if(sd)sd.textContent=studyKoreanDate(key)+(key===today?' · 오늘':'');
+  const done=studyDoneCount(), pct=Math.round(done/STUDY_PLAN_2027.length*100);
+  const pb=document.getElementById('studyProgressBar'); if(pb)pb.style.width=pct+'%';
+  const pt=document.getElementById('studyProgressText'); if(pt)pt.textContent=`완료 ${done}/${STUDY_PLAN_2027.length}일 · ${pct}%`;
+  const wt=document.getElementById('studyWeekText'); if(wt)wt.textContent='선택 주간 '+studyWeekPercent(key)+'%';
+  if(!item){host.innerHTML='<div class="study-future">학습계획 기간 밖입니다.</div>';return;}
+  const ck=(i)=>row.checks[i]?'checked':'';
+  const isCbt=item.phase.indexOf('CBT')>=0||item.phase==='실전점검';
+  host.innerHTML=`<div class="study-day-card">
+    <div class="study-phase">${item.phase}</div>
+    <div class="study-task-main">${item.theory}</div>
+    <div class="study-check-list">
+      <label class="study-check"><input type="checkbox" ${ck(0)} onchange="setStudyCheck('${key}',0,this.checked)"><div><b>① 이론</b><span>${item.theory}</span></div></label>
+      <label class="study-check"><input type="checkbox" ${ck(1)} onchange="setStudyCheck('${key}',1,this.checked)"><div><b>② 문제풀이</b><span>${item.problems}</span></div></label>
+      <label class="study-check"><input type="checkbox" ${ck(2)} onchange="setStudyCheck('${key}',2,this.checked)"><div><b>③ TTS</b><span>${item.tts}</span></div></label>
+      <label class="study-check"><input type="checkbox" ${ck(3)} onchange="setStudyCheck('${key}',3,this.checked)"><div><b>④ 오답·암기</b><span>${item.review}</span></div></label>
+    </div>
+    <div class="study-score-row">${isCbt?'<label>CBT 점수 <input id="studyScoreInput" type="number" min="0" max="100" value="'+(row.score||'')+'" oninput="saveStudyScoreMemo(\''+key+'\')"></label>':''}<textarea id="studyMemoInput" placeholder="오늘 메모 / 틀린 내용" oninput="saveStudyScoreMemo('${key}')">${String(row.memo||'').replace(/&/g,'&amp;').replace(/</g,'&lt;')}</textarea></div>
+    <div class="study-quick"><button class="primary" onclick="goScreen('screenTheory')">📖 이론 바로가기</button><button class="primary" onclick="goScreen('screenQuizToc')">✏️ 문제풀이 바로가기</button><button onclick="if(confirm('이 날짜의 체크와 기록을 초기화할까요?')){const s=loadStudyState();delete s['${key}'];saveStudyState(s);renderStudyPlan('${key}');}">이 날짜 초기화</button></div>
+  </div>`;
 }
 </script>
 </body>

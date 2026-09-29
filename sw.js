@@ -1,5 +1,5 @@
-// v4.20: 에너지관리기능장 CBT 모의고사 16회에 2026년 CBT 필기시험 복원문제 (2) 60문제 추가. 기존 데이터/로직 보존.
-const CACHE_NAME = 'energy-gas-v4-20-energy-master-cbt-16-force-cache-safe';
+// v4.21: 2027년 1월 필기 일일 학습계획/체크 기능 추가. 기존 문제/이론 DB 보존.
+const CACHE_NAME = 'energy-gas-v4-21-study-plan-2027-force-cache-safe';
 const ASSETS = [
   "assets/energy_master_cbt_15_q57_oc_curve.png",
   "assets/energy_master_cbt_12_q50_radiator_symbol.png",
@@ -51,11 +51,11 @@ const ASSETS = [
   "assets/energy_master_past_2002_07_21_q56_sales_table.png",
   "assets/energy_master_past_2002_07_21_q43_welding_symbol.png",
   './',
-  './index.html?v=4.19',
-  './manifest.json?v=4.19',
-  './questions.js?v=4.19',
-  './theory.js?v=4.19',
-  './sw.js?v=4.19',
+  './index.html?v=4.21',
+  './manifest.json?v=4.21',
+  './questions.js?v=4.21',
+  './theory.js?v=4.21',
+  './sw.js?v=4.21',
   './assets/2005_01_30_q45_steps.png',
   './assets/2005_04_03_q46_air_vent.png',
   './assets/2002_07_21_q22.png',
@@ -161,7 +161,7 @@ self.addEventListener('activate', event => {
     await self.clients.claim();
     const clientList = await self.clients.matchAll({type: 'window', includeUncontrolled: true});
     for (const client of clientList) {
-      client.postMessage({type: 'SW_UPDATED', version: 'v3.97'});
+      client.postMessage({type: 'SW_UPDATED', version: 'v4.21'});
     }
   })());
 });
@@ -186,7 +186,7 @@ async function networkFirst(req) {
   } catch (err) {
     const cached = await caches.match(req);
     if (cached) return cached;
-    return caches.match('./index.html?v=4.19') || caches.match('./index.html') || Response.error();
+    return caches.match('./index.html?v=4.21') || caches.match('./index.html') || Response.error();
   }
 }
 
@@ -205,7 +205,7 @@ self.addEventListener('fetch', event => {
       await cache.put(event.request, res.clone()).catch(() => null);
       return res;
     } catch (err) {
-      return caches.match('./index.html?v=4.19') || caches.match('./index.html') || Response.error();
+      return caches.match('./index.html?v=4.21') || caches.match('./index.html') || Response.error();
     }
   })());
 });
