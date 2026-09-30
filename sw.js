@@ -1,6 +1,75 @@
-// v4.21: 2027년 1월 필기 일일 학습계획/체크 기능 추가. 기존 문제/이론 DB 보존.
-const CACHE_NAME = 'energy-gas-v4-21-study-plan-2027-force-cache-safe';
+// v4.37: 출제예상문제 30. 통계적 품질관리 1~77번 반영. Q44 OC곡선 asset 추가. 기존 DB/이론/assets/학습계획 보존.
+const CACHE_NAME = 'energy-gas-v4-36-expected-30-statistical-quality-control-77q-force-cache-safe';
 const ASSETS = [
+  "assets/energy_master_expected_30_q44_oc_curve.png",
+  "assets/energy_master_expected_23_q06_stress_strain_curve.png",
+  "assets/energy_master_expected_23_q21_brinell_diagram.png",
+  "assets/energy_master_expected_22_q06_reference.png",
+  "assets/energy_master_expected_22_q10_reference.png",
+  "assets/energy_master_expected_22_q12_opt1.png",
+  "assets/energy_master_expected_22_q12_opt2.png",
+  "assets/energy_master_expected_22_q12_opt3.png",
+  "assets/energy_master_expected_22_q12_opt4.png",
+  "assets/energy_master_expected_22_q13_opt1.png",
+  "assets/energy_master_expected_22_q13_opt2.png",
+  "assets/energy_master_expected_22_q13_opt3.png",
+  "assets/energy_master_expected_22_q13_opt4.png",
+  "assets/energy_master_expected_22_q14_opt1.png",
+  "assets/energy_master_expected_22_q14_opt2.png",
+  "assets/energy_master_expected_22_q14_opt3.png",
+  "assets/energy_master_expected_22_q14_opt4.png",
+  "assets/energy_master_expected_22_q16_opt1.png",
+  "assets/energy_master_expected_22_q16_opt2.png",
+  "assets/energy_master_expected_22_q16_opt3.png",
+  "assets/energy_master_expected_22_q16_opt4.png",
+  "assets/energy_master_expected_22_q17_opt1.png",
+  "assets/energy_master_expected_22_q17_opt2.png",
+  "assets/energy_master_expected_22_q17_opt3.png",
+  "assets/energy_master_expected_22_q17_opt4.png",
+  "assets/energy_master_expected_22_q18_opt1.png",
+  "assets/energy_master_expected_22_q18_opt2.png",
+  "assets/energy_master_expected_22_q18_opt3.png",
+  "assets/energy_master_expected_22_q18_opt4.png",
+  "assets/energy_master_expected_22_q19_opt1.png",
+  "assets/energy_master_expected_22_q19_opt2.png",
+  "assets/energy_master_expected_22_q19_opt3.png",
+  "assets/energy_master_expected_22_q19_opt4.png",
+  "assets/energy_master_expected_22_q20_reference.png",
+  "assets/energy_master_expected_22_q22_reference.png",
+  "assets/energy_master_expected_22_q23_opt1.png",
+  "assets/energy_master_expected_22_q23_opt2.png",
+  "assets/energy_master_expected_22_q23_opt3.png",
+  "assets/energy_master_expected_22_q23_opt4.png",
+  "assets/energy_master_expected_22_q24_opt1.png",
+  "assets/energy_master_expected_22_q24_opt2.png",
+  "assets/energy_master_expected_22_q24_opt3.png",
+  "assets/energy_master_expected_22_q24_opt4.png",
+  "assets/energy_master_expected_22_q24_reference.png",
+  "assets/energy_master_expected_22_q25_opt1.png",
+  "assets/energy_master_expected_22_q25_opt2.png",
+  "assets/energy_master_expected_22_q25_opt3.png",
+  "assets/energy_master_expected_22_q25_opt4.png",
+  "assets/energy_master_expected_22_q25_reference.png",
+  "assets/energy_master_expected_22_q26_opt1.png",
+  "assets/energy_master_expected_22_q26_opt2.png",
+  "assets/energy_master_expected_22_q26_opt3.png",
+  "assets/energy_master_expected_22_q26_opt4.png",
+  "assets/energy_master_expected_22_q26_reference.png",
+  "assets/energy_master_expected_22_q27_opt1.png",
+  "assets/energy_master_expected_22_q27_opt2.png",
+  "assets/energy_master_expected_22_q27_opt3.png",
+  "assets/energy_master_expected_22_q27_opt4.png",
+  "assets/energy_master_expected_22_q27_reference.png",
+  "assets/energy_master_expected_22_q28_opt1.png",
+  "assets/energy_master_expected_22_q28_opt2.png",
+  "assets/energy_master_expected_22_q28_opt3.png",
+  "assets/energy_master_expected_22_q28_opt4.png",
+  "assets/energy_master_expected_22_q29_opt1.png",
+  "assets/energy_master_expected_22_q29_opt2.png",
+  "assets/energy_master_expected_22_q29_opt3.png",
+  "assets/energy_master_expected_22_q29_opt4.png",
+  "assets/energy_master_expected_22_q29_reference.png",
+  "assets/energy_master_expected_22_q31_reference.png",
   "assets/energy_master_cbt_15_q57_oc_curve.png",
   "assets/energy_master_cbt_12_q50_radiator_symbol.png",
   "assets/energy_master_cbt_08_q46_cross_fitting.png",
@@ -51,11 +120,11 @@ const ASSETS = [
   "assets/energy_master_past_2002_07_21_q56_sales_table.png",
   "assets/energy_master_past_2002_07_21_q43_welding_symbol.png",
   './',
-  './index.html?v=4.21',
-  './manifest.json?v=4.21',
-  './questions.js?v=4.21',
-  './theory.js?v=4.21',
-  './sw.js?v=4.21',
+  './index.html?v=4.33',
+  './manifest.json?v=4.28',
+  './questions.js?v=4.28',
+  './theory.js?v=4.28',
+  './sw.js?v=4.28',
   './assets/2005_01_30_q45_steps.png',
   './assets/2005_04_03_q46_air_vent.png',
   './assets/2002_07_21_q22.png',
@@ -120,6 +189,14 @@ const ASSETS = [
   './assets/energy_master_expected_13_q20_symbol.png',
   './assets/energy_master_past_2002_04_07_q29_formula.png',
   './assets/energy_master_past_2002_04_07_q39_isometric.png',
+  './assets/energy_master_expected_19_q23_thread_length.png',
+  './assets/energy_master_expected_19_q34_copper_fitting.png',
+  './assets/energy_master_expected_19_q36_adapter_options.png',
+  './assets/energy_master_expected_19_q39_bending_arc.png',
+  './assets/energy_master_expected_19_q43_solder_sequence.png',
+  './assets/energy_master_expected_19_q71_swivel_options.png',
+  './assets/energy_master_expected_19_q75_pipe_shoe.png',
+  './assets/energy_master_expected_19_q79_guide_options.png',
   './icon-72.png',
   './icon-96.png',
   './icon-128.png',
@@ -139,7 +216,16 @@ const ASSETS = [
   './assets/energy_master_past_2013_04_14_q40_ts_cycle.png',
   './assets/energy_master_past_2013_04_14_q41_tensile_curve.png',
   './assets/energy_master_cbt_06_q33_detector.png',
-];
+  "assets/energy_master_expected_31_q30_pert_network.png",
+  "assets/energy_master_expected_31_q31_network.png",
+  "assets/energy_master_expected_31_q41_opt1.png",
+  "assets/energy_master_expected_31_q41_opt2.png",
+  "assets/energy_master_expected_31_q41_opt3.png",
+  "assets/energy_master_expected_31_q41_opt4.png",
+  "assets/energy_master_expected_31_q44_opt1.png",
+  "assets/energy_master_expected_31_q44_opt2.png",
+  "assets/energy_master_expected_31_q44_opt3.png",
+  "assets/energy_master_expected_31_q44_opt4.png"];
 
 self.addEventListener('install', event => {
   event.waitUntil((async () => {
@@ -161,7 +247,7 @@ self.addEventListener('activate', event => {
     await self.clients.claim();
     const clientList = await self.clients.matchAll({type: 'window', includeUncontrolled: true});
     for (const client of clientList) {
-      client.postMessage({type: 'SW_UPDATED', version: 'v4.21'});
+      client.postMessage({type: 'SW_UPDATED', version: 'v4.31'});
     }
   })());
 });
@@ -186,7 +272,7 @@ async function networkFirst(req) {
   } catch (err) {
     const cached = await caches.match(req);
     if (cached) return cached;
-    return caches.match('./index.html?v=4.21') || caches.match('./index.html') || Response.error();
+    return caches.match('./index.html?v=4.33') || caches.match('./index.html') || Response.error();
   }
 }
 
@@ -205,7 +291,7 @@ self.addEventListener('fetch', event => {
       await cache.put(event.request, res.clone()).catch(() => null);
       return res;
     } catch (err) {
-      return caches.match('./index.html?v=4.21') || caches.match('./index.html') || Response.error();
+      return caches.match('./index.html?v=4.33') || caches.match('./index.html') || Response.error();
     }
   })());
 });
